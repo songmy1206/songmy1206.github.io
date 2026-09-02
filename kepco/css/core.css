@@ -1,0 +1,387 @@
+@charset "utf-8";
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	Font Family
+	
+	ex) font-family:'Nanum Gothic';
+
+	Nanum Gothic
+	Noto Sans KR
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Pretendard */
+
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 100;
+  src: url(../font/pretendard/eot/Pretendard-Thin.eot);
+  src: url(../font/pretendard/eot/Pretendard-Thin.eot?#iefix) format("embedded-opentype"), url(../font/pretendard/woff/Pretendard-Thin.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 200;
+  src: url(../font/pretendard/eot/Pretendard-ExtraLight.eot);
+  src: url(../font/pretendard/eot/Pretendard-ExtraLight.eot?#iefix) format("embedded-opentype"), url(../font/pretendard/woff/Pretendard-ExtraLight.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../font/pretendard/eot/Pretendard-Light.eot);
+  src: url(../font/pretendard/eot/Pretendard-Light.eot?#iefix) format("embedded-opentype"), url(../font/pretendard/woff/Pretendard-Light.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/pretendard/eot/Pretendard-Regular.eot);
+  src: url(../font/pretendard/eot/Pretendard-Regular.eot?#iefix) format("embedded-opentype"), url(../font/pretendard/woff/Pretendard-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../font/pretendard/eot/Pretendard-Medium.eot);
+  src: url(../font/pretendard/eot/Pretendard-Medium.eot?#iefix) format("embedded-opentype"), url(../font/pretendard/woff/Pretendard-Medium.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  src: url(../font/pretendard/eot/Pretendard-SemiBold.eot);
+  src: url(../font/pretendard/eot/Pretendard-SemiBold.eot?#iefix) format("embedded-opentype"), url(../font/pretendard/woff/Pretendard-SemiBold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../font/pretendard/eot/Pretendard-Bold.eot);
+  src: url(../font/pretendard/eot/Pretendard-Bold.eot?#iefix) format("embedded-opentype"), url(../font/pretendard/woff/Pretendard-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 800;
+  src: url(../font/pretendard/eot/Pretendard-ExtraBold.eot);
+  src: url(../font/pretendard/eot/Pretendard-ExtraBold.eot?#iefix) format("embedded-opentype"), url(../font/pretendard/woff/Pretendard-ExtraBold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 900;
+  src: url(../font/pretendard/eot/Pretendard-Black.eot);
+  src: url(../font/pretendard/eot/Pretendard-Black.eot?#iefix) format("embedded-opentype"), url(../font/pretendard/woff/Pretendard-Black.woff) format("woff");
+}
+
+/* SCDream */
+@font-face {
+  font-family: "SCDream";
+  font-style: normal;
+  font-weight: 200;
+  src: url(../font/score/scdream4.woff) format("woff");
+}
+@font-face {
+  font-family: "SCDream";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../font/score/scdream5.woff) format("woff");
+}
+
+@font-face {
+  font-family: "SCDream";
+  font-style: bold;
+  font-weight: 600;
+  src: url(../font/score/scdream6.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 100;
+  src: url(../font/noto/NotoSansKR-Thin.woff2) format("woff2"), url(../font/noto/NotoSansKR-Thin.woff) format("woff"), url(../font/noto/NotoSansKR-Thin.otf) format("opentype");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../font/noto/NotoSansKR-Light.woff2) format("woff2"), url(../font/noto/NotoSansKR-Light.woff) format("woff"), url(../font/noto/NotoSansKR-Light.otf) format("opentype");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/noto/NotoSansKR-Regular.woff2) format("woff2"), url(../font/noto/NotoSansKR-Regular.woff) format("woff"), url(../font/noto/NotoSansKR-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../font/noto/NotoSansKR-Medium.woff2) format("woff2"), url(../font/noto/NotoSansKR-Medium.woff) format("woff"), url(../font/noto/NotoSansKR-Medium.otf) format("opentype");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../font/noto/NotoSansKR-Bold.woff2) format("woff2"), url(../font/noto/NotoSansKR-Bold.woff) format("woff"), url(../font/noto/NotoSansKR-Bold.otf) format("opentype");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 900;
+  src: url(../font/noto/NotoSansKR-Black.woff2) format("woff2"), url(../font/noto/NotoSansKR-Black.woff) format("woff"), url(../font/noto/NotoSansKR-Black.otf) format("opentype");
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	Basic	
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+* {
+  border: 0;
+}
+* {
+  border: 0;
+  outline: none;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  font-family: "Pretendard", "Noto Sans KR" /*,'Spoqa Han Sans','Nanum Gothic','돋움',Dotum,Helvetica,Verdana,Arial,sans-serif*/;
+}
+ul,
+ol,
+dl,
+dt,
+dd,
+li,
+button {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  background-color: transparent;
+}
+input,
+button {
+  outline: none;
+}
+input:focus {
+  outline: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  vertical-align: middle;
+}
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+/* 초기 한글사용(한글 및 중국, 일본 사이트용) */
+input[type="text"],
+input[type="password"],
+textarea {
+  ime-mode: active;
+}
+
+/* 스크롤바 전체 */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  -webkit-mask-position: left top;
+}
+
+/* 스크롤바 막대 */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* 스크롤바 뒷배경 */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* 스크롤바 XY 사용 시 오른쪽 아래 모서리 */
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* 체크박스 */
+.input_switch {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+.input_switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.input_slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc; /* 체크 안됐을때 색상 */
+}
+
+.input_slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .input_slider {
+  background: url("../images/ico-checkbox.svg") no-repeat center, linear-gradient(118deg, #2976ff 22.69%, #37bcf8 90.2%);
+}
+
+input:focus + .input_slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .input_slider:before {
+  opacity: 0;
+}
+input:checked + .input_slider span {
+  color: red;
+}
+
+/* Rounded sliders */
+.input_slider.round {
+  border-radius: 4px;
+}
+
+.input_slider.round:before {
+  border-radius: 2px;
+}
+
+/* btns */
+/* .btns {
+  display: flex;
+  gap: 5px;
+  box-sizing: border-box;
+  padding: 5px 15px 0;
+}
+.btns.both,
+.sub-btns.both {
+  justify-content: space-between;
+  align-items: center;
+}
+.btns.center,
+.sub-btns.center {
+  justify-content: center;
+}
+.btns.right,
+.sub-btns.right {
+  justify-content: flex-end;
+}
+
+.btns button {
+  min-width: 90px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #dbe2ea;
+  font-size: 15px;
+  font-weight: 500;
+  color: #6c757d;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+.btns button.wide,
+.sub-btns button.wide {
+  width: 100%;
+}
+.btns button:hover,
+.sub-btns button:hover {
+  background: #dbe2ea;
+}
+.btns button.black,
+.sub-btns button.black {
+  background: #313a46;
+  border-color: #313a46;
+  color: #fff;
+}
+.btns button.black:hover,
+.sub-btns button.black:hover {
+  background: #505862;
+  border-color: #505862;
+} */
+/* sub btns */
+/* .sub-btns {
+  padding: 0;
+  gap: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.sub-btns button {
+  min-width: 55px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid #dbe2ea;
+  font-size: 13px;
+  font-weight: 500;
+  color: #6c757d;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+.sub-btns.line {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 15px;
+  position: relative;
+} */

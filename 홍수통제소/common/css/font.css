@@ -1,0 +1,105 @@
+/* s-core-dream */
+@font-face {
+  font-family: "S-Core";
+  src: url("../font/S-Core_Dream/S-Core1.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-Core";
+  src: url("../font/S-Core_Dream/S-Core2.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-Core";
+  src: url("../font/S-Core_Dream/S-Core3.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-Core";
+  src: url("../font/S-Core_Dream/S-Core4.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-Core";
+  src: url("../font/S-Core_Dream/S-Core5.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-Core";
+  src: url("../font/S-Core_Dream/S-Core6.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-Core";
+  src: url("../font/S-Core_Dream/S-Core7.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-Core";
+  src: url("../font/S-Core_Dream/S-Core8.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* pretendard */
+@font-face {
+  font-family: "Pretandard";
+  src: url("../font/pretendard/Pretendard-Thin.otf") format("otf");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretandard";
+  src: url("../font/pretendard/Pretendard-ExtraLight.otf") format("otf");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretandard";
+  src: url("../font/pretendard/Pretendard-Light.otf") format("otf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretandard";
+  src: url("../font/pretendard/Pretendard-Regular.otf") format("otf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretandard";
+  src: url("../font/pretendard/Pretendard-Medium.otf") format("otf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretandard";
+  src: url("../font/pretendard/Pretendard-SemiBold.otf") format("otf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretandard";
+  src: url("../font/pretendard/Pretendard-Bold.otf") format("otf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretandard";
+  src: url("../font/pretendard/Pretendard-ExtraBold.otf") format("otf");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretandard";
+  src: url("../font/pretendard/Pretendard-Black.otf") format("otf");
+  font-weight: 900;
+  font-style: normal;
+}

@@ -1,0 +1,55 @@
+/* btn - select, apply, main 제외*/
+.btn { display: flex; justify-content: center; align-items: center; gap: 5px; }
+.btn button { padding: 5px 10px; display: flex; justify-content: center; align-items: center; gap: 5px; border-radius: 5px; white-space: nowrap; cursor: pointer; font-size: 12px; font-weight: 700; }
+
+/*main-btn */
+.main-btn { display: flex; justify-content: center; padding: 15px; gap: 5px; }  
+.main-btn button { display: flex; align-items: center; justify-content: center; height: 30px; border-radius: 5px; font-size: 12px; font-weight: 800; gap: 5px; padding: 5px 10px; }
+.main-btn .full { width: 100%; }
+
+/* sub-btn */ 
+.sub-btn button { width: 75px; height: 25px; padding: 0; border-radius: 3px; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 3px; }
+
+/* apply-btn */
+.apply-btn { display: flex; justify-content: flex-end; padding: 15px; gap: 5px; position: absolute; bottom: 0; width: calc(100% - 30px); } 
+.apply-btn button { width: 115px; height: 30px; border-radius: 5px; font-size: 12px; font-weight: 800; flex: 1; }
+.apply-btn.f-initial { padding: 15px 10px; }
+.apply-btn.f-initial button { flex: initial; }
+
+/* img-upload-btn */
+.img-upload-btn { display: flex; align-items: center; justify-content: center; width: 115px; height: 30px; border-radius: 5px; font-size: 12px; font-weight: 800; cursor: pointer; gap: 5px; } 
+.img-upload-btn + input[type="file"] { position: absolute; width: 0; height: 0; padding: 0; overflow: hidden; border: 0; }
+
+/* radio-btn */
+.radio { display: flex; gap: 5px; justify-content: flex-end; }
+.radio input[type="radio"] { display: none; }
+.radio input[type="radio"] + label { display: flex; cursor: pointer; padding: 5px 10px; border-radius: 5px; justify-content: center; align-items: center; gap: 5px; height: 16px; white-space: nowrap; }
+
+/* radio-default */
+input[type="radio"] { -webkit-appearance: none; -moz-appearance: none; appearance: none; width: 14px; height: 14px; border: 0; border-radius: 50%; outline: none; cursor: pointer; } 
+input[type="radio"]:checked { border-width: 3px; border-style: solid; }
+input[type="radio"] + label { cursor: pointer; }
+input[type="radio"]:checked { cursor: pointer; }
+
+/* checkbox */
+.checkbox { display: flex; gap: 5px; flex-direction: row; flex-wrap: wrap; }
+.checkbox input[type="checkbox"] { display: none; }
+.checkbox input[type="checkbox"] + label { display: flex; cursor: pointer; padding: 5px 10px; border-radius: 5px; justify-content: center; align-items: center; gap: 5px; height: 16px; white-space: nowrap; }
+
+/* move-btn */
+.move-btn { display: flex; justify-content: center; gap: 5px; }
+
+/* 슬라이드 컨텐츠 버튼 */
+.nav5-btn { margin-bottom: 0; justify-content: flex-end; }
+.nav5-btn button { padding: 3px 6px; }
+
+/* 팝업 버튼 */
+.popup-btn { display: flex; justify-content: space-between; gap: 5px; }
+.popup-btn div { display: flex; gap: 5px; }
+
+/* flex-end-btn */
+.popup-btn-fe { display: flex; justify-content: flex-end; padding: 15px;  }
+
+/* show hide 버튼 */ 
+.widget.tab .sh-btn { position: absolute; top: 50%; transform: translateY(-50%); left: -20px; width: 20px; height: 50px; border-radius: 5px 0 0 5px; cursor: pointer; box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.2); }
+.widget.tab .sh-btn i { width: 18px; height: 18px; background-size: contain; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }

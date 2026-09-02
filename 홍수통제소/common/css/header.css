@@ -1,0 +1,149 @@
+
+/* .wrap wrap-user */
+.wrap header .wrap-user i.ico-user {background-color: #3091F0;}
+.wrap header .wrap-user .user-detail.active {color: #515151; border: 1px solid rgba(0, 0, 0, 0.2); background-color: #ffffff;}
+.wrap header .wrap-user .user-detail .time-left-wrap {color: #515151;}
+.wrap header .wrap-user .user-detail .time-left-wrap::after {border-bottom: 1px solid rgba(0, 0, 0, 0.1);}
+.wrap header .wrap-user .user-detail .time-left-wrap li i {filter: invert(1);}
+.wrap header .wrap-user .user-detail .time-left-wrap ul button {background-color: rgba(0, 0, 0, 0.15); color: #000000; border: none;}
+
+/************************************************************************************************************************************/
+
+/* header */
+header {position: fixed; display: flex; justify-content: space-between; align-items: center; padding: 33px 40px; width: calc(100% - 80px); z-index: 1; transition: all 0.3s ease-in-out; background-color: transparent; height: 44px;}
+header .logo {display: flex; align-items: center; margin: 0; flex: 1;}
+header .logo-m,
+header .wrap-user i.ico-close {display: none;}
+
+header .m-wrap {display: flex; justify-content: space-between; align-items: baseline; width: 100%; height: 100%; padding-top: 0; transition: all 0.3s ease-in-out;}
+
+header .header-menu {display: flex; width: 36%; justify-content: space-between; max-width: 1000px; transform: translateY(-4px); transition: all 0.3s ease-in-out;}
+header .header-menu li {cursor: pointer;}
+header .header-menu li p {position: relative; display: flex; align-items: center; gap: 5px; font-weight: 700; transition: all 0.3s ease; width: fit-content; margin-bottom: 20px; color: rgba(0, 0, 0, 0.6);}
+header .header-menu li p.active {color: #28cbff;}
+header .header-menu li p:hover {color: rgba(0, 0, 0, 1); transition: all 0.3s ease-in-out;}
+header .header-menu li p::before {position: absolute; content: ""; width: 100%; height: 1px; background-color: transparent; bottom: 0; left: 0; transform-origin: left; transition: transform 0.3s ease; transform: scale(0);}
+header .header-menu li p:hover::before {background-color: #000; transform: scaleX(1);}
+
+header .header-menu li .header-submenu {display: flex; flex-direction: column; gap: 10px; opacity: 0; transition: all 0.3s ease-in-out;}
+header .header-menu li .header-submenu li {word-break: keep-all; white-space: break-spaces; text-align: start; font-size: 13px; font-weight: 300; transition: all 0.3s ease;}
+header .header-menu li .header-submenu li:hover {color: rgba(255, 255, 255, 1);}
+
+header .wrap-user {display: flex; color: #565656; gap: 15px; font-size: 16px; font-weight: 700; transition: all 0.3s ease-in-out; height: fit-content; flex: 1; flex-direction: row-reverse;}
+header .wrap-user div {color: #565656; padding-top: 1px; cursor: pointer;}
+
+header:not(.portal) .header-menu > li {width: 112px;}
+header:not(.portal).active .wrap-user,
+header:not(.portal).active .wrap-user div {color: rgba(255, 255, 255, 1);}
+
+/* header .scroll */
+header.scroll {background-color: rgba(0, 0, 0, 0.6); backdrop-filter: blur(5px); transition: all 0.3s ease-in-out;}
+header.scroll i.ico-logo {background:  url("../images/ico-logo-fff.svg") center no-repeat;}
+
+header.scroll .header-menu li p {color: rgba(255, 255, 255, 0.8);}
+header.scroll .header-menu li p:hover {color: rgba(255, 255, 255, 1);}
+header.scroll .header-menu li p:hover::before {background-color: #fff;}
+
+header.scroll .wrap-user {color: rgba(255, 255, 255, 1);}
+header.scroll .wrap-user div {color: rgba(255, 255, 255, 1);}
+
+/* header.active */
+header.active {height: 169px; background-color: rgba(0, 0, 0, 0.6); color: rgba(255, 255, 255, 0.8); transition: all 0.3s ease-in-out; backdrop-filter: blur(5px);}
+header.active i.ico-logo {background:  url("../images/ico-logo-fff.svg") center no-repeat;}
+
+header.active .header-menu li {color: rgba(255, 255, 255, 0.7);}
+header.active .header-menu li p {color: rgba(255, 255, 255, 0.8);}
+header.active .header-menu li p:hover {color: rgba(255, 255, 255, 1);}
+header.active .header-menu li p.active {color: #28cbff;}
+header.active .header-menu li p.active:hover {color: rgba(255, 255, 255, 1);}
+header.active .header-menu li p:hover::before {background-color: #fff;}
+header.active .header-menu li .header-submenu {opacity: 1; transition: all 0.3s ease-in-out;}
+
+header.active .wrap-user {color: rgba(255, 255, 255, 0.8);}
+header.active .wrap-user > div.active {color: rgba(255, 255, 255, 1);}
+
+/* 상단 서비스 버튼 */
+.wrap-user > ul {position: relative;}
+.wrap-user .user-service {display: flex; align-items: center; gap: 4px; cursor: pointer; margin-bottom: 12px; position: relative;}
+.wrap-user .user-service p {width: min-content; word-break: auto-phrase; max-width: 127px; white-space: break-spaces; margin: 0 4px;}
+.wrap-user .user-service i.ico-select-tri {transform: rotate(180deg);}
+.wrap-user .user-service i.ico-select-tri.active {transform: rotate(0deg);}
+.wrap-user .user-detail {display: flex; flex-direction: column; gap: 14px; border-radius: 4px; height: 0; overflow: hidden; padding: 0 15px; border: 1px solid rgba(255, 255, 255, 0); box-sizing: border-box; position: absolute; width: 100%; min-width: 146px; right: 0;}
+.wrap-user .user-detail.active {padding: 10px 15px; background-color: rgba(0, 0, 0, 0.5); border: 1px solid rgba(255, 255, 255, 0.2); height: auto;}
+.wrap-user .user-detail p {cursor: pointer; font-size: 13px; font-weight: 700;}
+.wrap-user .user-detail .time-left-wrap {display: flex; flex-direction: column; gap: 8px; font-size: 10px; font-weight: 500; color: #ffffff; cursor: default;}
+.wrap-user .user-detail .time-left-wrap::after {content: ""; border-bottom: 1px solid rgba(255, 255, 255, 0.1);}
+.wrap-user .user-detail .time-left-wrap ul {display: flex; gap: 6px; align-items: center; font-size: 12px;}
+.wrap-user .user-detail .time-left-wrap li {display: flex;}
+.wrap-user .user-detail .time-left-wrap li > *:not(button) {cursor: default;}
+.wrap-user .user-detail .time-left-wrap ul .time {color: #48CEFF;}
+.wrap-user .user-detail .time-left-wrap ul button {background-color: rgba(255, 255, 255, 0.15); color: #ffffff; padding: 2px; border-radius: 2px; font-size: 11px;}
+
+/************************************************************************************************************************************/
+
+/* 공통 - rnd, portal main */
+
+.wrap-rnd header .header-menu li,
+.wrap-rnd header .header-menu li p {color: rgba(255, 255, 255, 0.8);}
+.wrap-rnd header .header-menu li p:hover,
+.wrap-portal header .header-menu li p:hover {color: rgba(255, 255, 255, 1);}
+.wrap-rnd header .header-menu li p:hover::before,
+.wrap-portal header .header-menu li p:hover::before {background-color: rgba(255, 255, 255, 1);}
+
+.wrap-rnd header .wrap-user,
+.wrap-rnd header .wrap-user > div,
+.wrap-portal header .wrap-user,
+.wrap-portal header .wrap-user > div {color: #ffffff;}
+
+/************************************************************************************************************************************/
+
+/* portal main */
+.wrap-portal header .header-menu li p {color: rgba(255, 255, 255, 0.8);}
+
+/************************************************************************************************************************************/
+
+/* 반응형 */  
+
+/* header */
+@media screen and (max-width: 1500px) { 
+  header .header-menu {width: 54%;}
+}
+@media screen and (max-width: 1000px) {
+  header .logo-m {display: flex; margin: 0;} 
+  header .wrap-user i.ico-close {display: block;}
+
+  header .m-wrap {height: 100vh; background-color: rgba(0, 0, 0, 1); position: fixed; top: 0; left: 0; z-index: 999; flex-direction: column; gap: 70px; transform: translateX(100vw); transition: all 0.3s ease-in-out; justify-content: initial; visibility: hidden; opacity: 0; padding: 0;}
+  header .m-wrap.active {transform: translateX(0); transition: all 0.3s ease-in-out; visibility: visible; opacity: 1; overflow-y: scroll;}
+  header .m-wrap .logo {display: none;}
+
+  header .header-menu {flex-direction: column; width: calc(100% - 160px); padding: 0px 80px 80px 80px; gap: 48px; order: 2; overflow: auto;}
+  header .header-menu li {gap: 15px; color: rgba(255, 255, 255, 0.6); flex-basis: auto;}
+  header .header-menu li p {color: rgba(255, 255, 255, 0.6); cursor: default; pointer-events: none;}
+
+  header .header-menu li .header-submenu {opacity: 1;}
+  header .header-menu li .header-submenu li {color: #fff;}
+
+  header .wrap-user {flex-direction: row; padding: 30px 100px; width: calc(100% - 200px); order: 1; align-items: flex-start; justify-content: center; min-height: 178px; border-bottom: 1px solid rgba(255, 255, 255, 0.3); flex: none;}
+  header .wrap-user i.ico-close {position: absolute; top: 35px; right: 26px;}
+  header .wrap-user div {color: #ffffff; font-size: 13px;}
+  header .wrap-user .user-service {flex-direction: column; cursor: default; color: rgba(255, 255, 255, 1);}
+  header .wrap-user .user-service p {max-width: fit-content; white-space: nowrap;}
+  header .wrap-user .user-service i.ico-user {width: 90px; height: 90px; background-size: 62px; background-color: rgba(255, 255, 255, 0.1); margin-bottom: 10px; cursor: default;}
+  header .wrap-user .user-service i.ico-select-tri {display: none;}
+  header .wrap-user .user-detail {height: fit-content; width: fit-content; padding: 10px; color: #ffffff; flex-direction: row; border: 1px solid rgba(255, 255, 255, 0.2); gap: 32px; left: 50%; transform: translateX(-50%);}
+  header .wrap-user .user-detail p {font-size: 13px; white-space: nowrap;}
+
+  header.scroll i.ico-menu {background-image:  url("../images/ico-menu-fff.svg");}
+
+  header.portal .header-menu li,
+  header.portal .header-menu li p {color: rgba(255, 255, 255, 1) !important;}
+  header:not(.portal) .header-menu > li {width: auto;}
+
+  /* .time-left-wrap */
+  header .wrap-user .user-detail .time-left-wrap {display: none;}
+}
+
+@media screen and (max-width: 890px) {
+  header {padding: 33px 20px; width: calc(100% - 40px);}
+}
+

@@ -1,0 +1,150 @@
+i.ico-notice { background-image: url("../images/ico-notice.svg"); }
+i.ico-situation { background-image: url("../images/ico-situation.svg"); }
+i.ico-method { background-image: url("../images/ico-method.svg"); }
+i.ico-dropfile {width: 28px; height: 28px; background-image: url("../images/ico-dropfile.svg");} 
+i.ico-link {width: 16px; height: 16px; background-image: url("../images/ico-link.svg");}
+i.ico-link-fff {width: 16px; height: 16px; background-image: url("../images/ico-link-fff.svg"); opacity: 0.8;}
+i.pop-kind.confirm{ background-image: url( "../images/ico-confirm.svg"); }
+
+/* 아이콘 */
+i { display: inline-block; cursor: pointer; flex-shrink: 0; background-repeat: no-repeat; background-position: center; }
+
+/* 사이즈 */
+i.sz6 {width: 6px; height: 6px;}
+i.sz10 {width: 10px; height: 10px;}
+i.sz12 {width: 12px; height: 12px;}
+i.sz14 {width: 14px; height: 14px;}
+i.sz16 {width: 16px; height: 16px;}
+i.sz18 {width: 18px; height: 18px;}
+i.sz20 {width: 20px; height: 20px;}
+i.sz24 {width: 24px; height: 24px;}
+i.sz26 {width: 26px; height: 26px;}
+i.sz32 {width: 32px; height: 32px;}
+i.sz36 {width: 36px; height: 36px;}
+i.sz40 {width: 40px; height: 40px;}
+i.sz42 {width: 42px; height: 42px;}
+i.sz44 {width: 44px; height: 44px;}
+
+/* header */
+i.ico-logo {width: 175px; height: 44px; background-image: url("../images/ico-logo.svg");}
+.wrap-rnd i.ico-logo,
+.wrap-portal i.ico-logo {background-image: url("../images/ico-logo-fff.svg");}
+i.ico-user {background-image: url("../images/ico-user.svg"); border-radius: 50%; background-color: rgba(0, 0, 0, 0.6);}
+.wrap header i.ico-select-tri {background-image: url("../images/ico-select-tri_ver2.svg");}
+.wrap header.active i.ico-select-tri,
+.wrap header.scroll i.ico-select-tri {background-image: url("../images/ico-select-tri.svg");}
+i.ico-time-left {background-image: url("../images/ico-time-left.svg");}
+i.ico-close {background-image: url("../images/ico-close.svg");}
+i.ico-menu { width: 28px; height: 30px; background-image: url("../images/ico-menu.svg"); background-size: contain; } 
+.wrap-rnd i.ico-menu,
+.wrap-portal i.ico-menu {background-image: url("../images/ico-menu-fff.svg");}
+
+/* footer */
+i.ico-logo_footer { height: 50px; min-width: 152px; background-image: url("../images/ico-logo_footer.svg"); background-size: contain;}
+footer.ver2 i.ico-select-tri {background-image: url("../images/ico-select-tri_ver2.svg");}
+
+/* portal */
+i.divider { height: 18px; width: 1px; color: #ddd; }
+
+/* r&d */
+i.ico-prev.slide {background-image: url("../images/ico-slide-prev.svg"); left: -51px;}
+i.ico-next.slide { background-image: url("../images/ico-slide-next.svg"); right: -51px;}
+i.ico-play {background-image: url("../images/ico-play.svg");}
+i.ico-stop {background-image: url("../images/ico-stop.svg");}
+i.ico-more {background-image: url("../images/ico-more.svg");}
+i.ico-slide-dot {background-color: rgba(255, 255, 255, 0.2); border-radius: 50%; transition: all 0.3s ease-in-out;}
+i.ico-detail-view {background-image: url("../images/ico-detail-view.svg");}
+
+/* board - portal */
+.icon {display: inline-block;}
+.icon .icon-answer,
+.icon .icon-question { height: 24px; background-color: rgba(0, 0, 0, 0.1); border-radius: 50px; padding: 0 5px; display: flex; align-items: center; padding: 0 10px 0 5px; font-size: 11px; font-weight: 500;}
+
+i.ico-question {background-image: url("../images/ico-question.svg");}
+i.ico-etc {background-image: url("../images/ico-etc.svg");}
+i.ico-important {background-image: url("../images/ico-important.svg"); cursor: default; padding-top: 2px; }
+i.ico-announcement {background-image: url("../images/ico-announcement.svg"); cursor: default; background-size: contain; }
+i.ico-prev-cb {background-image: url("../images/ico-prev-cb.svg"); }
+i.ico-next-cb {background-image: url("../images/ico-next-cb.svg"); }
+i.ico-print{background-image: url("../images/ico-print.svg"); }
+i.ico-csv-save {background-image: url("../images/ico-csv-save.svg"); }
+i.ico-accor {position: absolute; top: 50%; right: 20px; transform: translateY(-50%); transition: all 0.3s ease-in-out; background-image: url("../images/ico-accor.svg");}
+
+/* board - r&d */
+i.ico-plus {background-image: url("../images/ico-plus.svg");} 
+i.ico-delete {background-image: url("../images/ico-delete.svg");}
+i.pop-kind.edit{ background-image: url( "../images/ico-edit.svg"); }
+i.pop-kind.err{ background-image: url( "../images/ico-err.svg"); }
+
+/* usersvc */
+i.ico-close_svc {background-image: url("../images/ico-close_b.svg");}
+i.ico-dot-color {background-image: url("../images/ico-dot-color.svg");}
+i.ico-logntc-1 {background-image: url("../images/ico-logntc-1.svg");} 
+i.ico-logntc-2 {background-image: url("../images/ico-logntc-2.svg");} 
+i.ico-logntc-3 {background-image: url("../images/ico-logntc-3.svg");} 
+i.ico-trash {background-image: url("../images/ico-trash.svg");} 
+i.ico-apply {background-image: url("../images/ico-apply.svg");}
+i.ico-circle-check {background-image: url("../images/ico-circle-check.svg");}
+i.ico-caution {background-image: url("../images/ico-caution.svg");}
+i.ico-noinfo {background-image: url("../images/ico-noinfo.svg");}
+i.ico-pwntc {width: 44px; height: 36px; background-image: url("../../common/images/ico-pwntc.svg");} 
+
+/* common */
+i.ico-select-tri {background-image: url("../images/ico-select-tri.svg"); background-size: contain;}
+i.ico-move {background-image: url("../images/ico-move.svg");}
+i.ico-search { background-image: url("../images/ico-search.svg"); }
+i.ico-pdf {background-image: url("../images/ico-pdf.svg");}
+i.ico-card-lock { background-image: url("../images/ico-card-lock.svg");}
+i.ico-card-pin {background-image: url("../images/ico-card-pin.svg");}
+i.ico-card-attachment {background-image: url("../images/ico-card-attachment.svg");}
+i.ico-img {background-image: url("../images/ico-img.svg");}
+i.ico-xls {background-image: url("../images/ico-xls.svg");}
+i.ico-file {background-image: url("../images/ico-file.svg");}
+i.ico-video {background-image: url("../images/ico-video.svg");}
+i.ico-prev{background-image: url("../images/ico-prev.svg");}
+i.ico-next {background-image: url("../images/ico-next.svg"); }
+i.ico-prev-db {background-image: url("../images/ico-prev-db.svg"); }
+i.ico-next-db {background-image: url("../images/ico-next-db.svg"); }
+i.ico-register {background-image: url("../images/ico-register.svg");}
+i.ico-asterisk {background-image: url("../images/ico-asterisk.svg"); cursor: default;}
+i.ico-info {background-image: url("../images/ico-info.svg"); cursor: default;}
+i.ico-dot{background-image: url("../images/ico-dot.svg"); }
+i.ico-attachment {padding-top: 5px; background-image: url("../images/ico-attachment.svg"); }
+i.ico-pin {background-image: url("../images/ico-pin.svg");}
+i.ico-clip {border-radius: 50%; background-image: url("../images/ico-clip.svg"); background-color: rgba(0, 0, 0, 0.1); }
+i.ico-lock {border-radius: 50%; background-image: url("../images/ico-lock.svg"); background-color: rgba(0, 0, 0, 0.1);}
+i.ico-answer {background-image: url("../images/ico-answer.svg");}
+
+/* 대민서비스 */
+.ico-menu_1 {background-image: url("../images/ico-menu1.svg");}
+.main-menu__item:hover .ico-menu_1,
+.main-menu__item.active .ico-menu_1 {background-image: url("../images/ico-menu1_a.svg");}
+.ico-menu_2 {background-image: url("../images/ico-menu2.svg");}
+.main-menu__item:hover .ico-menu_2,
+.main-menu__item.active .ico-menu_2 {background-image: url("../images/ico-menu2_a.svg");}
+.ico-menu_3 {background-image: url("../images/ico-menu3.svg");}
+.main-menu__item:hover .ico-menu_3,
+.main-menu__item.active .ico-menu_3 {background-image: url("../images/ico-menu3_a.svg");}
+.ico-menu_4 {background-image: url("../images/ico-menu4.svg");}
+.main-menu__item:hover .ico-menu_4,
+.main-menu__item.active .ico-menu_4 {background-image: url("../images/ico-menu4_a.svg");}
+.ico-menu_5 {background-image: url("../images/ico-menu5.svg");}
+.main-menu__item:hover .ico-menu_5,
+.main-menu__item.active .ico-menu_5 {background-image: url("../images/ico-menu5_a.svg");}
+
+i.ico-alert {background-image: url("../images/ico-alert.svg");}
+i.ico-siren {background-image: url("../images/ico-siren.svg");}
+.alarm.ver2 .alarm__content i.ico-siren {background-image: url("../images/portal/icons/ico-siren_ver2.svg");}
+
+i.ico-view-item1 {background-image: url("../images/ico-view-list1.svg");}
+i.ico-view-item2 {background-image: url("../images/ico-view-list2.svg");}
+i.ico-view-item3 {background-image: url("../images/ico-view-list3.svg");}
+i.ico-view-item4 {background-image: url("../images/ico-view-list4.svg");}
+i.ico-circle-plus {background-image: url("../images/ico-circle-plus.svg");}
+i.ico-angle-bracket {background-image: url("../images/ico-angle-bracket.svg");}
+i.ico-stop {background-image: url("../images/ico-stop.svg");}
+i.ico-stop.play {background-image: url("../images/ico-play.svg");}
+
+
+/* login */
+i.ico-view {background-image: url("../images/ico-view.svg");}

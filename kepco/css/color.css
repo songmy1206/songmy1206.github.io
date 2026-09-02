@@ -1,0 +1,374 @@
+:root {
+  --black: #000000;
+  --basic-type2: #000000;
+  --bg-full-contentBox: #000410;
+  --bg-nav-content: #000e31;
+  --header-leftnav-bg: #001344;
+  --header-line: #0066d9;
+  --btn-main: #0074f6;
+  --btn-bg-apply: #00a3ff;
+  --text-nav-content-name: #00d1ff;
+  --bg-hover-color: #00d1ff;
+  --bg-header-btn: #00c2ff;
+  --input-radio-check-hover: #0362cd;
+  --input-radio-hover: #0b3366;
+  --input-bg-readonly: #0d1322;
+  --subtable-th: #0f4059;
+  --btn-main-btn-active: #114681;
+  --img-uploader: #17508f;
+  --btn-main-2: #17508f;
+  --bg-sub-common: #131b2f;
+  --subtab-active-bg: #1a73e8;
+  --nav-left-active: #1c87ff;
+  --nav-left-hover: #1e6bc1;
+  --bg-right: #202635;
+  --bg-popup: #212635;
+  --state-nomal-deep: #2d593f;
+  --subtab-active-text: #3098fb;
+  --input-bg: #323642;
+  --table-bg-th: #363b49;
+  --bg-img-viewer: #3e4b58;
+  --selectbox-option-bg-deep: #434e5a;
+  --btn-apply-cancel: #44474a;
+  --btn-main-hover: #459dff;
+  --selectbox-option-bg: #52586a;
+  --state-nomal: #5affb0;
+  --btn-bg-active: #bff0ff;
+  --warning-deep: #ca1d1d;
+  --important: #fc2626;
+  --active-point: #ff2e60;
+  --warning: #ff5454;
+  --caution: #ffdb5a;
+  --white: #ffffff;
+  --basic-type1: #ffffff;
+
+  --transparent: transparent;
+
+  --bg-content: rgba(0, 0, 0, 0.15);
+  --bg-tab-popup: rgba(0, 0, 0, 0.3);
+  --bg-tab-main: rgba(0, 0, 0, 0.3);
+  --list-control-hover: rgba(0, 163, 255, 0.1);
+  --list-control-active: rgba(0, 163, 255, 0.44);
+  --bg-sub-pannel-title: rgba(0, 194, 255, 0.1);
+  --popup-header-bar: rgba(0, 194, 255, 0.9);
+  --bg-drag-and-drop-active: rgba(0, 209, 255, 0.7);
+  --nav-left-hover: rgba(28, 135, 255, 0.5);
+  --btn-small-small: rgba(46, 217, 255, 0.2);
+  --icon-hover: rgba(46, 217, 255, 0.8);
+  --btn-active-hover: rgba(255, 46, 96, 0.25);
+  --bg-basic-wrapper: rgba(255, 255, 255, 0.13);
+  --border-table: rgba(255, 255, 255, 0.05);
+  --bg-info-list: rgba(255, 255, 255, 0.05);
+  --bg-basic: rgba(255, 255, 255, 0.1);
+  --bg-search-box: rgba(255, 255, 255, 0.1);
+  --bg-btn: rgba(255, 255, 255, 0.2);
+  --bg-checkbox: rgba(255, 255, 255, 0.2);
+  --bg-tabActive-popup: rgba(255, 255, 255, 0.2);
+  --bg-tabActive-main: rgba(255, 255, 255, 0.2);
+  --bg-radio: rgba(255, 255, 255, 0.2);
+  --bd-search-box: rgba(255, 255, 255, 0.2);
+  --partition: rgba(255, 255, 255, 0.5);
+  --text-main-btn-active: rgba(255, 255, 255, 0.6);
+  --text-checkbox: rgba(255, 255, 255, 0.7);
+  --text-drag-and-drop-active: rgba(255, 255, 255, 0.7);
+  --input-text-readonly: rgba(255, 255, 255, 0.7);
+  --text-info-list: rgba(255, 255, 255, 0.7);
+  --text-radio: rgba(255, 255, 255, 0.7);
+}
+
+/* main css */
+/* 헤더 */
+.main-wrap header { background-color: var(--header-leftnav-bg); border-bottom-color: var(--header-line); }
+.main-wrap header .header-logo span { color: var(--basic-type1); }
+.header-btn ul li { background-color: var(--bg-header-btn); color: var(--basic-type2); }
+.header-btn ul li:hover { background-color: var(--bg-hover-color); }
+.header-btn ul li.active { background-color: var(--btn-bg-active); }
+
+/* 위젯 탭 */
+.widget.tab { background-color: var(--bg-right); }
+.widget.tab .tabs li { background-color: var(--bg-tab-main); }
+.widget.tab .tabs li.active { background-color: var(--bg-tabActive-main); }
+.widget.tab .sub-tabs { border-bottom-color: var(--bg-basic); }
+.widget.tab .sub-tabs li.active em { background-color: var(--subtab-active-bg); }
+.widget.tab .sub-tabs li.active { color: var(--subtab-active-text); }
+.widget.tab .tab-contents-wrap .sub-tab-contents .st-content { background-color: var(--bg-content); }
+.widget.tab .tab-contents-wrap .sub-tab-contents .st-content .tc-name { color: var(--text-nav-content-name); }
+.widget.tab .tab-contents-wrap .sub-tab-contents .st-content .tc-detail1 { background-color: var(--input-bg); }
+.widget.tab .tab-contents-wrap .sub-tab-contents .st-content .tc-detail1 li strong { color: var(--text-nav-content-name); }
+.widget.tab .tab-contents-wrap .sub-tab-contents .st-content .tc-detail2 li { background-color: var(--input-bg); }
+
+/* 위젯 탭 팝업  */
+.tab-content-popup .title { background-color: var(--bg-popup) !important; }
+.tab-content-popup .nav-sub-contents .nav-sub-content { background-color: var(--transparent); }
+
+/* 위젯 팝업 */
+.widget .accor-contents { background-color: var(--bg-content); }
+.widget ul li.date { color: var(--white); background-color: var(--bg-basic); }
+.widget .nav-content .nav-content-detail strong { color: var(--active-point); } 
+.widget li.nav-content { background-color: var(--bg-content); }
+.widget4 .widget4-contents li { background-color: var(--input-bg); }
+.widget4 .widget4-contents li p { color: var(--basic-type1); }
+
+/* 네비게이션 */
+.main-wrap nav { background-color: var(--header-leftnav-bg); }
+.main-wrap nav ul li { color: var(--basic-type1); }
+.main-wrap nav ul li:hover { background-color: var(--nav-left-hover); }
+.main-wrap nav ul li.active { background-color: var(--nav-left-active); }
+
+/* 드론접속 nav1 */ 
+.main-nav_1 .nav-content-wrap { background-color: var(--bg-nav-content); }
+.nav-content-sub .nav-content-name h4 { color: var(--text-nav-content-name); }
+.nav-content-sub .nav-content-name h4.active { color: var(--active-point); }
+.nav-content-sub .nav-content-name i.more:hover { background-color: var(--btn-active-hover); }
+.nav-content-name i.more.active { background-color: var(--active-point); }
+.nav-content-sub .nav-content-text span { color: var(--basic-type1); }
+.nav-content-sub .nav-content-text strong { color: var(--text-nav-content-name); }
+
+/* 내 드론 관리 */
+.nc1-contents { background-color: var(--bg-full-contentBox); }
+
+/* 상세정보 */  
+.nav-contents .nc-sub { background-color: var(--bg-full-contentBox); }
+.nc-sc { background-color: var(--bg-basic-wrapper); }
+.main-nav_1 .nc-sub1-contents .nc-sc h6 { color: var(--text-nav-content-name); }
+.main-nav_1 .nc-sub1-contents .nc-sc div p { color: var(--basic-type1); }
+
+/* 임무설정 */
+.nc-sub2 { background-color: var(--bg-sub-common); }
+.nc-sub2 .nc-sub-name { background-color: var(--btn-small-small); }
+.nc-sub2-popup .nc-sub2-popup-detail ul li { color: var(--basic-type1); }
+.nc-sub2-popup .nc-sub2-popup-detail ul li strong { color: var(--text-nav-content-name); }
+
+/* 임무이력 */
+.nc-sub3-popup .nc-sub3-popup-detail ul li { color: var(--basic-type1); }
+.nc-sub3-popup-detail ul li strong { color: var(--text-nav-content-name); }
+.nc-sub3-popup-detail .map { background-color: var(--basic-type2); }
+
+/* 로봇설정 */
+.nc-sub4-popup .nc-sub4-popup-detail { color: var(--basic-type1); }
+.nc-sub4-popup-detail .popup4-accor.accor-bg { background-color: var(--bg-content); }
+.nc-sub4-popup-detail .popup4-accor .popup4-accor-icon { background-color: var(--bg-basic); }
+.nc-sub4-popup-detail .popup4-accor .popup4-accor-text p { color: var(--white); }
+.popup4-accor .popup4-accor-hide input { background-color: var(--input-bg); color: var(--basic-type1); }
+
+/* 권한설정 */ 
+.nc-sub5-popup .nc-sub5-popup-detail { color: var(--basic-type1); }
+.nc-sub5-popup-detail .sub5-popup-content { background-color: var(--bg-content); }
+.popup5-name li { background-color: var(--bg-basic); }
+.popup5-name li:hover { background-color: var(--bg-hover-color); }
+.popup5-name li:active { background-color: var(--bg-drag-and-drop-active); color: var(--text-drag-and-drop-active); } 
+.popup5-icon { background-color: var(--bg-basic); }
+
+/* 통합임무 nav2, 지오팬스 nav3*/
+.nav-content { background-color: var(--bg-nav-content); }
+.nav-content .main-btn button:first-child { background-color: var(--btn-main-2); }
+.nav-content .main-btn button:first-child:hover { background-color: var(--nav-left-hover); }
+
+/* 그룹관리, 신규 그룹 생성 */
+.accor-contents { background-color: var(--bg-content); }
+.accor-contents .accor-contents-title strong { color: var(--text-nav-content-name); }
+.accor-contents .accor-contents-title i { background-color: var(--bg-basic); }
+.accor-contents .accor-contents-name p { color: var(--basic-type1); }
+.accor-contents .accor-contents-name input { color: var(--basic-type1); background-color: var(--input-bg); }
+.accor-contents .accor-contents-name input.readonly { border-color: var(--bg-basic); color: var(--input-text-readonly); background-color: var(--input-bg-readonly); }
+
+/* 수동 경로 생성 */
+.nav-sub-content.table { background-color: var(--bg-basic); }
+.nav-sub-content.table th { background-color: var(--subtable-th); }
+td .merge-title strong { color: var(--basic-type1); }
+
+/* 수동 경로 생성 - 팝업 */
+.popUp .n2s2-select-wrap .select-detail { background-color: var(--bg-content); }
+
+/* 옵션 팝업*/
+.popUp table { background-color: var(--bg-content); }
+.popUp table th { background-color: var(--table-bg-th); }
+
+/* 탭 팝업 */
+.popUp .tab.nav2-tab1 .tab-contents { background-color: var(--bg-content); }
+.popUp .tab.nav2-tab1 .tab-contents input { background-color: var(--input-bg); color: var(--basic-type1); }
+
+/* 임무스케줄 nav4 */
+.main-nav_4 .nav-content { background-color: var(--bg-full-contentBox); }
+
+/* 권한관리 nav5 */
+.main-nav_5 .nav-content { background-color: var(--bg-full-contentBox); }
+.main-nav_5 .nc-sub1-contents { background-color: var(--bg-basic-wrapper); }
+.main-nav_5 .nc-sub1-contents .nc-sc { background-color: var(--bg-content); }
+.main-nav_5 .nc-sub1-contents .nc-sc .ns-title i { background-color: var(--bg-basic); }
+.main-nav_5 .nc-sub1-contents .nc-sc .ns-title-text p { color: var(--basic-type1); }
+
+/* common css */
+/****************************** 공통 ******************************/
+html, body { color: var(--basic-type1); } 
+button { color: var(--basic-type1); }
+
+/* border-bottom */
+.b-bottom { border-bottom-color: var(--bg-basic-wrapper); }
+
+/* 파티션 */
+.partition { background-color: var(--partition); }
+
+/* 검색창 */
+.nav-contents .content-search input { border-color: var(--bd-search-box); background-color: var(--bg-search-box); color: var(--basic-type1); }
+
+/* 아코디언 컨텐츠 공통 */
+.accor { color: var(--basic-type1); }
+.accor .acco-name.active p { color: var(--text-nav-content-name); }
+.accor .accor-sub-name.active { color: var(--active-point); }
+
+/* 셀렉트 박스 */
+.selectbox button { color: var(--basic-type1); }
+.selectbox .selectbox-btn { background-color: var(--input-bg); }
+.selectbox .selectbox-option { background-color: var(--selectbox-option-bg); } 
+.selectbox.state .selectbox-btn.activate, .selectbox.state .selectbox-btn.activate + .selectbox-option button { background-color: var(--state-nomal-deep); }
+.selectbox.state .selectbox-btn.disabled, .selectbox.state .selectbox-btn.disabled + .selectbox-option button { background-color: var(--selectbox-option-bg-deep); }
+
+/* 컨텐츠 페이징 */
+.contents-page ul li.active { background-color: var(--bg-hover-color); color: var(--basic-type2); } 
+
+/* 프로그레스 바 */
+.progress-slider { background-color: var(--input-bg); }
+.progress-slider::-webkit-slider-thumb { background-color: var(--basic-type1); }
+.progress-slider::-webkit-slider-thumb:active { background-color: var(--bg-hover-color); }
+
+/* 캘린더 */
+.calandar { background-color: var(--bg-basic-wrapper); color: var(--basic-type1); }
+
+/* dl list */
+.dl-list { background-color: var(--bg-basic-wrapper); }
+.dl-list .title { color: var(--basic-type1); }
+.dl-list .title dl { border-bottom-color: var(--bg-basic); }
+.dl-list dl { border-bottom-color: var(--bg-basic); }
+.dl-list dl dt .img-viewer { background-color: var(--bg-img-viewer); }
+.list-contents li { color: var(--basic-type1); }
+
+/* 리스트 */
+.info-list { background-color: var(--bg-info-list); color: var(--text-info-list); }
+.info-list.important { background-color: var(--nav-left-active); color: var(--basic-type1); }
+
+/* 팝업 */
+.popUp { background-color: var(--bg-popup); } 
+.popUp .title:not(.nav-sub-content .title) { background-color: var(--popup-header-bar); color: var(--basic-type1); }
+.popUp .title em { color: var(--white); } 
+.partition-title p { color: var(--white); }
+.sub-title { color: var(--text-nav-content-name); }
+
+/* 서브페이지 */
+.sub-common { background-color: var(--bg-sub-common); }
+.sub-common .nc-sub-name { background-color: var(--bg-sub-pannel-title); }
+.sub-common .nav-sub-contents { color: var(--basic-type1); }
+
+/* nav 서브 창 */
+.nav-sub-contents .title p { color: var(--text-nav-content-name); }
+.nav-sub-contents strong { color: var(--active-point); }
+.nav-sub-contents .title i { background-color: var(--btn-small-small); }
+.nav-sub-content { background-color: var(--bg-content); }
+.nav-sub-content .form { background-color: var(--input-bg); color: var(--basic-type1); }
+
+/* 서브 팝업 (nav4, nav5) */
+.popUp .n2s2-select-wrap .i30 { background-color: var(--bg-basic); }
+.popUp .select-list li:hover { background-color: var(--list-control-hover); }
+.popUp .select-list li:active { background-color: var(--list-control-active); }
+.popUp .tab .tab-name button { background-color: var(--bg-tab-popup); }
+.popUp .tab .tab-name button.active { background-color: var(--bg-tabActive-popup); }
+
+/* 테이블 */
+table th { border-right-color: var(--border-table); }
+table td { border-right-color: var(--border-table); }
+table tr:not(tr:first-child, tr:last-child) { border-bottom-color: var(--border-table); }
+
+/* 인풋 캘린더  */
+input[type="date"]::-webkit-calendar-picker-indicator { color: var(--basic-type1); }
+
+/* date picker */
+.title .date-picker i { background-color: var(--bg-basic); }
+.title .date-picker i:hover { background-color: var(--icon-hover); }
+.title .date-picker p.date { color: var(--basic-type1); }
+
+/* 아이콘 */
+i.edit:not(button i.edit):hover { background-color: var(--icon-hover); }
+i.delete:not(button i.delete):hover { background-color: var(--icon-hover); }
+
+i.variant1 { background-color: #ff5858; }
+i.variant2 { background-color: #ff8a58; }
+i.variant3 { background-color: #ffbc58; }
+i.variant4 { background-color: #ffee58; }
+i.variant5 { background-color: #a2ff58; }
+i.variant6 { background-color: #58ff7d; }
+i.variant7 { background-color: #58ffd7; } 
+i.variant8 { background-color: #58c3ff; }
+i.variant9 { background-color: #587dff; }
+i.variant10 { background-color: #4a47fd; }
+i.variant11 { background-color: #d357ff; }
+i.variant12 { background-color: #9a4aff; }
+
+/* point-num 내부 숫자 */
+i.point-num::after { color: var(--basic-type1); }
+
+/* 폼 아이콘 */
+.form-container.icon-container i:hover { background-color: var(--icon-hover); }
+
+/* 알림 아이콘 */
+.main-wrap header .header-btn ul li.alert-num::after { background-color: var(--important); color: var(--basic-type1); }
+
+/* 경고알림 아이콘 - 이미지 x */
+i.alarm.default { background-color: var(--state-nomal); }
+i.alarm.warning { background-color: var(--warning); }
+i.alarm.caution {background-color: var(--caution); }
+li.nav-content::before { background: var(--state-nomal); }
+li.nav-content.warning::before { background-color: var(--warning); } 
+li.nav-content.caution::before { background: var(--caution); }
+
+@keyframes rgyAni01 { 0% { transform: scale(1, 1); opacity: 1; } 100% { transform: scale(1, 1); background-color: var(--warning-deep); } }
+
+/* 아코디언 아이콘 */
+.accor-name i.delete:hover { background-color: var(--icon-hover); }
+
+/* button css */
+/* btn - select, apply, main 제외*/ 
+.btn button { background-color: var(--bg-btn); } 
+.btn button:hover { background-color: var(--btn-small-small); }
+
+/*main-btn */ 
+.main-btn { color: var(--basic-type1); }
+.main-btn button { background-color: var(--btn-main); }
+.main-btn button:hover { background-color: var(--btn-main-hover); }
+.main-btn.active button { background-color: var(--btn-main-btn-active); color: var(--text-main-btn-active); }
+/* sub-btn */
+.sub-btn button { background-color: var(--bg-basic-wrapper); color: var(--basic-type1); }
+.sub-btn button:hover { background-color: var(--btn-active-hover); }
+.sub-btn button.active { background-color: var(--active-point); }
+
+/* apply-btn */
+.apply-btn .cancel { background-color: var(--btn-apply-cancel); }
+.apply-btn .apply { background-color: var(--btn-bg-apply); }
+
+/* img-upload-btn */
+.img-upload-btn { background-color: var(--img-uploader); }
+
+/* radio-btn */
+.radio input[type="radio"] + label { background-color: var(--bg-radio); color: var(--text-radio); }
+.radio input[type="radio"] + label:hover { background-color: var(--input-radio-hover); }
+.radio input[type="radio"]:checked + label { background-color: var(--btn-main); color: var(--basic-type1); }
+.radio input[type="radio"]:checked + label:hover { background-color: var(--input-radio-check-hover); }
+
+/* radio-default */
+input[type="radio"] { background-color: var(--basic-type1); }
+input[type="radio"]:checked { background-color: var(--nav-left-active); border-color: var(--basic-type1); }
+
+/* checkbox */
+.checkbox input[type="checkbox"] + label { background-color: var(--bg-checkbox); color: var(--text-checkbox); }
+.checkbox input[type="checkbox"] + label:hover { background-color: var(--input-radio-hover); }
+.checkbox input[type="checkbox"]:checked + label { background-color: var(--btn-main); color: var(--basic-type1); }
+.checkbox input[type="checkbox"]:checked + label:hover { background-color: var(--input-radio-check-hover); }
+
+/* move-btn */
+.move-btn i { background-color: var(--bg-btn); }
+.move-btn i:hover { background-color: var(--btn-small-small); }
+
+/* 팝업 버튼 */
+.popup-btn button:hover { background-color: var(--btn-small-small); }
+
+/* show hide 버튼 */
+.widget.tab .sh-btn { background-color: var(--text-nav-content-name); }

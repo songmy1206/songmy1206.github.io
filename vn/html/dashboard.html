@@ -1,0 +1,1808 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="../images/icons/favicon.svg" />
+    <link rel="stylesheet" href="../css/import.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+
+    <script src="../js/common.js"></script>
+    <script src="../js/dashboard.js"></script>
+
+    <title>vn-dashboard</title>
+  </head>
+  <body class="dashboard">
+    <header>
+      <div class="header__left">
+        <div class="left-logo">
+          <i class="logo__icon ico-logo i35"></i>
+          <p class="logo__text">
+            GIS Disaster Monitoring <br />
+            System for Danang
+          </p>
+        </div>
+      </div>
+      <div class="header__right">
+        <ul class="right-nav">
+          <li class="nav__list active"><p>Home</p></li>
+          <li class="nav__list"><p>Integrated Map</p></li>
+          <li class="nav__list"><p>Spatial Data</p></li>
+          <li class="nav__list"><p>Transmission System</p></li>
+        </ul>
+        <div class="right-btn">
+          <button class="btn__register">
+            <i class="basic-ico bgsz25 sz25 icon39" aria-label="basicicon39"></i>
+            <em>Đăng ký thông tin tai nạn</em>
+          </button>
+          <button class="btn__zalo active">
+            <i class="basic-ico bgsz40 sz40 icon91" aria-label="basicicon91"></i>
+            <i class="basic-ico bgsz25 sz25 icon94" aria-label="basicicon94"></i>
+          </button>
+          <button class="btn__user active"><i class="basic-ico bgsz40 sz40 icon92" aria-label="basicicon92"></i></button>
+        </div>
+        <div class="right-popup__zalo popup">
+          <div class="popup-contents">
+            <div class="popup-contents__title">
+              <div class="icon-label">
+                <p>zalo</p>
+              </div>
+              <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+            </div>
+          </div>
+        </div>
+        <div class="right-popup__user popup">
+          <div class="popup-contents">
+            <div class="popup-contents__title">
+              <div class="icon-label">
+                <i class="basic-ico bgsz30 sz30 icon104" aria-label="basicicon104"></i>
+                <p>Thông tin người dùng</p>
+              </div>
+              <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+            </div>
+            <ul class="popup-contents__list">
+              <li class="popup-contents__item">
+                <p class="asterisk">ID người dùng</p>
+                <input type="text" />
+              </li>
+              <li class="popup-contents__item">
+                <p class="asterisk">Số sê-ri người dùng</p>
+                <input type="text" />
+              </li>
+              <li class="popup-contents__item">
+                <p class="asterisk">Tên người dùng</p>
+                <input type="text" />
+              </li>
+              <li class="popup-contents__item">
+                <p class="asterisk">Thư điện tử người dùng</p>
+                <div>
+                  <input type="text" />
+                  <input type="text" />
+                </div>
+              </li>
+              <li class="popup-contents__item">
+                <p>khoa</p>
+                <input type="text" />
+              </li>
+              <li class="popup-contents__item">
+                <p>Số điện thoại cá nhân</p>
+                <input type="text" />
+              </li>
+              <li class="popup-contents__item">
+                <button class="point">“Đồng bộ SSO ID</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="main__left">
+        <div class="left-top chk-box">
+          <div class="chk-box__list">
+            <input type="checkbox" id="lt-chk-box__item1" checked />
+            <label class="chk-box__item" for="lt-chk-box__item1">
+              <div class="icon-label">
+                <i class="basic-ico bgsz25 sz25 icon1" aria-label="basicicon01"></i>
+                <p>cháy rừng</p>
+              </div>
+              <ul class="level-bar level5">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <div class="case-info">
+                <strong>11</strong>
+                <p class="case-text">vụ</p>
+                <p class="level-text">Cấp <b>5</b></p>
+              </div>
+              <i class="basic-ico bgsz15 sz15 icon56" aria-label="basicicon56"></i>
+            </label>
+            <input type="checkbox" id="lt-chk-box__item2" />
+            <label class="chk-box__item" for="lt-chk-box__item2">
+              <div class="icon-label">
+                <i class="basic-ico bgsz25 sz25 icon2" aria-label="basicicon02"></i>
+                <p>bão</p>
+              </div>
+              <ul class="level-bar level4">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <div class="case-info">
+                <strong>11</strong>
+                <p class="case-text">vụ</p>
+                <p class="level-text">Cấp <b>4</b></p>
+              </div>
+              <i class="basic-ico bgsz15 sz15 icon56" aria-label="basicicon56"></i>
+            </label>
+            <input type="checkbox" id="lt-chk-box__item3" />
+            <label class="chk-box__item" for="lt-chk-box__item3">
+              <div class="icon-label">
+                <i class="basic-ico bgsz25 sz25 icon3" aria-label="basicicon03"></i>
+                <p>lũ lụt</p>
+              </div>
+              <ul class="level-bar level3">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <div class="case-info">
+                <strong>11</strong>
+                <p class="case-text">vụ</p>
+                <p class="level-text">Cấp <b>3</b></p>
+              </div>
+              <i class="basic-ico bgsz15 sz15 icon56" aria-label="basicicon56"></i>
+            </label>
+            <input type="checkbox" id="lt-chk-box__item4" />
+            <label class="chk-box__item" for="lt-chk-box__item4">
+              <div class="icon-label">
+                <i class="basic-ico bgsz25 sz25 icon5" aria-label="basicicon05"></i>
+                <p>
+                  áp thấp <br />
+                  nhiệt đới
+                </p>
+              </div>
+              <ul class="level-bar level2">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <div class="case-info">
+                <strong>11</strong>
+                <p class="case-text">vụ</p>
+                <p class="level-text">Cấp <b>2</b></p>
+              </div>
+              <i class="basic-ico bgsz15 sz15 icon56" aria-label="basicicon56"></i>
+            </label>
+            <input type="checkbox" id="lt-chk-box__item5" />
+            <label class="chk-box__item" for="lt-chk-box__item5">
+              <div class="icon-label">
+                <i class="basic-ico bgsz25 sz25 icon4" aria-label="basicicon04"></i>
+                <p>
+                  nắng nóng
+                  <br />
+                  cực đoan
+                </p>
+              </div>
+              <ul class="level-bar level1">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <div class="case-info">
+                <strong>11</strong>
+                <p class="case-text">vụ</p>
+                <p class="level-text">Cấp <b>1</b></p>
+              </div>
+              <i class="basic-ico bgsz15 sz15 icon56" aria-label="basicicon56"></i>
+            </label>
+            <input type="checkbox" id="lt-chk-box__item6" />
+            <label class="chk-box__item" for="lt-chk-box__item6">
+              <div class="icon-label">
+                <i class="basic-ico bgsz25 sz25 icon6" aria-label="basicicon06"></i>
+                <p>động đất</p>
+              </div>
+              <ul class="level-bar level5">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <div class="case-info">
+                <strong>11</strong>
+                <p class="case-text">vụ</p>
+                <p class="level-text">Cấp <b>5</b></p>
+              </div>
+              <i class="basic-ico bgsz15 sz15 icon56" aria-label="basicicon56"></i>
+            </label>
+          </div>
+        </div>
+        <div class="left-middle tab">
+          <p class="tab-title">Disaster Information List</p>
+          <div class="tab-nav">
+            <ul class="tab-nav__list">
+              <li class="tab-nav__item active"><p>mới nhất</p></li>
+              <li class="tab-nav__item"><p>lý lịch quá khứ</p></li>
+            </ul>
+          </div>
+          <div class="tab-contents">
+            <ul class="tab-contents__list">
+              <li class="tab-contents__item active">
+                <div class="select-wrap">
+                  <div class="calendar">
+                    <div class="range-bar">
+                      <div class="date-field">
+                        <i class="basic-ico bgsz20 sz20 icon37" aria-label="basicicon37"></i>
+                        <span class="start-display"></span>
+                      </div>
+                      <span class="separator"></span>
+                      <div class="date-field">
+                        <i class="basic-ico bgsz20 sz20 icon37" aria-label="basicicon37"></i>
+                        <span class="end-display"></span>
+                      </div>
+                      <i class="basic-ico bgsz15 sz15 icon100" aria-label="basicicon100"></i>
+                    </div>
+                    <div class="date-picker">
+                      <div class="date-picker__list">
+                        <div class="date-picker__item">
+                          <p>năm</p>
+                          <div class="column year-col"></div>
+                        </div>
+                        <div class="date-picker__item">
+                          <p>tháng</p>
+                          <div class="column month-col"></div>
+                        </div>
+                        <div class="date-picker__item">
+                          <p>ngày</p>
+                          <div class="column day-col"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <select name="time" class="selectbox ver1">
+                    <option value="time1">time1</option>
+                    <option value="time2">time2</option>
+                    <option value="time3">time3</option>
+                    <option value="time4">time4</option>
+                  </select>
+                </div>
+                <div class="scroll-contents">
+                  <ul class="scroll-contents__list">
+                    <li class="scroll-contents__item">
+                      <div class="icon-label">
+                        <i class="basic-ico bgsz20 sz20 icon2" aria-label="basicicon02"></i>
+                      </div>
+                      <div class="item-detail">
+                        <p class="time">2025-01-12 15:21:59</p>
+                        <p>Bão nhiệt đới OOOOOOOOO phát sinh</p>
+                        <div class="file-wrap">
+                          <em>Bão nhiệt đới OOOOOOOOO.doc</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                          <i class="basic-ico bgsz20 sz20 icon79" aria-label="basicicon79"></i>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="icon-label">
+                        <i class="basic-ico bgsz20 sz20 icon1" aria-label="basicicon01"></i>
+                      </div>
+                      <div class="item-detail">
+                        <p class="time">2025-01-12 15:21:59</p>
+                        <p>Cháy rừng OOOOOOOOO phát sinh</p>
+                        <div class="file-wrap">
+                          <em>Cháy rừng OOOOOOOOO.doc</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                          <i class="basic-ico bgsz20 sz20 icon79" aria-label="basicicon79"></i>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="tab-contents__item">
+                <div class="select-wrap">
+                  <div class="calendar">
+                    <div class="range-bar">
+                      <div class="date-field">
+                        <i class="basic-ico bgsz20 sz20 icon37" aria-label="basicicon37"></i>
+                        <span class="start-display"></span>
+                      </div>
+                      <span class="separator"></span>
+                      <div class="date-field">
+                        <i class="basic-ico bgsz20 sz20 icon37" aria-label="basicicon37"></i>
+                        <span class="end-display"></span>
+                      </div>
+                      <i class="basic-ico bgsz15 sz15 icon100" aria-label="basicicon100"></i>
+                    </div>
+                    <div class="date-picker">
+                      <div class="date-picker__list">
+                        <div class="date-picker__item">
+                          <p>năm</p>
+                          <div class="column year-col"></div>
+                        </div>
+                        <div class="date-picker__item">
+                          <p>tháng</p>
+                          <div class="column month-col"></div>
+                        </div>
+                        <div class="date-picker__item">
+                          <p>ngày</p>
+                          <div class="column day-col"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <select name="time" class="selectbox ver1">
+                    <option value="time1">time1</option>
+                    <option value="time2">time2</option>
+                    <option value="time3">time3</option>
+                    <option value="time4">time4</option>
+                  </select>
+                </div>
+                <div class="scroll-contents">
+                  <ul class="scroll-contents__list">
+                    <li class="scroll-contents__item">
+                      <div class="icon-label">
+                        <i class="basic-ico bgsz20 sz20 icon2" aria-label="basicicon02"></i>
+                      </div>
+                      <div class="item-detail">
+                        <p class="time">2025-01-12 15:21:59</p>
+                        <p>Bão nhiệt đới OOOOOOOOO phát sinh</p>
+                        <div class="file-wrap">
+                          <em>Bão nhiệt đới OOOOOOOOO.doc</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                          <i class="basic-ico bgsz20 sz20 icon79" aria-label="basicicon79"></i>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="icon-label">
+                        <i class="basic-ico bgsz20 sz20 icon1" aria-label="basicicon01"></i>
+                      </div>
+                      <div class="item-detail">
+                        <p class="time">2025-01-12 15:21:59</p>
+                        <p>Cháy rừng OOOOOOOOO phát sinh</p>
+                        <div class="file-wrap">
+                          <em>Cháy rừng OOOOOOOOO.doc</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                          <i class="basic-ico bgsz20 sz20 icon79" aria-label="basicicon79"></i>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="icon-label">
+                        <i class="basic-ico bgsz20 sz20 icon3" aria-label="basicicon03"></i>
+                      </div>
+                      <div class="item-detail">
+                        <p class="time">2025-01-12 15:21:59</p>
+                        <p>OOOOOOOOOO phát sinh</p>
+                        <div class="file-wrap">
+                          <em>OOOOOOOOOO.doc</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                          <i class="basic-ico bgsz20 sz20 icon79" aria-label="basicicon79"></i>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="icon-label">
+                        <i class="basic-ico bgsz20 sz20 icon5" aria-label="basicicon05"></i>
+                      </div>
+                      <div class="item-detail">
+                        <p class="time">2025-01-12 15:21:59</p>
+                        <p>Đợt nắng nóng OOOOOOOOO phát sinh</p>
+                        <div class="file-wrap">
+                          <em>Đợt nắng nóng OOOOOOOOO.doc</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                          <i class="basic-ico bgsz20 sz20 icon79" aria-label="basicicon79"></i>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="icon-label">
+                        <i class="basic-ico bgsz20 sz20 icon4" aria-label="basicicon04"></i>
+                      </div>
+                      <div class="item-detail">
+                        <p class="time">2025-01-12 15:21:59</p>
+                        <p>OOOOOOOOOO phát sinh</p>
+                        <div class="file-wrap">
+                          <em>OOOOOOOOOO.doc</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                          <i class="basic-ico bgsz20 sz20 icon79" aria-label="basicicon79"></i>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="icon-label">
+                        <i class="basic-ico bgsz20 sz20 icon6" aria-label="basicicon06"></i>
+                      </div>
+                      <div class="item-detail">
+                        <p class="time">2025-01-12 15:21:59</p>
+                        <p>OOOOOOOOOO phát sinh</p>
+                        <div class="file-wrap">
+                          <em>OOOOOOOOOO.doc</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                          <i class="basic-ico bgsz20 sz20 icon79" aria-label="basicicon79"></i>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="left-bottom chk-box">
+          <p class="chk-box-title">Current Disaster Response Status</p>
+          <div class="chk-box__list horizontal-scroll">
+            <input type="checkbox" id="lb-chk-box__item1" checked />
+            <label class="chk-box__item" for="lb-chk-box__item1">
+              <div>
+                <i class="basic-ico bgsz25 sz25 icon1" aria-label="basicicon01"></i>
+                <p>cháy</p>
+              </div>
+              <strong class="case-text">1</strong>
+              <i class="basic-ico bgsz15 sz15 icon56" aria-label="basicicon56"></i>
+            </label>
+            <input type="checkbox" id="lb-chk-box__item2" />
+            <label class="chk-box__item" for="lb-chk-box__item2">
+              <div>
+                <i class="basic-ico bgsz25 sz25 icon7" aria-label="basicicon7"></i>
+                <p>khẩn cấp</p>
+              </div>
+              <strong class="case-text">-</strong>
+              <i class="basic-ico bgsz15 sz15 icon56" aria-label="basicicon56"></i>
+            </label>
+            <input type="checkbox" id="lb-chk-box__item3" checked />
+            <label class="chk-box__item" for="lb-chk-box__item3">
+              <div>
+                <i class="basic-ico bgsz25 sz25 icon8" aria-label="basicicon8"></i>
+                <p>cứu nạn</p>
+              </div>
+              <strong class="case-text">1</strong>
+              <i class="basic-ico bgsz15 sz15 icon56" aria-label="basicicon56"></i>
+            </label>
+            <input type="checkbox" id="lb-chk-box__item4" />
+            <label class="chk-box__item" for="lb-chk-box__item4">
+              <div>
+                <i class="basic-ico bgsz25 sz25 icon9" aria-label="basicicon9"></i>
+                <p>Sự cố</p>
+              </div>
+              <strong class="case-text">-</strong>
+              <i class="basic-ico bgsz15 sz15 icon56" aria-label="basicicon56"></i>
+            </label>
+            <input type="checkbox" id="lb-chk-box__item5" />
+            <label class="chk-box__item" for="lb-chk-box__item5">
+              <div>
+                <i class="basic-ico bgsz25 sz25 icon10" aria-label="basicicon10"></i>
+                <p>Tai nạn</p>
+              </div>
+              <strong class="case-text">-</strong>
+              <i class="basic-ico bgsz15 sz15 icon56" aria-label="basicicon56"></i>
+            </label>
+          </div>
+
+          <div class="scroll-contents">
+            <ul class="scroll-contents__list">
+              <li class="scroll-contents__item">
+                <div class="icon-wrap">
+                  <i class="basic-ico bgsz30 sz30 icon1"></i>
+                </div>
+                <div class="item-detail">
+                  <p class="time">2025-01-12 15:21:59</p>
+                  <p>Cảnh sát / cứu hộ khẩn cấp cư dân khu vực lân cận khu dân cư xung quanh Tòa thị chính Đà Nẵng.</p>
+                </div>
+              </li>
+              <li class="scroll-contents__item">
+                <div class="icon-wrap">
+                  <i class="basic-ico bgsz30 sz30 icon7"></i>
+                </div>
+                <div class="item-detail">
+                  <p class="time">2025-01-12 15:21:59</p>
+                  <p>
+                    Cảnh sát / cứu hộ khẩn cấp cư dân khu vực lân cận khu dân cư xung quanh Tòa thị chính Đà Nẵng. Cảnh sát / cứu hộ khẩn cấp cư dân khu vực lân cận khu dân cư xung quanh Tòa thị chính
+                    Đà Nẵng.
+                  </p>
+                </div>
+              </li>
+              <li class="scroll-contents__item">
+                <div class="icon-wrap">
+                  <i class="basic-ico bgsz30 sz30 icon8"></i>
+                </div>
+                <div class="item-detail">
+                  <p class="time">2025-01-12 15:21:59</p>
+                  <p>Cảnh sát / cảnh sát / khẩn cấp / khẩn cấp xảy ra tai nạn giao thông ba vụ va chạm gần bờ biển Đà Nẵng.</p>
+                </div>
+              </li>
+              <li class="scroll-contents__item">
+                <div class="icon-wrap">
+                  <i class="basic-ico bgsz30 sz30 icon9"></i>
+                </div>
+                <div class="item-detail">
+                  <p class="time">2025-01-12 15:21:59</p>
+                  <p>Cháy / cứu hộ / khẩn cấp trong quá trình xác định thiệt hại hiện tại do sét đánh trên đường miền núi Đà Nẵng.</p>
+                </div>
+              </li>
+              <li class="scroll-contents__item">
+                <div class="icon-wrap">
+                  <i class="basic-ico bgsz30 sz30 icon10"></i>
+                </div>
+                <div class="item-detail">
+                  <p class="time">2025-01-12 15:21:59</p>
+                  <p>Cảnh sát điều động 3 người đàn ông trưởng thành bị thương ở nhà hàng ven biển OOO</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="main__center">
+        <div class="center-slider">
+          <div class="slider-container container">
+            <div class="slider-container__info">
+              <p>dự báo thời tiết</p>
+              <i class="ico-divider"></i>
+              <div class="info-location">
+                <p>Thời tiết cho địa điểm - Cập nhật 13h - 22/05/2025</p>
+              </div>
+              <div class="icon-label">
+                <i class="basic-ico bgsz20 sz20 icon46" aria-label="basicicon46"></i>
+                <em>NCHMF</em>
+                <i class="basic-ico bgsz20 sz20 icon69" aria-label="basicicon69"></i>
+              </div>
+            </div>
+            <div class="slider-container__controls">
+              <ul class="slider-indicator">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <div class="icon-wrap player">
+                <i class="basic-ico bgsz30 sz30 icon85" aria-label="basicicon85"></i>
+              </div>
+              <div class="slider-popup__filter popup">
+                <div class="popup-contents">
+                  <div class="popup-contents__title">
+                    <div class="icon-label">
+                      <p>bộ lọc</p>
+                    </div>
+                    <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                  </div>
+                  <ul class="popup-contents__list">
+                    <li class="popup-contents__item"></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-contents">
+            <i class="basic-ico bgsz30 sz30 icon89" aria-label="basicicon89"></i>
+            <i class="basic-ico bgsz30 sz30 icon90" aria-label="basicicon90"></i>
+            <div class="slider-mask">
+              <ul class="slider-contents__list">
+                <li class="slider-contents__item">
+                  <div class="item-main">
+                    <div class="icon-label">
+                      <input type="text" value="slide1" disabled />
+                      <i class="basic-ico bgsz20 sz20 icon39" aria-label="basicicon39"></i>
+                    </div>
+                    <p>Dự báo lúc 3 giờ</p>
+                    <div class="temp-wrap">
+                      <i class="weather-ico bgsz40 sz40 wth01" aria-label="weathericon01"></i>
+                      <p>35<sup>℃</sup></p>
+                    </div>
+                    <div class="hum-wrap">
+                      <p>Độ ẩm(%)</p>
+                      <p><strong>24</strong>%</p>
+                    </div>
+                    <div class="wind-wrap">
+                      <p>hơi thở(m/s)</p>
+                      <p><strong>17</strong>(m/s)</p>
+                    </div>
+                  </div>
+                  <div class="item-detail horizontal-scroll">
+                    <ul>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth01" aria-label="weathericon01"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth01" aria-label="weathericon01"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth01" aria-label="weathericon01"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth01" aria-label="weathericon01"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth01" aria-label="weathericon01"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth01" aria-label="weathericon01"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth01" aria-label="weathericon01"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth01" aria-label="weathericon01"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slider-contents__item">
+                  <div class="item-main">
+                    <div class="icon-label">
+                      <input type="text" value="slide2" disabled />
+                      <i class="basic-ico bgsz20 sz20 icon39" aria-label="basicicon39"></i>
+                    </div>
+                    <p>Dự báo lúc 3 giờ</p>
+                    <div class="temp-wrap">
+                      <i class="weather-ico bgsz40 sz40 wth02" aria-label="weathericon02"></i>
+                      <p>35<sup>℃</sup></p>
+                    </div>
+                    <div class="hum-wrap">
+                      <p>Độ ẩm(%)</p>
+                      <p><strong>24</strong>%</p>
+                    </div>
+                    <div class="wind-wrap">
+                      <p>hơi thở(m/s)</p>
+                      <p><strong>17</strong>(m/s)</p>
+                    </div>
+                  </div>
+                  <div class="item-detail horizontal-scroll">
+                    <ul>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth02" aria-label="weathericon02"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth02" aria-label="weathericon02"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth02" aria-label="weathericon02"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth02" aria-label="weathericon02"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth02" aria-label="weathericon02"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth02" aria-label="weathericon02"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth02" aria-label="weathericon02"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth02" aria-label="weathericon02"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slider-contents__item">
+                  <div class="item-main">
+                    <div class="icon-label">
+                      <input type="text" value="slide3" disabled />
+                      <i class="basic-ico bgsz20 sz20 icon39" aria-label="basicicon39"></i>
+                    </div>
+                    <p>Dự báo lúc 3 giờ</p>
+                    <div class="temp-wrap">
+                      <i class="weather-ico bgsz40 sz40 wth03" aria-label="weathericon03"></i>
+                      <p>35<sup>℃</sup></p>
+                    </div>
+                    <div class="hum-wrap">
+                      <p>Độ ẩm(%)</p>
+                      <p><strong>24</strong>%</p>
+                    </div>
+                    <div class="wind-wrap">
+                      <p>hơi thở(m/s)</p>
+                      <p><strong>17</strong>(m/s)</p>
+                    </div>
+                  </div>
+                  <div class="item-detail horizontal-scroll">
+                    <ul>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth03" aria-label="weathericon03"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth03" aria-label="weathericon03"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth03" aria-label="weathericon03"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth03" aria-label="weathericon03"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth03" aria-label="weathericon03"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth03" aria-label="weathericon03"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth03" aria-label="weathericon03"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth03" aria-label="weathericon03"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slider-contents__item">
+                  <div class="item-main">
+                    <div class="icon-label">
+                      <input type="text" value="slide4" disabled />
+                      <i class="basic-ico bgsz20 sz20 icon39" aria-label="basicicon39"></i>
+                    </div>
+                    <p>Dự báo lúc 3 giờ</p>
+                    <div class="temp-wrap">
+                      <i class="weather-ico bgsz40 sz40 wth04" aria-label="weathericon04"></i>
+                      <p>35<sup>℃</sup></p>
+                    </div>
+                    <div class="hum-wrap">
+                      <p>Độ ẩm(%)</p>
+                      <p><strong>24</strong>%</p>
+                    </div>
+                    <div class="wind-wrap">
+                      <p>hơi thở(m/s)</p>
+                      <p><strong>17</strong>(m/s)</p>
+                    </div>
+                  </div>
+                  <div class="item-detail horizontal-scroll">
+                    <ul>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth04" aria-label="weathericon04"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth04" aria-label="weathericon04"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth04" aria-label="weathericon04"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth04" aria-label="weathericon04"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth04" aria-label="weathericon04"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth04" aria-label="weathericon04"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth04" aria-label="weathericon04"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth04" aria-label="weathericon04"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slider-contents__item">
+                  <div class="item-main">
+                    <div class="icon-label">
+                      <input type="text" value="slide5" disabled />
+                      <i class="basic-ico bgsz20 sz20 icon39" aria-label="basicicon39"></i>
+                    </div>
+                    <p>Dự báo lúc 3 giờ</p>
+                    <div class="temp-wrap">
+                      <i class="weather-ico bgsz40 sz40 wth05" aria-label="weathericon05"></i>
+                      <p>35<sup>℃</sup></p>
+                    </div>
+                    <div class="hum-wrap">
+                      <p>Độ ẩm(%)</p>
+                      <p><strong>24</strong>%</p>
+                    </div>
+                    <div class="wind-wrap">
+                      <p>hơi thở(m/s)</p>
+                      <p><strong>17</strong>(m/s)</p>
+                    </div>
+                  </div>
+                  <div class="item-detail horizontal-scroll">
+                    <ul>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth05" aria-label="weathericon05"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth05" aria-label="weathericon05"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth05" aria-label="weathericon05"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth05" aria-label="weathericon05"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth05" aria-label="weathericon05"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth05" aria-label="weathericon05"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth05" aria-label="weathericon05"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth05" aria-label="weathericon05"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slider-contents__item">
+                  <div class="item-main">
+                    <div class="icon-label">
+                      <input type="text" value="slide6" disabled />
+                      <i class="basic-ico bgsz20 sz20 icon39" aria-label="basicicon39"></i>
+                    </div>
+                    <p>Dự báo lúc 3 giờ</p>
+                    <div class="temp-wrap">
+                      <i class="weather-ico bgsz40 sz40 wth06" aria-label="weathericon06"></i>
+                      <p>35<sup>℃</sup></p>
+                    </div>
+                    <div class="hum-wrap">
+                      <p>Độ ẩm(%)</p>
+                      <p><strong>24</strong>%</p>
+                    </div>
+                    <div class="wind-wrap">
+                      <p>hơi thở(m/s)</p>
+                      <p><strong>17</strong>(m/s)</p>
+                    </div>
+                  </div>
+                  <div class="item-detail horizontal-scroll">
+                    <ul>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth06" aria-label="weathericon06"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth06" aria-label="weathericon06"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth06" aria-label="weathericon06"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth06" aria-label="weathericon06"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth06" aria-label="weathericon06"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth06" aria-label="weathericon06"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth06" aria-label="weathericon06"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                      <li>
+                        <p class="time">6:00</p>
+                        <i class="weather-ico bgsz40 sz40 wth06" aria-label="weathericon06"></i>
+                        <p class="temp">35</p>
+                        <p class="hum"><strong>74</strong>%</p>
+                        <p class="wind">12</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="center-map">
+          <div class="map-popup__layer popup">
+            <button class="map__btn popup-btn"><i class="basic-ico bgsz25 sz25 icon99" aria-label="basicicon99"></i></button>
+            <div class="popup-contents">
+              <div class="popup-contents__title">
+                <div class="icon-label">
+                  <i class="basic-ico bgsz20 sz20 icon99" aria-label="basicicon99"></i>
+                  <p>Lớp</p>
+                </div>
+                <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+              </div>
+              <ul class="popup-contents__list">
+                <li class="popup-contents__item">
+                  <p>Bản đồ gió toàn cầu</p>
+                  <div class="item-toggle">
+                    <input type="checkbox" id="layer-toggle_1" class="toggle-checkbox" checked />
+                    <label for="layer-toggle_1" class="toggle-container"></label>
+                  </div>
+                </li>
+                <li class="popup-contents__item">
+                  <p>CCTV</p>
+                  <div class="item-toggle">
+                    <input type="checkbox" id="layer-toggle_2" class="toggle-checkbox" />
+                    <label for="layer-toggle_2" class="toggle-container"></label>
+                  </div>
+                </li>
+                <li class="popup-contents__item">
+                  <p>Cảm biến mực nước</p>
+                  <div class="item-toggle">
+                    <input type="checkbox" id="layer-toggle_3" class="toggle-checkbox" />
+                    <label for="layer-toggle_3" class="toggle-container"></label>
+                  </div>
+                </li>
+                <li class="popup-contents__item">
+                  <p>Khu vực xảy ra cháy rừng</p>
+                  <div class="item-toggle">
+                    <input type="checkbox" id="layer-toggle_4" class="toggle-checkbox" />
+                    <label for="layer-toggle_4" class="toggle-container"></label>
+                  </div>
+                </li>
+                <li class="popup-contents__item">
+                  <p>Thông tin bão</p>
+                  <div class="item-toggle">
+                    <input type="checkbox" id="layer-toggle_5" class="toggle-checkbox" />
+                    <label for="layer-toggle_5" class="toggle-container"></label>
+                  </div>
+                </li>
+                <li class="popup-contents__item">
+                  <p>Lớp-01</p>
+                  <div class="item-toggle">
+                    <input type="checkbox" id="layer-toggle_6" class="toggle-checkbox" />
+                    <label for="layer-toggle_6" class="toggle-container"></label>
+                  </div>
+                </li>
+                <li class="popup-contents__item">
+                  <p>lớp-02</p>
+                  <div class="item-toggle">
+                    <input type="checkbox" id="layer-toggle_7" class="toggle-checkbox" />
+                    <label for="layer-toggle_7" class="toggle-container"></label>
+                  </div>
+                </li>
+                <li class="popup-contents__item">
+                  <p>lớp-03</p>
+                  <div class="item-toggle">
+                    <input type="checkbox" id="layer-toggle_8" class="toggle-checkbox" />
+                    <label for="layer-toggle_8" class="toggle-container"></label>
+                  </div>
+                </li>
+                <li class="popup-contents__item">
+                  <p>lớp-04</p>
+                  <div class="item-toggle">
+                    <input type="checkbox" id="layer-toggle_9" class="toggle-checkbox" />
+                    <label for="layer-toggle_9" class="toggle-container"></label>
+                  </div>
+                </li>
+                <li class="popup-contents__item">
+                  <p>lớp-05</p>
+                  <div class="item-toggle">
+                    <input type="checkbox" id="layer-toggle_10" class="toggle-checkbox" />
+                    <label for="layer-toggle_10" class="toggle-container"></label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="map-popup__sensor popup drag" data-container=".center-map">
+            <div class="popup-contents">
+              <div class="popup-contents__title">
+                <div class="icon-label">
+                  <i class="basic-ico bgsz30 sz30 icon102" aria-label="basicicon102"></i>
+                  <p>chi tiết trường hợp</p>
+                </div>
+                <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+              </div>
+              <ul class="popup-contents__list">
+                <li class="popup-contents__item"></li>
+              </ul>
+            </div>
+          </div>
+          <div class="map-popup__cctv popup drag" data-container=".center-map">
+            <div class="popup-contents">
+              <div class="popup-contents__title">
+                <div class="icon-label">
+                  <i class="basic-ico bgsz20 sz20 icon57" aria-label="basicicon57"></i>
+                  <p>cctv</p>
+                </div>
+                <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+              </div>
+              <ul class="popup-contents__list">
+                <li class="popup-contents__item thumbnail">
+                  <div>
+                    <i class="ico-rec"></i>
+                    <em>Thời gian thực</em>
+                  </div>
+                </li>
+                <li class="popup-contents__item">
+                  <p>cctv no.3162</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="map-info__list">
+            <li class="map-info__item weather1">
+              <p>35<sup>℃</sup></p>
+              <i class="weather-ico bgsz40 sz40 wth01" aria-label="weathericon01"></i>
+              <div>
+                <i class="basic-ico bgsz15 sz15 icon79" aria-label="basicicon79"></i>
+                <strong>slide</strong>
+              </div>
+            </li>
+            <li class="map-info__item weather2">
+              <p>35<sup>℃</sup></p>
+              <i class="weather-ico bgsz40 sz40 wth02" aria-label="weathericon02"></i>
+              <div>
+                <i class="basic-ico bgsz15 sz15 icon79" aria-label="basicicon79"></i>
+                <strong>slideslideslide</strong>
+              </div>
+            </li>
+            <li class="map-info__item weather3">
+              <p>35<sup>℃</sup></p>
+              <i class="weather-ico bgsz40 sz40 wth03" aria-label="weathericon03"></i>
+              <div>
+                <i class="basic-ico bgsz15 sz15 icon79" aria-label="basicicon79"></i>
+                <strong>slide</strong>
+              </div>
+            </li>
+            <li class="map-info__item weather4">
+              <p>35<sup>℃</sup></p>
+              <i class="weather-ico bgsz40 sz40 wth04" aria-label="weathericon04"></i>
+              <div>
+                <i class="basic-ico bgsz15 sz15 icon79" aria-label="basicicon79"></i>
+                <strong>slide</strong>
+              </div>
+            </li>
+            <li class="map-info__item weather5">
+              <p>35<sup>℃</sup></p>
+              <i class="weather-ico bgsz40 sz40 wth05" aria-label="weathericon05"></i>
+              <div>
+                <i class="basic-ico bgsz15 sz15 icon79" aria-label="basicicon79"></i>
+                <strong>slide</strong>
+              </div>
+            </li>
+            <li class="map-info__item weather6">
+              <p>35<sup>℃</sup></p>
+              <i class="weather-ico bgsz40 sz40 wth06" aria-label="weathericon06"></i>
+              <div>
+                <i class="basic-ico bgsz15 sz15 icon79" aria-label="basicicon79"></i>
+                <strong>slide</strong>
+              </div>
+            </li>
+            <li class="map-info__item weather7">
+              <p>35<sup>℃</sup></p>
+              <i class="weather-ico bgsz40 sz40 wth07" aria-label="weathericon07"></i>
+              <div>
+                <i class="basic-ico bgsz15 sz15 icon79" aria-label="basicicon79"></i>
+                <strong>slide</strong>
+              </div>
+            </li>
+            <li class="map-info__item weather8">
+              <p>35<sup>℃</sup></p>
+              <i class="weather-ico bgsz40 sz40 wth08" aria-label="weathericon08"></i>
+              <div>
+                <i class="basic-ico bgsz15 sz15 icon79" aria-label="basicicon79"></i>
+                <strong>slide</strong>
+              </div>
+            </li>
+            <li class="map-info__item weather9">
+              <p>35<sup>℃</sup></p>
+              <i class="weather-ico bgsz40 sz40 wth09" aria-label="weathericon09"></i>
+              <div>
+                <i class="basic-ico bgsz15 sz15 icon79" aria-label="basicicon79"></i>
+                <strong>slide</strong>
+              </div>
+            </li>
+            <li class="map-info__item weather10">
+              <p>35<sup>℃</sup></p>
+              <i class="weather-ico bgsz40 sz40 wth10" aria-label="weathericon10"></i>
+              <div>
+                <i class="basic-ico bgsz15 sz15 icon79" aria-label="basicicon79"></i>
+                <strong>slide</strong>
+              </div>
+            </li>
+            <li class="map-info__item weather11">
+              <p>35<sup>℃</sup></p>
+              <i class="weather-ico bgsz40 sz40 wth11" aria-label="weathericon11"></i>
+              <div>
+                <i class="basic-ico bgsz15 sz15 icon79" aria-label="basicicon79"></i>
+                <strong>slide</strong>
+              </div>
+            </li>
+            <li class="map-info__item weather12">
+              <p>35<sup>℃</sup></p>
+              <i class="weather-ico bgsz40 sz40 wth12" aria-label="weathericon12"></i>
+              <div>
+                <i class="basic-ico bgsz15 sz15 icon79" aria-label="basicicon79"></i>
+                <strong>slide</strong>
+              </div>
+            </li>
+            <li class="map-info__item weather13">
+              <p>35<sup>℃</sup></p>
+              <i class="weather-ico bgsz40 sz40 wth13" aria-label="weathericon13"></i>
+              <div>
+                <i class="basic-ico bgsz15 sz15 icon79" aria-label="basicicon79"></i>
+                <strong>slide</strong>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main__right">
+        <div class="right-top graph">
+          <div class="graph-title">
+            <p class="title__text">
+              <strong>Cảnh báo cháy rừng hiện tại ở Đà Nẵng </strong>
+              13-05-2025
+            </p>
+            <select name="region" class="selectbox ver1">
+              <option value="vùng1">vùng1</option>
+              <option value="vùng2">vùng2</option>
+              <option value="vùng3">vùng3</option>
+              <option value="vùng4">vùng4</option>
+            </select>
+          </div>
+          <div class="graph-contents">
+            <div class="alarm-graph alarm1">
+              <img src="../images/dangerlevel_img.svg" alt="alarm-graph" />
+            </div>
+          </div>
+        </div>
+        <div class="right-middle tab scroll">
+          <div class="tab-title">
+            <div class="update">
+              <p class="title__text">Cảm biến lượng mưa và mực nước</p>
+              <p class="title__update"><b>Cập nhật: </b>12:00:00, 04/03/2025</p>
+            </div>
+            <ul class="sort">
+              <li class="active"><p>sort1</p></li>
+              <li class="divider"><i class="ico-divider"></i></li>
+              <li><p>sort2</p></li>
+            </ul>
+          </div>
+          <div class="tab-nav">
+            <ul class="tab-nav__list">
+              <li class="tab-nav__item active"><p>Tháp báo ngập</p></li>
+              <li class="tab-nav__item"><p>Tháp báo lũ</p></li>
+              <li class="tab-nav__item"><p>Trạm đo mực nước</p></li>
+            </ul>
+          </div>
+          <div class="tab-contents">
+            <ul class="tab-contents__list">
+              <div class="tab-contents__item active">
+                <div class="scroll-contents">
+                  <ul class="scroll-contents__list">
+                    <li class="scroll-contents__item">
+                      <div class="district">
+                        <p>Đà Nẵng</p>
+                        <strong>Distric-1 Distric-1 Distric-1 Distric-1 Distric-1 Distric-1</strong>
+                      </div>
+                      <div>
+                        <div class="value">
+                          <strong>1234ml</strong>
+                          <em class="rise">▲0.01m</em>
+                        </div>
+                        <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="district">
+                        <p>Đà Nẵng</p>
+                        <strong>Distric-2 Distric-2</strong>
+                      </div>
+                      <div>
+                        <div class="value">
+                          <strong>1234ml</strong>
+                          <em class="fall">▼0.02m</em>
+                        </div>
+                        <i class="basic-ico bgsz25 sz25 icon54" aria-label="basicicon54"></i>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="district">
+                        <p>Đà Nẵng</p>
+                        <strong>Distric-3</strong>
+                      </div>
+                      <div>
+                        <div class="value">
+                          <strong>1234ml</strong>
+                          <em>-</em>
+                        </div>
+                        <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="district">
+                        <p>Đà Nẵng</p>
+                        <strong>Distric-4</strong>
+                      </div>
+                      <div>
+                        <div class="value">
+                          <strong>1234ml</strong>
+                          <em class="rise">▲0.01m</em>
+                        </div>
+                        <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="district">
+                        <p>Đà Nẵng</p>
+                        <strong>Distric-5</strong>
+                      </div>
+                      <div>
+                        <div class="value">
+                          <strong>1234ml</strong>
+                          <em class="rise">▲0.01m</em>
+                        </div>
+                        <i class="basic-ico bgsz25 sz25 icon54" aria-label="basicicon54"></i>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="district">
+                        <p>Đà Nẵng</p>
+                        <strong>Distric-6</strong>
+                      </div>
+                      <div>
+                        <div class="value">
+                          <strong>1234ml</strong>
+                          <em class="rise">▲0.01m</em>
+                        </div>
+                        <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="district">
+                        <p>Đà Nẵng</p>
+                        <strong>Distric-7</strong>
+                      </div>
+                      <div>
+                        <div class="value">
+                          <strong>1234ml</strong>
+                          <em class="rise">▲0.01m</em>
+                        </div>
+                        <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="district">
+                        <p>Đà Nẵng</p>
+                        <strong>Distric-8</strong>
+                      </div>
+                      <div>
+                        <div class="value">
+                          <strong>1234ml</strong>
+                          <em class="rise">▲0.01m</em>
+                        </div>
+                        <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab-contents__item">
+                <div class="scroll-contents">
+                  <ul class="scroll-contents__list">
+                    <li class="scroll-contents__item">
+                      <div class="district">
+                        <p>Đà Nẵng</p>
+                        <strong>Distric-1 Distric-1 Distric-1 Distric-1 Distric-1 Distric-1</strong>
+                      </div>
+                      <div>
+                        <div class="value">
+                          <strong>1234ml</strong>
+                          <em class="rise">▲0.01m</em>
+                        </div>
+                        <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="district">
+                        <p>Đà Nẵng</p>
+                        <strong>Distric-2</strong>
+                      </div>
+                      <div>
+                        <div class="value">
+                          <strong>1234ml</strong>
+                          <em class="rise">▲0.01m</em>
+                        </div>
+                        <i class="basic-ico bgsz25 sz25 icon54" aria-label="basicicon54"></i>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="district">
+                        <p>Đà Nẵng</p>
+                        <strong>Distric-3</strong>
+                      </div>
+                      <div>
+                        <div class="value">
+                          <strong>1234ml</strong>
+                          <em class="rise">▲0.01m</em>
+                        </div>
+                        <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="district">
+                        <p>Đà Nẵng</p>
+                        <strong>Distric-4</strong>
+                      </div>
+                      <div>
+                        <div class="value">
+                          <strong>1234ml</strong>
+                          <em class="rise">▲0.01m</em>
+                        </div>
+                        <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="district">
+                        <p>Đà Nẵng</p>
+                        <strong>Distric-5</strong>
+                      </div>
+                      <div>
+                        <div class="value">
+                          <strong>1234ml</strong>
+                          <em class="rise">▲0.01m</em>
+                        </div>
+                        <i class="basic-ico bgsz25 sz25 icon54" aria-label="basicicon54"></i>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="district">
+                        <p>Đà Nẵng</p>
+                        <strong>Distric-6</strong>
+                      </div>
+                      <div>
+                        <div class="value">
+                          <strong>1234ml</strong>
+                          <em class="rise">▲0.01m</em>
+                        </div>
+                        <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="district">
+                        <p>Đà Nẵng</p>
+                        <strong>Distric-7</strong>
+                      </div>
+                      <div>
+                        <div class="value">
+                          <strong>1234ml</strong>
+                          <em class="rise">▲0.01m</em>
+                        </div>
+                        <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="district">
+                        <p>Đà Nẵng</p>
+                        <strong>Distric-8</strong>
+                      </div>
+                      <div>
+                        <div class="value">
+                          <strong>1234ml</strong>
+                          <em class="rise">▲0.01m</em>
+                        </div>
+                        <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="district">
+                        <p>Đà Nẵng</p>
+                        <strong>Distric-9</strong>
+                      </div>
+                      <div>
+                        <div class="value">
+                          <strong>1234ml</strong>
+                          <em class="rise">▲0.01m</em>
+                        </div>
+                        <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="district">
+                        <p>Đà Nẵng</p>
+                        <strong>Distric-10</strong>
+                      </div>
+                      <div>
+                        <div class="value">
+                          <strong>1234ml</strong>
+                          <em class="rise">▲0.01m</em>
+                        </div>
+                        <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab-contents__item">
+                <div class="scroll-contents">
+                  <ul class="scroll-contents__list">
+                    <li class="scroll-contents__item">
+                      <div class="district">
+                        <p>Đà Nẵng</p>
+                        <strong>Distric-1 Distric-1 Distric-1 Distric-1 Distric-1 Distric-1</strong>
+                      </div>
+                      <div>
+                        <div class="value">
+                          <strong>1234ml</strong>
+                          <em class="rise">▲0.01m</em>
+                        </div>
+                        <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="district">
+                        <p>Đà Nẵng</p>
+                        <strong>Distric-2</strong>
+                      </div>
+                      <div>
+                        <div class="value">
+                          <strong>1234ml</strong>
+                          <em class="rise">▲0.01m</em>
+                        </div>
+                        <i class="basic-ico bgsz25 sz25 icon54" aria-label="basicicon54"></i>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="district">
+                        <p>Đà Nẵng</p>
+                        <strong>Distric-3</strong>
+                      </div>
+                      <div>
+                        <div class="value">
+                          <strong>1234ml</strong>
+                          <em class="rise">▲0.01m</em>
+                        </div>
+                        <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="district">
+                        <p>Đà Nẵng</p>
+                        <strong>Distric-4</strong>
+                      </div>
+                      <div>
+                        <div class="value">
+                          <strong>1234ml</strong>
+                          <em class="rise">▲0.01m</em>
+                        </div>
+                        <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="district">
+                        <p>Đà Nẵng</p>
+                        <strong>Distric-5</strong>
+                      </div>
+                      <div>
+                        <div class="value">
+                          <strong>1234ml</strong>
+                          <em class="rise">▲0.01m</em>
+                        </div>
+                        <i class="basic-ico bgsz25 sz25 icon54" aria-label="basicicon54"></i>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="district">
+                        <p>Đà Nẵng</p>
+                        <strong>Distric-6</strong>
+                      </div>
+                      <div>
+                        <div class="value">
+                          <strong>1234ml</strong>
+                          <em class="rise">▲0.01m</em>
+                        </div>
+                        <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="right-bottom scroll">
+          <div class="scroll-title">
+            <p class="title__text">Khu vực thiết bị liên quan (CCTV)</p>
+            <select name="region" class="selectbox ver1">
+              <option value="vùng1">vùng1</option>
+              <option value="vùng2">vùng2</option>
+              <option value="vùng3">vùng3</option>
+              <option value="vùng4">vùng4</option>
+            </select>
+          </div>
+          <div class="scroll-contents">
+            <ul class="scroll-contents__list">
+              <li class="scroll-contents__item">
+                <div class="icon-label">
+                  <i class="basic-ico bgsz25 sz25 icon57" aria-label="basicicon57"></i>
+                  <p>Đà Nẵng</p>
+                </div>
+                <div class="district">
+                  <strong>Distric-1427 Distric-1427 Distric-1427 Distric-1427 Distric-1427 Distric-1427</strong>
+                  <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                </div>
+              </li>
+              <li class="scroll-contents__item">
+                <div class="icon-label">
+                  <i class="basic-ico bgsz25 sz25 icon57" aria-label="basicicon57"></i>
+                  <p>Đà Nẵng</p>
+                </div>
+                <div class="district">
+                  <strong>Distric-1427</strong>
+                  <i class="basic-ico bgsz25 sz25 icon54" aria-label="basicicon54"></i>
+                </div>
+              </li>
+              <li class="scroll-contents__item">
+                <div class="icon-label">
+                  <i class="basic-ico bgsz25 sz25 icon57" aria-label="basicicon57"></i>
+                  <p>Đà Nẵng</p>
+                </div>
+                <div class="district">
+                  <strong>Distric-1427</strong>
+                  <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                </div>
+              </li>
+              <li class="scroll-contents__item">
+                <div class="icon-label">
+                  <i class="basic-ico bgsz25 sz25 icon57" aria-label="basicicon57"></i>
+                  <p>Đà Nẵng</p>
+                </div>
+                <div class="district">
+                  <strong>Distric-1427</strong>
+                  <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                </div>
+              </li>
+              <li class="scroll-contents__item">
+                <div class="icon-label">
+                  <i class="basic-ico bgsz25 sz25 icon57" aria-label="basicicon57"></i>
+                  <p>Đà Nẵng</p>
+                </div>
+                <div class="district">
+                  <strong>Distric-1427</strong>
+                  <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                </div>
+              </li>
+              <li class="scroll-contents__item">
+                <div class="icon-label">
+                  <i class="basic-ico bgsz25 sz25 icon57" aria-label="basicicon57"></i>
+                  <p>Đà Nẵng</p>
+                </div>
+                <div class="district">
+                  <strong>Distric-1427</strong>
+                  <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                </div>
+              </li>
+              <li class="scroll-contents__item">
+                <div class="icon-label">
+                  <i class="basic-ico bgsz25 sz25 icon57" aria-label="basicicon57"></i>
+                  <p>Đà Nẵng</p>
+                </div>
+                <div class="district">
+                  <strong>Distric-1427</strong>
+                  <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                </div>
+              </li>
+              <li class="scroll-contents__item">
+                <div class="icon-label">
+                  <i class="basic-ico bgsz25 sz25 icon57" aria-label="basicicon57"></i>
+                  <p>Đà Nẵng</p>
+                </div>
+                <div class="district">
+                  <strong>Distric-1427</strong>
+                  <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                </div>
+              </li>
+              <li class="scroll-contents__item">
+                <div class="icon-label">
+                  <i class="basic-ico bgsz25 sz25 icon57" aria-label="basicicon57"></i>
+                  <p>Đà Nẵng</p>
+                </div>
+                <div class="district">
+                  <strong>Distric-1427</strong>
+                  <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                </div>
+              </li>
+              <li class="scroll-contents__item">
+                <div class="icon-label">
+                  <i class="basic-ico bgsz25 sz25 icon57" aria-label="basicicon57"></i>
+                  <p>Đà Nẵng</p>
+                </div>
+                <div class="district">
+                  <strong>Distric-1427</strong>
+                  <i class="basic-ico bgsz25 sz25 icon56" aria-label="basicicon56"></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

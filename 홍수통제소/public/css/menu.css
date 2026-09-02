@@ -1,0 +1,21 @@
+
+/* 대민 왼쪽 메인 메뉴 */
+.main-menu {position: fixed;display: flex; align-items: center; top: 50%; transform: translateY(-50%); z-index: 999;}
+.main-menu .main-menu__list {display: flex; flex-direction: column; align-items: center; padding: 4px; box-sizing: border-box; gap: 6px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; background-color: rgba(0, 0, 0, 0.6); font-weight: 600;}
+.main-menu .main-menu__list .main-menu__item {padding: 8px; box-sizing: border-box; display: flex; gap: 8px; align-items: center; flex-direction: column;}
+.main-menu .main-menu__list .main-menu__item .main-menu__link {display: flex; gap: 8px; align-items: center; flex-direction: column;}
+.main-menu .main-menu__list .main-menu__divider {width: 100%; height: 1px; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.25); padding: 0;}
+.main-menu .main-menu__list .main-menu__divider.disabled {display: none;}
+.main-menu .main-menu__list p {text-align: center; font-weight: 500; font-size: 12px; color: #fff;}
+.main-menu .main-menu__list .main-menu__item.active p, .main-menu .main-menu__list .main-menu__item:hover p {color: #34B0F9;}
+
+/* 포털 */
+.portal .main-menu {top: 45%; transform: translateY(-45%);}
+
+/* 반응형 */
+@media screen and (max-width: 650px) {
+  .main-menu, .portal .main-menu { bottom: 0 ; width: 100%; height: auto; top: auto; transform: none;}
+  .main-menu .main-menu__list {display: flex;justify-content: space-around; flex-direction: row; align-items: center; width: 100%; height: 80px; border-radius: 0px; background-color: rgba(31, 31, 31, 1)}
+  .main-menu .main-menu__list li:not(.main-menu__divider) {width: 25%;}
+  .main-menu .main-menu__list .main-menu__divider {display: none;}
+}

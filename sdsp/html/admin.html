@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- date-picker -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+    <!--  -->
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="../css/design.css" />
+    <link rel="stylesheet" href="../css/admin.css" />
+
+    <script src="../js/admin.js"></script>
+
+    <title>admin - SKT sdsp</title>
+  </head>
+  
+  <body>
+    <div class="wrap_admin">
+      <header>
+        <section class="wrap-top-nav">
+          <div class="logo">
+            <i class="skt-logo"></i>
+            <h1 class="body1_B">운항 정보 지원</h1>
+          </div>
+          <!-- GNB -->
+          <nav class="nav">
+            <ul class="nav-list body1_M">
+              <li class="nav-btn on" data-target="nav-home">Home</li>
+              <li class="nav-btn" data-target="nav-srv">SDSP 서비스</li>
+              <li class="nav-btn" data-target="nav-api">SDSP API</li>
+              <li class="nav-btn" data-target="nav-center">관리자 센터</li>
+            </ul>
+            <button class="logout body2_B">로그아웃</button>
+          </nav>
+        </section>
+      </header>
+      <div class="wrap-contents">
+        <!-- #1 Home -->
+        <div class="nav-cont nav-home">
+          <p>Home</p>
+        </div>
+        <!-- #2 SDSP 서비스 -->
+        <div class="nav-cont nav-srv">
+          <p>SDSP 서비스</p>
+        </div>
+        <!-- #3 SDSP API -->
+        <div class="nav-cont nav-api">
+          <p>SDSP API</p>
+        </div>
+        <!-- #4 관리자 센터 -->
+        <div class="nav-cont nav-center">
+          <div class="d-flex">
+            <!-- snb -->
+            <div class="sub-nav body2_M">
+              <p class="lnv-title snb-btn on" data-nav="dashboard">대시보드</p>
+              <p class="lnv-title">사용자 관리</p>
+              <ul class="sub-list body4_M">
+                <li data-nav="userlist" class="snb-btn snb-userlist">사용자 리스트</li>
+                <li data-nav="logindata" class="snb-btn snb-logindata">접속 이력</li>
+              </ul>
+              <p class="lnv-title">API 관리</p>
+              <ul class="sub-list body4_M">
+                <li data-nav="keylist" class="snb-btn keylist">Key 발급 목록</li>
+                <li data-nav="apiuse" class="snb-btn apiuse">API 이용 현황</li>
+                <li data-nav="apimanagement" class="snb-btn apimanagement">API 관리</li>
+              </ul>
+              <p class="lnv-title">연동 모듈 관리</p>
+              <ul class="sub-list body4_M">
+                <li data-nav="module" class="snb-btn snb-module">연동모듈데이터</li>
+                <li data-nav="moduleanalysis" class="snb-btn snb-moduleanalysis">분석내역</li>
+              </ul>
+              <p class="lnv-title snb-btn" data-nav="SIM">공간 정보 관리</p>
+              <p class="lnv-title">데이터 관리</p>
+              <ul class="sub-list body4_M">
+                <li data-nav="netcdf" class="snb-btn snb-netcdf">netCDF</li>
+                <li data-nav="wave" class="snb-btn snb-wave">전파 데이터</li>
+                <li data-nav="vertiport" class="snb-btn snb-vertiport">버티포트 데이터</li>
+                <li data-nav="corridor" class="snb-btn snb-corridor">회랑 데이터</li>
+              </ul>
+            </div>
+            <!-- cont -->
+            <div class="wrap_sub-cont">
+              <!-- 1. 대시보드 -->
+              <div class="snb-cont dashboard_panel">
+                <div class="dashboard--box">
+                  <h1>관리자 대시보드</h1>
+                  <!-- 연동모듈현황 -->
+                  <div class="dash-contents module">
+                    <aside class="title">
+                      <h2 class="body1_M">연동모듈현황</h2>
+                      <button class="element3_R">관리</button>
+                    </aside>
+                    <div class="slide-wrap">
+                      <button class="h-slide left" aria-label="Scroll Left"></button>
+                      <button class="h-slide right" aria-label="Scroll Right"></button>
+                      <div class="dash-contents--item">
+                        <section class="wrap-list">
+                          <hgroup>
+                            <h3 class="body2_B">기상모듈</h3>
+                            <span class="condition norm">정상</span>
+                          </hgroup>
+                          <article class="list module weather">
+                            <ul class="text body4_M">
+                              <li><strong>모델명</strong> <span>CAM-001CAM-001CAM-00</span></li>
+                              <li><strong>촬영범위</strong> <span>3000m</span></li>
+                              <li><strong>현재시간</strong> <span>2023-09-12 09:57:00</span></li>
+                            </ul>
+                          </article>
+                        </section>
+                        <section class="wrap-list">
+                          <hgroup>
+                            <h3 class="body2_B">소음모듈</h3>
+                            <span class="condition warn">비정상</span>
+                          </hgroup>
+                          <article class="list module noise">
+                            <ul class="text body4_M">
+                              <li><strong>모델명</strong> <span>CAM-001</span></li>
+                              <li><strong>촬영범위</strong> <span>3000m</span></li>
+                              <li><strong>현재시간</strong> <span>2023-09-12 09:57:00</span></li>
+                            </ul>
+                          </article>
+                        </section>
+                        <section class="wrap-list">
+                          <hgroup>
+                            <h3 class="body2_B">전파모듈</h3>
+                            <span class="condition norm">정상</span>
+                          </hgroup>
+                          <article class="list module wave">
+                            <ul class="text body4_M">
+                              <li><strong>모델명</strong> <span>CAM-001</span></li>
+                              <li><strong>촬영범위</strong> <span>3000m</span></li>
+                              <li><strong>현재시간</strong> <span>2023-09-12 09:57:00</span></li>
+                            </ul>
+                          </article>
+                        </section>
+                        <section class="wrap-list">
+                          <hgroup>
+                            <h3 class="body2_B">시나리오연계</h3>
+                            <strong class="state element3_B">자동갱신중</strong>
+                          </hgroup>
+                          <article class="list module text-only">
+                            <ul class="text body4_M">
+                              <li><strong>갱신주기</strong> <span>4h</span></li>
+                              <li><strong>최신 업데이트</strong> <span>2023년 09월 19일</span></li>
+                              <li><strong>마지막 업데이트 확인</strong> <span>2023년 09월 20일 14시</span></li>
+                            </ul>
+                          </article>
+                        </section>
+                        <section class="wrap-list">
+                          <hgroup>
+                            <h3 class="body2_B">메세지 로그</h3>
+                            <button class="caption">날짜선택</button>
+                          </hgroup>
+                          <table class="body4_M">
+                            <thead>
+                              <tr>
+                                <th>날짜</th>
+                                <th>타입</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>2023-09-12 09:00</td>
+                                <td>A2-START</td>
+                              </tr>
+                              <tr>
+                                <td>2023-09-13 10:30</td>
+                                <td>B3-MIDDLE</td>
+                              </tr>
+                              <tr>
+                                <td>2023-09-14 14:00</td>
+                                <td>C4-END</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </section>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- OPEN API 현황 -->
+                  <div class="dash-contents flex-col api">
+                    <aside class="title row">
+                      <h2 class="body1_M">OPEN API 현황</h2>
+                      <button class="element3_R">관리</button>
+                    </aside>
+                    <div class="slide-wrap">
+                      <button class="h-slide left" aria-label="Scroll Left"></button>
+                      <button class="h-slide right" aria-label="Scroll Right"></button>
+                      <div class="dash-contents--item">
+                        <section class="wrap-list">
+                          <hgroup>
+                            <h3 class="body2_B">Key 승인 건수</h3>
+                          </hgroup>
+                          <article class="list">
+                            <ul class="num">
+                              <li>
+                                <strong class="body1_B">173</strong>
+                                <span class="body4_M">건</span>
+                              </li>
+                            </ul>
+                          </article>
+                        </section>
+                        <section class="wrap-list">
+                          <hgroup>
+                            <h3 class="body2_B">기상 요청 건수</h3>
+                          </hgroup>
+                          <article class="list">
+                            <ul class="num">
+                              <li class="style-1">
+                                <div class="result success">
+                                  <h4 class="body4_M">성공</h4>
+                                  <aside>
+                                    <strong class="body1_B">173</strong>
+                                    <span class="body4_M">건</span>
+                                  </aside>
+                                </div>
+                                <div class="result fail">
+                                  <h4 class="body4_M">실패</h4>
+                                  <aside>
+                                    <strong class="body1_B">1333</strong>
+                                    <span class="body4_M">건</span>
+                                  </aside>
+                                </div>
+                                <div class="result total">
+                                  <h4 class="body4_M">total</h4>
+                                  <aside>
+                                    <strong class="body1_B">133</strong>
+                                    <span class="body4_M">건</span>
+                                  </aside>
+                                </div>
+                              </li>
+                            </ul>
+                          </article>
+                        </section>
+                        <section class="wrap-list">
+                          <hgroup>
+                            <h3 class="body2_B">소음 요청 건수</h3>
+                          </hgroup>
+                          <article class="list">
+                            <ul class="num">
+                              <li class="style-1">
+                                <div class="result success">
+                                  <h4 class="body4_M">성공</h4>
+                                  <aside>
+                                    <strong class="body1_B">1743</strong>
+                                    <span class="body4_M">건</span>
+                                  </aside>
+                                </div>
+                                <div class="result fail">
+                                  <h4 class="body4_M">실패</h4>
+                                  <aside>
+                                    <strong class="body1_B">13343</strong>
+                                    <span class="body4_M">건</span>
+                                  </aside>
+                                </div>
+                                <div class="result total">
+                                  <h4 class="body4_M">total</h4>
+                                  <aside>
+                                    <strong class="body1_B">8333</strong>
+                                    <span class="body4_M">건</span>
+                                  </aside>
+                                </div>
+                              </li>
+                            </ul>
+                          </article>
+                        </section>
+                        <section class="wrap-list">
+                          <hgroup>
+                            <h3 class="body2_B">전파 요청 건수</h3>
+                          </hgroup>
+                          <article class="list">
+                            <ul class="num">
+                              <li class="style-1">
+                                <div class="result success">
+                                  <h4 class="body4_M">성공</h4>
+                                  <aside>
+                                    <strong class="body1_B">10</strong>
+                                    <span class="body4_M">건</span>
+                                  </aside>
+                                </div>
+                                <div class="result fail">
+                                  <h4 class="body4_M">실패</h4>
+                                  <aside>
+                                    <strong class="body1_B">1</strong>
+                                    <span class="body4_M">건</span>
+                                  </aside>
+                                </div>
+                                <div class="result total">
+                                  <h4 class="body4_M">total</h4>
+                                  <aside>
+                                    <strong class="body1_B">32</strong>
+                                    <span class="body4_M">건</span>
+                                  </aside>
+                                </div>
+                              </li>
+                            </ul>
+                          </article>
+                        </section>
+                        <section class="wrap-list">
+                          <hgroup>
+                            <h3 class="body2_B">장애물 요청 건수</h3>
+                          </hgroup>
+                          <article class="list">
+                            <ul class="num">
+                              <li class="style-1">
+                                <div class="result success">
+                                  <h4 class="body4_M">성공</h4>
+                                  <aside>
+                                    <strong class="body1_B">10</strong>
+                                    <span class="body4_M">건</span>
+                                  </aside>
+                                </div>
+                                <div class="result fail">
+                                  <h4 class="body4_M">실패</h4>
+                                  <aside>
+                                    <strong class="body1_B">1</strong>
+                                    <span class="body4_M">건</span>
+                                  </aside>
+                                </div>
+                                <div class="result total">
+                                  <h4 class="body4_M">total</h4>
+                                  <aside>
+                                    <strong class="body1_B">32</strong>
+                                    <span class="body4_M">건</span>
+                                  </aside>
+                                </div>
+                              </li>
+                            </ul>
+                          </article>
+                        </section>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 서버 현황 -->
+                  <div class="dash-contents network">
+                    <aside class="title">
+                      <h2 class="body1_M">서버 현황</h2>
+                      <button class="element3_R">관리</button>
+                    </aside>
+                    <div class="slide-wrap">
+                      <button class="h-slide left" aria-label="Scroll Left"></button>
+                      <button class="h-slide right" aria-label="Scroll Right"></button>
+                      <div class="dash-contents--item">
+                        <section class="wrap-list">
+                          <hgroup>
+                            <h3 class="body2_B">서버 정보</h3>
+                          </hgroup>
+                          <article class="list">
+                            <ul class="text body4_M">
+                              <li class="condition"><strong>SDSP</strong> <span class="condition norm">정상</span></li>
+                              <li><strong>OS</strong> <span>Linux Ubuntu</span></li>
+                              <li><strong>CPU 사용량</strong> <span>4%</span></li>
+                              <li><strong>메모리 사용량</strong> <span>24%</span></li>
+                            </ul>
+                          </article>
+                        </section>
+                        <section class="wrap-list">
+                          <hgroup>
+                            <h3 class="body2_B">서비스현황</h3>
+                          </hgroup>
+                          <article class="list host">
+                            <ul class="text body4_M">
+                              <li class="jc-fe"><span class="condition norm body4_M">정상</span></li>
+                              <li><strong>호스트</strong> <span>192, 168. 50. 254</span></li>
+                              <li><strong>초당 네트워크 전송 속도</strong> <span>0.00 B/s</span></li>
+                            </ul>
+                            <ul class="text body4_M">
+                              <li class="jc-fe"><span class="condition norm body4_M">정상</span></li>
+                              <li><strong>호스트</strong> <span>192, 168. 50. 254</span></li>
+                              <li><strong>초당 네트워크 전송 속도</strong> <span>0.00 B/s</span></li>
+                            </ul>
+                            <ul class="text body4_M">
+                              <li class="jc-fe"><span class="condition warn body4_M">비정상</span></li>
+                              <li><strong>호스트</strong> <span>192, 168. 50. 254</span></li>
+                              <li><strong>초당 네트워크 전송 속도</strong> <span>0.00 B/s</span></li>
+                            </ul>
+                            <ul class="text body4_M">
+                              <li class="jc-fe"><span class="condition norm body4_M">정상</span></li>
+                              <li><strong>호스트</strong> <span>192, 168. 50. 254</span></li>
+                              <li><strong>초당 네트워크 전송 속도</strong> <span>0.00 B/s</span></li>
+                            </ul>
+                          </article>
+                        </section>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 사용자 접속 현황 -->
+                  <div class="dash-contents flex-col user">
+                    <aside class="title row">
+                      <h2 class="body1_M">사용자 접속 현황</h2>
+                      <button class="element3_R">관리</button>
+                    </aside>
+                    <div class="slide-wrap">
+                      <button class="h-slide left" aria-label="Scroll Left"></button>
+                      <button class="h-slide right" aria-label="Scroll Right"></button>
+                      <div class="dash-contents--item">
+                        <section class="wrap-list chart">
+                          <hgroup>
+                            <h3 class="body2_B">접속 기록</h3>
+                            <div class="calendar">
+                              <input type="text" class="monthpicker-input caption" placeholder="YYYY.MM." />
+                            </div>
+                          </hgroup>
+                          <article class="chart"><img src="https://via.placeholder.com/453x125" alt="" /></article>
+                        </section>
+                        <section class="wrap-list chart">
+                          <hgroup>
+                            <h3 class="body2_B">서비스별 사용 빈도수</h3>
+                            <div class="calendar">
+                              <input type="text" class="monthpicker-input caption" placeholder="YYYY.MM." />
+                            </div>
+                          </hgroup>
+                          <article class="chart"><img src="https://via.placeholder.com/453x125" alt="" /></article>
+                        </section>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 2. 사용자관리 -->
+              <!-- 사용자 리스트 -->
+              <div class="snb-cont userlist_panel">
+                <div class="sub-top">
+                  <h1>사용자</h1>
+                </div>
+                <div class="wrap-cont">
+                  <section class="top-setting-ui">
+                    <article class="search">
+                      <select>
+                        <option>전체</option>
+                        <option>사용자명</option>
+                      </select>
+                      <span class="search-box">
+                        <input type="search" placeholder="검색어를 입력하세요." class="body3_R" />
+                        <i class="ico-search w16"></i>
+                      </span>
+                      <button class="element2_R">검색</button>
+                    </article>
+                  </section>
+                  <!-- 테이블 시작 -->
+                  <section class="table scroll-y">
+                    <table class="basic" cellpadding="0" cellspacing="0">
+                      <thead>
+                        <tr>
+                          <th><input type="checkbox" id="userList-chkA" /><label for="userList-chkA"></label></th>
+                          <th>
+                            <div>
+                              <p class="body1_M">이름</p>
+                              <i class="ico-move-vertical w24"></i>
+                            </div>
+                          </th>
+                          <th>
+                            <div>
+                              <p class="body1_M">이메일</p>
+                              <i class="ico-move-vertical w24"></i>
+                            </div>
+                          </th>
+                          <th>
+                            <div>
+                              <p class="body1_M">휴대전화</p>
+                              <i class="ico-move-vertical w24"></i>
+                            </div>
+                          </th>
+                          <th>
+                            <div>
+                              <p class="body1_M">계정 그룹</p>
+                              <i class="ico-move-vertical w24"></i>
+                            </div>
+                          </th>
+                          <th>
+                            <div>
+                              <p class="body1_M">소속</p>
+                              <i class="ico-move-vertical w24"></i>
+                            </div>
+                          </th>
+                          <th>
+                            <div>
+                              <p class="body1_M">승인 상태</p>
+                              <i class="ico-move-vertical w24"></i>
+                            </div>
+                          </th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- 상세정보창 호출 class="userList" -->
+                        <tr class="userList">
+                          <td><input type="checkbox" id="userList-chk1" /><label for="userList-chk1"></label></td>
+                          <td>홍길동</td>
+                          <td>sample@sk.com</td>
+                          <td>010-0000-0000</td>
+                          <td>운항 관리사</td>
+                          <td>기업 이름</td>
+                          <td>승인</td>
+                          <td><i class="ico-link w24"></i></td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" id="userList-chk2" /><label for="userList-chk2"></label></td>
+                          <td>홍길동</td>
+                          <td>sample@sk.com</td>
+                          <td>010-0000-0000</td>
+                          <td>운항 관리사</td>
+                          <td>기업 이름</td>
+                          <td>승인</td>
+                          <td><i class="ico-link w24"></i></td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" id="userList-chk3" /><label for="userList-chk3"></label></td>
+                          <td>홍길동</td>
+                          <td>sample@sk.com</td>
+                          <td>010-0000-0000</td>
+                          <td>운항 관리사</td>
+                          <td>기업 이름</td>
+                          <td>승인</td>
+                          <td><i class="ico-link w24"></i></td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" id="userList-chk4" /><label for="userList-chk4"></label></td>
+                          <td>홍길동</td>
+                          <td>sample@sk.com</td>
+                          <td>010-0000-0000</td>
+                          <td>운항 관리사</td>
+                          <td>기업 이름</td>
+                          <td>승인</td>
+                          <td><i class="ico-link w24"></i></td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" id="userList-chk5" /><label for="userList-chk5"></label></td>
+                          <td>홍길동</td>
+                          <td>sample@sk.com</td>
+                          <td>010-0000-0000</td>
+                          <td>운항 관리사</td>
+                          <td>기업 이름</td>
+                          <td>승인</td>
+                          <td><i class="ico-link w24"></i></td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" id="userList-chk6" /><label for="userList-chk6"></label></td>
+                          <td>홍길동</td>
+                          <td>sample@sk.com</td>
+                          <td>010-0000-0000</td>
+                          <td>운항 관리사</td>
+                          <td>기업 이름</td>
+                          <td>승인</td>
+                          <td><i class="ico-link w24"></i></td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" id="userList-chk7" /><label for="userList-chk7"></label></td>
+                          <td>홍길동</td>
+                          <td>sample@sk.com</td>
+                          <td>010-0000-0000</td>
+                          <td>운항 관리사</td>
+                          <td>기업 이름</td>
+                          <td>승인</td>
+                          <td><i class="ico-link w24"></i></td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" id="userList-chk8" /><label for="userList-chk8"></label></td>
+                          <td>홍길동</td>
+                          <td>sample@sk.com</td>
+                          <td>010-0000-0000</td>
+                          <td>운항 관리사</td>
+                          <td>기업 이름</td>
+                          <td>승인</td>
+                          <td><i class="ico-link w24"></i></td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" id="userList-chk9" /><label for="userList-chk9"></label></td>
+                          <td>홍길동</td>
+                          <td>sample@sk.com</td>
+                          <td>010-0000-0000</td>
+                          <td>운항 관리사</td>
+                          <td>기업 이름</td>
+                          <td>승인</td>
+                          <td><i class="ico-link w24"></i></td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" id="userList-chk10" /><label for="userList-chk10"></label></td>
+                          <td>홍길동</td>
+                          <td>sample@sk.com</td>
+                          <td>010-0000-0000</td>
+                          <td>운항 관리사</td>
+                          <td>기업 이름</td>
+                          <td>승인</td>
+                          <td><i class="ico-link w24"></i></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="paging">
+                      <ul>
+                        <li>이전</li>
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>다음</li>
+                      </ul>
+                    </div>
+                    <div class="btn-wrap">
+                      <div class="left">
+                        <button class="style1 element2_R">
+                          <i class="ico-plus w16"></i>
+                          승인 대기 내역
+                        </button>
+                        <button class="style2 element2_R">선택 승인</button>
+                        <button class="style3 element2_R">삭제</button>
+                      </div>
+                      <div class="right"></div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+              <!-- 접속이력 -->
+              <div class="snb-cont logindata_panel">
+                <div class="sub-top">
+                  <h2>접속 이력</h2>
+                </div>
+              </div>
+              <!-- 3. API 관리 -->
+              <!-- Key 발급 목록 -->
+              <div class="snb-cont keylist_panel">
+                <div class="sub-top">
+                  <h2>Key 발급 목록</h2>
+                </div>
+              </div>
+              <!-- API 이용 현황 -->
+              <div class="snb-cont apiuse_panel">
+                <div class="sub-top">
+                  <h2>API 이용 현황</h2>
+                </div>
+              </div>
+              <!-- API 관리 -->
+              <div class="snb-cont apimanagement_panel">
+                <div class="sub-top">
+                  <h2>API 관리</h2>
+                </div>
+              </div>
+              <!-- 4. 연동모듈관리 -->
+              <!-- 연동모듈데이터 -->
+              <div class="snb-cont module_panel">
+                <div class="sub-top">
+                  <h2>연동모듈데이터</h2>
+                </div>
+              </div>
+              <!-- 분석내역 -->
+              <div class="snb-cont moduleanalysis_panel">
+                <div class="sub-top">
+                  <h2>분석내역</h2>
+                </div>
+              </div>
+              <!-- 5. 공간 정보 관리 -->
+              <div class="snb-cont SIM_panel">
+                <div class="sub-top">
+                  <h2>공간 정보 관리</h2>
+                </div>
+              </div>
+              <!-- 6. 데이터 관리 -->
+              <!-- netCDF -->
+              <div class="snb-cont netcdf_panel">
+                <div class="sub-top">
+                  <h2>netCDF</h2>
+                </div>
+              </div>
+              <!-- wave -->
+              <div class="snb-cont wave_panel">
+                <div class="sub-top">
+                  <h2>전파 데이터</h2>
+                </div>
+              </div>
+              <!-- 버티포트 데이터 -->
+              <div class="snb-cont vertiport_panel">
+                <div class="sub-top">
+                  <h2>버티포트 데이터</h2>
+                </div>
+              </div>
+              <!-- 회랑 데이터 -->
+              <div class="snb-cont corridor_panel">
+                <div class="sub-top">
+                  <h2>회랑 데이터</h2>
+                </div>
+              </div>
+
+              <!-- popup -->
+              <article class="popup-wrap">
+                <!-- 상태변경 -->
+                <ul class="popup drag hide">
+                  <li class="title">상태변경</li>
+                  <li class="body3_R">사용자 상태를 “이용 중지“ 로 변경합니다.<br />이용 중지된 경우 사이트 접속이 차단됩니다.</li>
+                  <li class="btn-wrap">
+                    <button class="style3 element2_R">확인</button>
+                    <button class="style2 element2_R">취소</button>
+                  </li>
+                </ul>
+                <!-- 계정 상세 정보 -->
+                <div class="popup drag account hide">
+                  <div class="top">
+                    <p>계정 상세 정보</p>
+                    <i class="ico-close w20"></i>
+                  </div>
+                  <div class="content">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <th><em class="body2_M">사용자명</em></th>
+                          <th><em class="body2_M">비밀번호</em></th>
+                          <th><em class="body2_M">생년월일</em></th>
+                          <th><em class="body2_M">계정 그룹</em></th>
+                        </tr>
+                        <tr>
+                          <td><input type="text" class="body2_M" readonly="" value="홍길동" /></td>
+                          <td><input type="password" class="body2_M" readonly="" value="12345" /></td>
+                          <td><input type="text" class="body2_M" readonly="" value="2024.07.29" /></td>
+                          <td><input type="text" class="body2_M" readonly="" value="운항관리사" /></td>
+                        </tr>
+                        <tr>
+                          <th><em class="body2_M">아이디(이메일)</em></th>
+                          <th><em class="body2_M">비밀번호 확인</em></th>
+                          <th><em class="body2_M">휴대전화</em></th>
+                          <th><em class="body2_M">소속</em></th>
+                        </tr>
+                        <tr>
+                          <td><input type="text" class="body2_M" readonly="" value="hongildong@sk.com" /></td>
+                          <td><input type="password" class="body2_M" readonly="" value="12345" /></td>
+                          <td><input type="text" class="body2_M" readonly="" value="010-0000-0000" /></td>
+                          <td><input type="text" class="body2_M" readonly="" value="SK텔레콤" /></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="btn-wrap edit-close">
+                    <div class="left">
+                      <button class="style3">시스템 사용 이력</button>
+                    </div>
+                    <div class="right">
+                      <button class="edit"><p>수정</p></button>
+                      <button class="close color"><p>닫기</p></button>
+                    </div>
+                  </div>
+                  <div class="btn-wrap cancel-save hide">
+                    <div class="left"></div>
+                    <div class="right">
+                      <button class="cancel"><p>취소</p></button>
+                      <button class="save color"><p>저장</p></button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

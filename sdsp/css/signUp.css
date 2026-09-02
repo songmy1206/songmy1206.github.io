@@ -1,0 +1,214 @@
+/******************************************************** sign-up ********************************************************/
+.sign-up {position: relative; width: 100vw; height: 100vh; background: url("../images/signUp/background-image.png") center/cover no-repeat; color: var(--UI_M_7);}
+.sign-up::after {content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(18, 18, 18, 0.22);}
+.sign-up > * {position: relative; z-index: 1; user-select: none;}
+
+/* header */
+.sign-up nav.nav ul.nav-list li {color: var(--UI_M_5);}
+.sign-up nav.nav ul.nav-list li.on {color: var(--UI_M_7);}
+.sign-up header section.wrap-top-nav .logo h1 {color: var(--UI_M_7);}
+.sign-up header button.logout,
+.sign-up header button.login {border: 1px solid var(--UI_M_7); background-color: transparent; color: var(--UI_M_5);}
+
+/* main */
+.sign-up main {height: calc(100% - 130px);}
+
+/* footer */
+.sign-up footer {position: absolute; bottom: 22px; left: 50%; display: flex; justify-content: center; transform: translateX(-50%);}
+
+/******************************************************** web ********************************************************/
+
+/* .wep-wrap */
+.sign-up main .web-wrap {position: absolute; top: calc(50% - 130px); right: 15%; transform: translateY(-40%); display: flex; flex-direction: column; gap: 20px;}
+.sign-up main .web-wrap .logo-wrap {display: flex; flex-direction: column; gap: 8px; font-size: 22px; font-weight: 500;}
+.sign-up main .web-wrap .web {display: flex; align-items: center; justify-content: center; gap: 8px; padding: 8px 32px; border: 1px solid var(--UI_M_7); border-radius: 46px; box-sizing: border-box; font-size: 24px; font-weight: 700; width: fit-content; cursor: pointer;}
+
+/******************************************************** popup ********************************************************/
+
+/* .popup-wrap */
+.sign-up main .popup-wrap {width: 100%; height: 100%;}
+.sign-up main .popup-wrap .popup {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -60%); background-color: var(--UI_M_7); color: var(--UI_G_1); border: 1px solid var(--UI_G_5); border-radius: 10px; height: 645px; box-sizing: border-box;}
+.sign-up main .popup-wrap .popup > div {display: flex; justify-content: center; align-items: center;}
+.sign-up main .popup-wrap .popup .p-contents > div:not(.btn-wrap) {display: flex; gap: 8px;}
+
+/* popup - header */
+.sign-up main .popup-wrap .popup .p-header {padding: 24px 20px; justify-content: flex-end; position: relative;}
+
+/* popup - contents */
+.sign-up main .popup-wrap .popup .p-contents {flex-direction: column; gap: 24px; height: 100%; justify-content: flex-start;}
+.sign-up main .popup-wrap .popup .p-contents h1 {padding: 32px 0 0 0; font-size: 28px; font-weight: 700; color: var(--UI_G_3);}
+.sign-up main .popup-wrap .popup .p-contents .btn-wrap {position: absolute; right: 36px; bottom: 28px;}
+
+/* popup - footer */
+.sign-up main .popup-wrap .popup .p-footer {padding: 24px 40px; color: var(--UI_M_4);}
+
+/* popup - login */
+.sign-up main .popup-wrap .popup.login input {width: auto; border: 1px solid var(--UI_G_5);}
+.sign-up main .popup-wrap .popup.login input:hover {border-color: var(--UI_M_4);}
+.sign-up main .popup-wrap .popup.login input:focus {border-color: var(--UI_M_2);}
+.sign-up main .popup-wrap .popup.login input:not(:placeholder-shown) {border-color: 1px solid var(--UI_G_1);}
+
+.sign-up main .popup-wrap .popup.login {height: fit-content;}
+.sign-up main .popup-wrap .popup.login .p-contents {padding-bottom: 94px; justify-content: center;}
+.sign-up main .popup-wrap .popup.login .p-contents h1 {padding: 22px 0 32px 0;}
+.sign-up main .popup-wrap .popup.login .p-contents > div:not(.btn-wrap) {width: 240px;}
+.sign-up main .popup-wrap .popup.login .p-contents .btn-wrap {position: inherit;}
+
+.sign-up main .popup-wrap .popup.login .p-contents > div > em {display: none; color: var(--UI_S_2);}
+.sign-up main .popup-wrap .popup.login .p-contents > div.caution em {display: block;}
+.sign-up main .popup-wrap .popup.login .p-contents > div.caution input {border-color: var(--UI_S_2);}
+
+/* popup findId */
+.sign-up main .popup-wrap .popup.findId .step-contents {padding-top: 48px;}
+.sign-up main .popup-wrap .popup.findId .p-contents .step-contents > div {gap: 36px;}
+.sign-up main .popup-wrap .popup.findId .p-contents .step-contents > div.last .text-wrap {background-color: var(--UI_M_6); display: flex; flex-direction: column; gap: 12px;}
+
+/* popup findPw */
+.sign-up main .popup-wrap .popup.findPw .step-contents .step1 {padding-top: 48px;}
+.sign-up main .popup-wrap .popup.findPw .p-contents .step-contents > div.active {align-items: center;}
+.sign-up main .popup-wrap .popup.findPw .p-contents .step-contents > div.last .text-wrap {position: inherit; transform: none; display: flex; flex-direction: column; gap: 12px; background-color: var(--UI_M_6); margin: 12px 0;}
+
+/******************************************************** wrap ********************************************************/
+
+/* wrap 공통 */
+.sign-up .popup-wrap .popup .p-contents .email-wrap,
+.sign-up .popup-wrap .popup .p-contents .pw-wrap {flex-direction: column; align-items: initial;}
+
+/* .acct-btn-wrap */
+.sign-up .acct-btn-wrap {position: relative; display: flex; align-items: center; gap: 24px; justify-content: center; color: var(--UI_G_1);}
+.sign-up .acct-btn-wrap li:not(.divider) {cursor: pointer;}
+.sign-up .acct-btn-wrap li.divider {width: 1px; height: 14px; background-color: var(--UI_G_5);}
+
+/* .text-wrap */
+.sign-up .text-wrap {text-align: center;}
+
+/* .form-wrap */
+.sign-up .form-wrap {display: flex; align-items: center; position: relative;} 
+.sign-up .form-wrap > p {width: 92px; margin-right: 36px;}
+.sign-up .form-wrap p.time {position: absolute; right: 72px;}
+.sign-up .form-wrap button {white-space: nowrap; border-radius: 24px; padding: 4px 8px; font-size: 12px; font-weight: 600; margin-left: 12px;}
+.sign-up .form-wrap em {display: block; width: 280px; position: absolute; top: calc(100% + 4px); left: 128px; font-size: 11px; font-weight: 500; color: var(--UI_M_4);}
+.sign-up .form-wrap.caution em {color: var(--UI_S_2);}
+.sign-up .form-wrap:not(.caution) input:not(:placeholder-shown):valid + em {display: none;}
+.sign-up .form-wrap .check-list {position: absolute; top: calc(100% + 4px); width: 280px; left: 128px;  display: flex; gap: 8px;}
+.sign-up .form-wrap .check-list em {display: flex; position: initial; width: fit-content;}
+
+/* .input1 */
+.sign-up .form-wrap.input1.caution .select-box .select-option {border-color: var(--UI_S_2);}
+/* .email */
+.sign-up .form-wrap.email button {background-color: var(--UI_M_7); border: 1px solid var(--UI_M_3); color: var(--UI_M_3);}
+/* .pw */
+.sign-up .form-wrap.pw input:not(:placeholder-shown):valid + .check-list em,
+.sign-up .form-wrap.pw input:focus + .check-list em {color: var(--UI_G_1);}
+.sign-up .form-wrap.pw input.limit-err:focus + .check-list .limit i::after,
+.sign-up .form-wrap.pw input.mix-err:focus + .check-list .mix i::after {border-color: var(--UI_S_2);}
+.sign-up .form-wrap.pw input.limit-true:focus + .check-list .limit i::after,
+.sign-up .form-wrap.pw input.mix-true:focus + .check-list .mix i::after {border-color: var(--UI_S_4);}
+.sign-up .form-wrap.pw input.limit-err.mix-err:focus {border-color: var(--UI_S_2);}
+/* .chkPw */
+.sign-up .form-wrap.chkPw input:focus {border-color: #3f83f8;}
+.sign-up .form-wrap.chkPw em {display: none;}
+.sign-up .form-wrap.chkPw.caution em {display: block;} 
+/* .tel */
+.sign-up .form-wrap.tel button {background-color: var(--UI_M_2); border: 1px solid var(--UI_M_2); color: var(--UI_M_7);}
+
+/******************************************************** step ********************************************************/
+
+.sign-up main .popup-wrap .popup .p-contents .step-wrap {flex-direction: column; align-items: flex-end;}
+.sign-up main .popup-wrap .popup .p-contents .step-wrap em {color: var(--UI_S_2);}
+.sign-up main .popup-wrap .popup .p-contents .step-contents > div {flex-direction: column; gap: 24px; display: none;}
+.sign-up main .popup-wrap .popup .p-contents .step-contents > div.active {display: inline-flex;}
+.sign-up main .popup-wrap .popup .p-contents .step-wrap .step {display: flex; gap: 54px;}
+.sign-up main .popup-wrap .popup .p-contents .step-wrap .step li {width: 146px; height: 36px; border: 1px solid var(--UI_G_5); border-radius: 32px; display: flex; justify-content: center; align-items: center; position: relative; padding-left: 16px; box-sizing: border-box;}
+.sign-up main .popup-wrap .popup .p-contents .step-wrap .step li::before {width: 16px; height: 16px; border-radius: 50%; background-color: var(--UI_G_5); color: var(--UI_M_7) !important; display: flex; align-items: center; justify-content: center; position: absolute; left: 8px; font-weight: 500;}
+.sign-up main .popup-wrap .popup .p-contents .step-wrap .step li:nth-child(1):before {content: "1";}
+.sign-up main .popup-wrap .popup .p-contents .step-wrap .step li:nth-child(2):before {content: "2";}
+.sign-up main .popup-wrap .popup .p-contents .step-wrap .step li:nth-child(3):before {content: "3";}
+.sign-up main .popup-wrap .popup .p-contents .step-wrap .step li.active {border: 1px solid var(--UI_M_2); color: var(--UI_M_2); font-weight: 700;}
+.sign-up main .popup-wrap .popup .p-contents .step-wrap .step li.active::before {background-color: var(--UI_M_2);}
+.sign-up main .popup-wrap .popup .p-contents .step-wrap .step li:not(:last-child)::after {content: ""; width: 54px; border-bottom: 1px dashed var(--UI_G_5); left: 100%; position: absolute;}
+
+/* step .last  */
+.sign-up main .popup-wrap .popup .p-contents .step-contents > div.last .text-wrap {font-size: 22px; font-weight: 500; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 28px 60px; border-radius: 10px; white-space: nowrap;}
+
+/******************************************************** tab ********************************************************/
+
+.sign-up .tab-wrap .tab {display: none; flex-direction: column; gap: 24px; padding-top: 12px;}
+.sign-up .tab-wrap .tab.active {display: flex;}
+
+/******************************************************** 공통 ********************************************************/
+ /* width : fit-contents */
+.fit {width: fit-content !important;}
+
+/* 캘린더  */
+.sign-up .calendar input[type="text"] {padding: 0 12px; background-position: right 12px center;}
+
+/* 아이콘 */
+i.skt-logo {width: 108px; height: 45px; background: url("../images/signUp/skt-logo.svg");}
+i.ico-logo-web {width: 192px; height: 104px; background: url("../images/signUp/ico-logo-web.svg");}
+i.ico-arrow-right {background: url("../images/signUp/ico-arrow-right.svg");}
+i.ico-language {background: url("../images/signUp/ico-language.svg");}
+i.ico-check {background: url("../images/signUp/ico-check.svg");}
+i.ico-dropdown {background: url("../images/signUp/ico-dropdown.svg");}
+i.ico-angle-bracket {background: url("../images/signUp/ico-angle-bracket.svg");}
+i.ico-info {background: url("../images/signUp/ico-info.svg");}
+i.ico-checkmark {position: relative; width: 14px; height: 14px; cursor: default;}
+i.ico-checkmark::after {content: ""; position: absolute; width: 4px; height: 8px; border: solid var(--UI_M_4); border-width: 0 1px 1px 0; top: 1px; left: 5px; transform: rotate(45deg);}
+.sign-up i.ico-calendar {position: absolute; right: 12px; top: 50%; transform: translateY(-50%);}
+
+/* 팝업 */
+.w500 {width: 500px;}
+.w900 {width: 900px;}
+.w150 {width: 150px !important;}
+.w240 {width: 240px !important;}
+
+/* 버튼 */
+.sign-up .btn-wrap button {padding: 12px 40px; white-space: nowrap;}
+.sign-up .btn-wrap button.type1 {color: var(--UI_G_1); border: 1px solid var(--UI_M_2); background-color: var(--UI_M_7);}
+.sign-up .btn-wrap button.type2 {color: var(--UI_M_7); background-color: var(--UI_M_2);}
+.sign-up .btn-wrap button.disabled {color: var(--UI_M_7); background-color: var(--UI_G_5); cursor: not-allowed; pointer-events: none;}
+
+/* 드롭다운 */
+.sign-up .dropdown {position: absolute; top: calc(100% - 20px); background: var(--UI_M_7); border: 1px solid var(--UI_G_3); box-shadow: var(--gradient2); border-radius: 4px;}
+.sign-up .dropdown li {padding: 4px 12px; cursor: pointer; display: flex; align-items: center; gap: 4px; height: 28px; box-sizing: border-box;}
+.sign-up .dropdown li.select {color: var(--UI_M_3);}
+.sign-up .dropdown li i {display: none;}
+.sign-up .dropdown li.select i {display: block;}
+
+/* 인풋 */
+.sign-up input {display: block;}
+.sign-up input + label {cursor: pointer;}
+.sign-up input:not([type="checkbox"]) {height: 36px; border: 1px solid var(--UI_G_1); box-sizing: border-box; border-radius: 4px; color: var(--UI_G_1); width: 280px;}
+.sign-up input:focus {border: 1px solid var(--UI_M_2);}
+.sign-up .caution input {border: 1px solid var(--UI_S_2);}
+
+/* 셀렉트 박스 */
+.sign-up .select-box {position: relative; width: 280px;}
+.sign-up .select-box .select-option {display: flex; align-items: center; justify-content: space-between; border: 1px solid var(--UI_G_2); border-radius: 4px; padding: 4px 12px; cursor: pointer;}
+.sign-up .select-box .options {position: absolute; width: 100%; border: 1px solid var(--UI_G_2); border-radius: 4px; margin-top: 4px; box-sizing: border-box; z-index: 1; display: none;}
+.sign-up .select-box.open .options {display: block; background-color: var(--UI_M_7); max-height: 195px; overflow-y: auto;}
+.sign-up .select-box.open .options li {padding: 10px; cursor: pointer;}
+.sign-up .select-box.open .options li.selected {background-color: var(--UI_B_W_3); color: var(--UI_M_2);}
+.sign-up .select-box.open .options li:hover {background-color: var(--UI_M_6); border-radius: 4px;}
+
+/* 알림창 */
+.sign-up .alert {border-radius: 10px; padding: 32px 48px; flex-direction: column; gap: 24px; background-color: var(--UI_M_7); box-shadow: var(--gradient1); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;}
+.sign-up .alert.active {display: inline-flex;}
+
+/* * */
+.essential {position: relative;}
+.essential::before {content: "*"; position: absolute; right: 100%; color: var(--UI_S_2);}
+
+/* 로그인창 버튼 */
+.sign-up .return {display: flex; align-items: center; gap: 4px; position: absolute; top: 44px; left: 40px; cursor: pointer;}
+
+/* 탭 버튼 */
+.sign-up .tab-btn {display: flex; gap: 4px; border: 1px solid var(--UI_M_2); border-radius: 73px; width: fit-content;}
+.sign-up .tab-btn li {padding: 8px 16px; cursor: pointer;}
+.sign-up .tab-btn li.active {background-color: var(--UI_M_2); color: var(--UI_M_7); border-radius: 27px;}
+
+/* 토스트 메세지 */
+.sign-up .toast-message {display: flex; gap: 20px; border-radius: 8px; padding: 20px 24px 20px 40px; background-color: var(--UI_M_7); position: absolute; bottom: 22%; left: 50%; transform: translateX(-50%); box-shadow: var(--gradient2);}
+.sign-up .toast-message div {display: flex; gap: 8px; align-items: center;}
+.sign-up .toast-message div p {white-space: nowrap;}
+

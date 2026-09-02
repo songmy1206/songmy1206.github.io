@@ -1,0 +1,79 @@
+/* footer */
+footer {position: relative;}
+
+/* 푸터 버전2 */
+footer.ver2 .link {background-color: #e9e8e8; color: #777777;}
+footer.ver2 .link-select-box .link-list__item a {background-color: #f5f5f5; color: #3e3e3e;}
+footer.ver2 .footer-wrap {background-color: #f4f4f4;}
+footer.ver2 .footer-info .info__spec-list {color: #999999;}
+footer.ver2 .link-select-box .sb-list::-webkit-scrollbar-track {background-color: #f5f5f5;}
+
+/* 링크 */
+.link {display: flex; justify-content: space-between; padding: 0 11.2%; background-color: #2E2E2E; color: #ffffff;}
+
+.link-text .text-list {display: flex; align-items: center; gap: 20px; height: 40px; font-size: 12px; font-weight: 500;}
+
+.link-select-box {position: relative; font-size: 12px; padding: 0 10px; height: 40px; width: 150px; line-height: 40px; border-left: 1px solid rgba(0, 0, 0, 0.2); border-right: 1px solid rgba(0, 0, 0, 0.2); cursor: pointer;}
+.link-select-box .link__title {display: flex; align-items: center; justify-content: space-between;}
+
+.link-select-box .sb-list {position: absolute; left: 0; bottom: 40px; width: 100%; max-height: 0; opacity: 0; overflow: auto; transition: bottom 0.5s ease-out,max-height 0.5s ease-out,opacity 0.5s ease-out; font-size: 11px;}
+.link-select-box .sb-list.active {bottom: 100%; max-height: 120px; opacity: 1; z-index: 1;}
+
+.link-select-box .link-list__item a {display: block; width: 100%; height: 100%; padding-left: 10px; box-sizing: border-box; background-color: #fff; color: #3E3E3E; font-size: 11px;}
+.link-select-box .link-list__item a:hover{background-color: #eeeeee;}
+
+.link-select-box .sb-list::-webkit-scrollbar {width: 8px; height: 8px;}
+.link-select-box .sb-list::-webkit-scrollbar-button {display: none;}
+.link-select-box .sb-list::-webkit-scrollbar-thumb {border: solid transparent; background-clip: padding-box; border-radius: 8px; margin-left: 10px; background-color: rgba(175, 175, 175, 0.8);}
+.link-select-box .sb-list::-webkit-scrollbar-track {background-color: #ffffff;}
+
+/* 카피라이트 */
+.footer-wrap {display: flex; align-items: center; gap: 20px; background-color: #1C1C1C; padding: 10px 11.2%;}
+
+.footer-info {display: flex; flex-direction: column; gap: 12px;}
+.footer-info > ul {display: flex; flex-wrap: wrap; row-gap: 8px; font-size: 12px; font-weight: 500;}
+.footer-info .info__contact-list {column-gap: 12px; color: #999999;}
+.footer-info .info__policy-list {column-gap: 6px; color: #666666;}
+.footer-info .info__policy-list .policy-list__item p {line-height: 16px;}
+.footer-info .info__spec-list {column-gap: 6px; color:#ffffff; font-size: 11px;}
+
+/* 고정알림 */
+.alarm-wrap {position: fixed; bottom: 20px; right: 20px; z-index: 1;}
+
+.alarm .alarm__btn {width: 56px; height: 56px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 50%; background-image: linear-gradient(125deg, #2976FF, #36B8F8); font-size: 10px; color: #ffffff; box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);}
+.alarm__btn .alarm__btn-bg {display: flex; flex-direction: column; align-items: center; gap:4px; font-weight: 400; font-size: 12px;}
+.alarm__btn .alarm__btn-bg i {background-size: inherit;}
+.alarm__btn .alarm__btn-num {width: 15px; height: 15px; display: flex; align-items: center; justify-content: center; font-weight: 400; border-radius: 50%; background-color: #FF0000; position: absolute; top: 8px; right: 11px;}
+
+.alarm .alarm__content {position: absolute; bottom: calc(100% + 10px); right: 0; border-radius: 10px; background-color: rgba(0,0,0,0.7); border: 1px solid rgba(255, 255, 255, 0.2); box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25); backdrop-filter: blur(5px); z-index: 999;}
+.alarm__content .alarm__content-top {font-family: 'Pretendard'; display: flex; align-items: stretch; justify-content: space-between; gap: 4px; padding: 10px 16px; border-bottom: 1px solid rgba(255, 255, 255, 0.2); font-size: 11px; font-weight: 500;  line-height: 1.2; color: #F95B5B;}
+.alarm__content .alarm__content__list {display: flex; flex-direction: column; gap: 8px; padding: 0 8px; margin: 8px 0; max-height: 400px; overflow: auto;}
+.alarm__content .alarm__content__list::-webkit-scrollbar-track {background-color: transparent;}
+.alarm__content .alarm__content__list::-webkit-scrollbar-thumb {margin-left: 5px; background-color: #969696;}
+.alarm__content__list .alarm-list__item {display: flex; flex-direction: column; gap: 10px; width: 250px; padding: 15px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.2); background-color: rgba(255, 255, 255, 0.1);}
+.alarm__content__list .alarm-list__item .alarm__item-top {display: flex; align-items: center; justify-content: space-between;}
+.alarm__content__list .alarm-list__item .alarm__item-top p.tag {padding: 5px 10px; border-radius: 5px; font-size: 10px; font-weight: 500; cursor: default; color: #ffffff; border: none;}
+.alarm__content__list .alarm-list__item .alarm__item-top i {cursor: default;}
+.alarm__content__list .alarm-list__item .alarm__item-top .tag.alert-issue {background-color: #FF543D; }
+.alarm__content__list .alarm-list__item .alarm__item-top p.alert-clear {background-color: #AA9491; }
+.alarm__content__list .alarm-list__item .alarm__item-top p.advisory-clear {background-color: #CDB89F }
+.alarm__content__list .alarm-list__item .alarm__item-top p.advisory-issue {background-color: #FFA115 }
+.alarm__content__list .alarm-list__item .alarm__item-top p.tag.default {background-color: #4F4F4F;}
+.alarm__content__list .alarm-list__item .alarm__item-text {display: flex; flex-direction: column; gap: 4px; color: #fff; font-family: 'Pretendard';}
+.alarm__content__list .alarm-list__item .alarm__item-text strong {line-height: 16px; font-size: 14px; font-weight: 600;}
+.alarm__content__list .alarm-list__item .alarm__item-text p {font-size: 12px; font-weight: 300; color: rgba(255,255,255,0.6);}
+
+/* 반응형 */
+@media screen and (max-width: 1024px) {
+  .link {padding: 0 20px;}
+  .footer-wrap {flex-wrap: wrap; padding: 20px;}
+  .wrap-usersvc .detail-popup {width: calc(100% - 40px) !important;}
+}
+@media screen and (max-width: 650px) {
+  .alarm-wrap {bottom: 90px; right: 10px;}
+}
+@media screen and (max-width: 500px) {
+  .link {flex-direction: column-reverse; padding-top: 10px;}
+  .link-select-box {padding: 0 8px; border: 1px solid rgba(255, 255, 255, 0.2);}
+  .ver2 .link-select-box {border: 1px solid rgba(0, 0, 0, 0.2);}
+}

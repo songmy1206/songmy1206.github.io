@@ -1,0 +1,59 @@
+:root{
+    /* 그레이스케일 */
+    --c-gr1: #efefef;
+    --c-gr2: #ccd4d6;
+    --c-gr3: #b3babc;
+    --c-gr4: #989ea0;
+    --c-gr5: #80898c;
+    --c-gr6: #686f72;
+    --c-gr7: #515759; /*대시보드 배경*/
+    --c-gr8: #3a3e3f; /*주 텍스트 컬러 대시보드 배경*/
+    --c-gr9: #232526; /*대시보드 배경*/
+    /* Light Blue*/
+    --c-LB1: #cde4ea;
+    --c-LB2: #b7e0ea;
+    --c-LB3: #a0dcea;
+    --c-LB4: #88d5ea; /*메인블루1*/
+    --c-LB4-grd: rgba(136, 213, 234, 0.8); /*메인블루1*/
+    --c-LB5: #71d3ea;
+    --c-LB6: #59ceea;
+    --c-LB7: #42cbea;
+    --c-LB8: #2ac6ea;
+    --c-LB9: #13c2ea;
+    --c-LB10: #00beea;
+    /* Blue*/    
+    --c-BL1: #91a3ad;
+    --c-BL2: #809fad;
+    --c-BL3: #6f9bad;
+    --c-BL4: #6095ad;
+    --c-BL5: #4e90ad;
+    --c-BL6: #3d8bad;
+    --c-BL7: #2b80ad; /*메인블루2*/
+    --c-BL8: #1a80ad;
+    --c-BL9: #097bad;
+    --c-BL10: #0078ad;
+    /* 포인트컬러 */
+    --c-R1: #ff4b5c; /*메인 고채도 RED*/
+    --c-R2: #e5455c;
+    --c-R3: #cc3e52;
+    --c-R4: #b23648;
+    --c-R5: #992e3e;
+    --c-R6: #7f2633;
+    --c-R7: #661f29;
+    --c-R8: #4c171f;
+    --c-R9: #330f15;
+    /* 기타컬러 */
+  --c-Bk: #000000;
+  --c-Wt: #ffffff;
+  --c-YW: #fec105;
+}
+
+
+/* ======================================================
+    [3] section 지도영역
+======================================================*/
+section{width: 100%; height: calc(100vh - 45px);}
+section h2{display: none;}
+section .map-container{width: 100%; height: 100%;}
+
+

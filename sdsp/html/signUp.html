@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- date-picker -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+    <!--  -->
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="../css/design.css" />
+    <link rel="stylesheet" href="../css/signUp.css" />
+
+    <script src="../js/signUp.js"></script>
+
+    <title>sdsp-signUp</title>
+  </head>
+  
+  <body>
+    <div class="sign-up">
+      <header>
+        <section class="wrap-top-nav">
+          <div class="logo">
+            <i class="skt-logo"></i>
+            <h1 class="body1_B">운항 정보 지원</h1>
+          </div>
+          <!-- GNB -->
+          <nav class="nav">
+            <ul class="nav-list body1_M">
+              <li class="nav-btn on" data-target="nav-home">Home</li>
+              <li class="nav-btn" data-target="nav-srv">SDSP 서비스</li>
+              <li class="nav-btn" data-target="nav-api">SDSP API</li>
+              <li class="nav-btn" data-target="nav-mypage">마이페이지</li>
+            </ul>
+            <button class="login body2_B">로그인</button>
+          </nav>
+        </section>
+      </header>
+      <main>
+        <div class="web-wrap">
+          <div class="logo-wrap">
+            <i class="ico-logo-web"></i>
+            <p >SKT Supplemental Data Service Provider</p>
+          </div>
+          <div class="web">
+            <p>바로가기</p>
+            <i class="ico-arrow-right w40"></i>
+          </div>
+        </div>
+        <div class="popup-wrap">
+          <!-- 로그인 팝업 -->
+          <div class="popup w500 login hide">
+            <div class="p-header">
+              <i class="ico-language w24"></i>
+              <div class="dropdown hide">
+                <ul class="body3_R">
+                  <li class="select">
+                    <p>Korean</p>
+                    <i class="ico-check w20"></i>
+                  </li>
+                  <li>
+                    <p>English</p>
+                    <i class="ico-check w20"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="p-contents">
+              <h1>UAM SDSP</h1>
+              <!-- caution -->
+              <div class="email-wrap caption">
+                <p class="body3_B">이메일</p>
+                <input type="text" placeholder="이메일 입력" />
+                <em>안내 문구 자리</em>
+              </div>
+              <!-- caution -->
+              <div class="pw-wrap caption">
+                <p class="body3_B">비밀번호</p>
+                <input type="password" placeholder="비밀번호 입력" />
+                <em>안내 문구 자리</em>
+              </div>
+              <div class="chk-wrap">
+                <input type="checkbox" id="login" />
+                <label for="login" class="element3_R">이메일 기억하기</label>
+              </div>
+              <div class="btn-wrap">
+                <button class="w240 type2">로그인</button>
+              </div>
+              <ul class="acct-btn-wrap body4_M">
+                <li class="register"><p>계정신청</p></li>
+                <li class="divider"></li>
+                <li class="find-id"><p>아이디 찾기</p></li>
+                <li class="divider"></li>
+                <li class="find-pw"><p>비밀번호 찾기</p></li>
+              </ul>
+            </div>
+            <div class="p-footer caption">
+              <p>CopyrightⓒSK Telecom Co., Ltd. All Rights Reserved.</p>
+            </div>
+          </div>
+          <!-- 계정신청 팝업 -->
+          <div class="popup w900 register hide">
+            <div class="p-contents">
+              <h1>계정 신청</h1>
+              <div class="step-wrap">
+                <ul class="step text-sm">
+                  <li class="step1 active">계정선택 정보 입력</li>
+                  <li class="step2">기본정보 입력</li>
+                  <li class="step3">신청완료</li>
+                </ul>
+                <em class="body3_B">*필수 입력 항목입니다.</em>
+              </div>
+              <div class="step-contents">
+                <div class="step1 active">
+                  <!-- caution -->
+                  <div class="form-wrap input1">
+                    <p class="body3_B essential">계정그룹</p>
+                    <div class="select-box body3_R">
+                      <div class="select-option">
+                        <p>선택</p>
+                        <i class="ico-dropdown w24"></i>
+                      </div>
+                      <ul class="options">
+                        <li>기장</li>
+                        <li>시스템 관리</li>
+                        <li>정비사</li>
+                        <li>운항관리사</li>
+                        <li>뷰어</li>
+                        <li>등등</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="form-wrap input2 hide">
+                    <p class="text-sm">소속 회사</p>
+                    <input type="text" placeholder="소속 입력" class="body3_R" />
+                  </div>
+                  <div class="btn-wrap">
+                    <button class="w150 type1 cancel">취소</button>
+                    <button class="w150 type2 next">다음</button>
+                  </div>
+                </div>
+                <div class="step2">
+                  <div class="form-wrap">
+                    <p class="text-sm essential">이름</p>
+                    <input type="text" placeholder="이름 입력" class="body3_R" />
+                  </div>
+                  <div class="form-wrap email">
+                    <p class="text-sm essential">아이디(이메일)</p>
+                    <input type="email" placeholder="아이디(이메일주소) 입력" class="body3_R" />
+                    <button class="yId">중복확인</button>
+                  </div>
+                  <!-- limit-err, mix-err, limit-true, mix-true -->
+                  <div class="form-wrap pw">
+                    <p class="text-sm essential">비밀번호</p>
+                    <input type="password" placeholder="비밀번호 입력" class="body3_R limit-true mix-err" />
+                    <div class="check-list">
+                      <em class="limit">
+                        <i class="ico-checkmark"></i>
+                        8~25자
+                      </em>
+                      <em class="mix">
+                        <i class="ico-checkmark"></i>
+                        알파벳/숫자/특수문자 포함
+                      </em>
+                    </div>
+                  </div>
+                  <!-- caution -->
+                  <div class="form-wrap chkPw caution">
+                    <p class="text-sm essential">비밀번호 확인</p>
+                    <input type="password" placeholder="비밀번호 확인 입력" class="body3_R" />
+                    <em>안내 문구 자리</em>
+                  </div>
+                  <div class="form-wrap">
+                    <p class="text-sm essential">생년월일</p>
+                    <div class="calendar">
+                      <input type="text" class="datepicker-input" placeholder="YYYY.MM.DD" readonly />
+                    </div>
+                  </div>
+                  <!-- caution -->
+                  <div class="form-wrap tel caution">
+                    <p class="text-sm essential">휴대전화</p>
+                    <input type="tel" placeholder="ex)010-1234-1234" class="body3_R" />
+                    <em>안내 문구 자리</em>
+                  </div>
+                  <div class="btn-wrap">
+                    <button class="w150 type1 cancel">취소</button>
+                    <button class="w150 type2 next">다음</button>
+                  </div>
+                </div>
+                <div class="step3 last">
+                  <div class="text-wrap">
+                    <p>계정신청이 완료되었습니다. <br />관리자 승인 후 계정 사용이 가능합니다.</p>
+                  </div>
+                  <div class="btn-wrap">
+                    <button class="w150 type2 done">완료</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="alert-popup">
+              <ul class="alert eIn">
+                <li class="text-wrap body2_M">
+                  <p>계정그룹은 필수 입력 항목입니다.</p>
+                </li>
+                <li class="btn-wrap">
+                  <button class="type2">확인</button>
+                </li>
+              </ul>
+              <ul class="alert yId">
+                <li class="text-wrap body2_M">
+                  <p>
+                    abc@gmail.com <br />
+                    은(는) 사용 가능한 아이디입니다.
+                  </p>
+                </li>
+                <li class="btn-wrap">
+                  <button class="type2">확인</button>
+                </li>
+              </ul>
+              <ul class="alert nId">
+                <li class="text-wrap body2_M">
+                  <p>
+                    abc@gmail.com <br />
+                    은(는) 사용 불가한 아이디입니다.
+                  </p>
+                </li>
+                <li class="btn-wrap">
+                  <button class="type2">확인</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 아이디 찾기 팝업 -->
+          <div class="popup w900 findId hide">
+            <div class="p-contents">
+              <div class="return">
+                <i class="ico-angle-bracket w12"></i>
+                <p class="element3_R">로그인</p>
+              </div>
+              <h1>아이디 찾기</h1>
+              <div class="step-wrap">
+                <ul class="step text-sm">
+                  <li class="step1 active">휴대전화 인증</li>
+                  <li class="step2">아이디 확인</li>
+                </ul>
+                <em class="body3_B">*필수 입력 항목입니다.</em>
+              </div>
+              <div class="step-contents">
+                <div class="step1 active">
+                  <!-- caution -->
+                  <div class="form-wrap">
+                    <p class="text-sm essential">이름</p>
+                    <input type="text" placeholder="이름 입력" class="body3_R" />
+                    <em>안내 문구 자리</em>
+                  </div>
+                  <!-- caution -->
+                  <div class="form-wrap tel">
+                    <p class="text-sm essential">휴대전화</p>
+                    <input type="tel" placeholder="ex)010-1234-1234" class="body3_R" />
+                    <em>안내 문구 자리</em>
+                    <button class="vn">인증번호 전송</button>
+                  </div>
+                  <!-- caution -->
+                  <div class="form-wrap code">
+                    <p class="text-sm essential">인증번호</p>
+                    <input type="tel" placeholder="인증번호 입력" class="body3_R" />
+                    <em>안내 문구 자리</em>
+                    <p class="time text-sm fit">00:00</p>
+                    <button>인증번호 인증</button>
+                  </div>
+                  <div class="btn-wrap">
+                    <button class="w150 type1 cancel">취소</button>
+                    <button class="w150 type2 next disabled">다음</button>
+                  </div>
+                </div>
+                <div class="step2 last">
+                  <div class="text-wrap">
+                    <p class="body1_M">확인된 아이디는 다음과 같습니다.</p>
+                    <h2>sample@sk.com</h2>
+                  </div>
+                  <div class="btn-wrap">
+                    <button class="type1 fit">비밀번호 찾기</button>
+                    <button class="type2 fit">로그인하기</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="toast-message hide">
+              <div>
+                <i class="ico-info w24"></i>
+                <p>인증번호가 전송되었습니다. 제한시간 3분 이내 입력해주세요.</p>
+              </div>
+              <i class="ico-close w24"></i>
+            </div>
+          </div>
+          <!-- 비밀번호 찾기 팝업 -->
+          <div class="popup w900 findPw hide">
+            <div class="p-contents">
+              <div class="return">
+                <i class="ico-angle-bracket w12"></i>
+                <p class="element3_R">로그인</p>
+              </div>
+              <h1>비밀번호 찾기</h1>
+              <div class="step-wrap">
+                <ul class="step text-sm">
+                  <li class="step1 active">본인 인증</li>
+                  <li class="step2">비밀번호 재설정</li>
+                </ul>
+                <em class="body3_B">*필수 입력 항목입니다.</em>
+              </div>
+              <div class="step-contents">
+                <div class="step1 active">
+                  <ul class="tab-btn element2_R">
+                    <li class="active" data-tab="id">아이디 인증</li>
+                    <li data-tab="phone">휴대전화 인증</li>
+                  </ul>
+                  <div class="tab-wrap">
+                    <div class="tab active" data-content="id">
+                      <!-- caution -->
+                      <div class="form-wrap tel">
+                        <p class="text-sm essential">아이디(이메일)</p>
+                        <input type="tel" placeholder="아이디(이메일) 입력" class="body3_R" />
+                        <em>안내 문구 자리</em>
+                        <button class="vn">인증번호 전송</button>
+                      </div>
+                      <!-- caution -->
+                      <div class="form-wrap code">
+                        <p class="text-sm essential">인증번호</p>
+                        <input type="tel" placeholder="인증번호 입력" class="body3_R" />
+                        <em>안내 문구 자리</em>
+                        <p class="time text-sm fit">00:00</p>
+                        <button>인증번호 인증</button>
+                      </div>
+                    </div>
+                    <div class="tab" data-content="phone">
+                      <!-- caution -->
+                      <div class="form-wrap tel">
+                        <p class="text-sm essential">휴대전화</p>
+                        <input type="tel" placeholder="ex)010-1234-1234" class="body3_R" />
+                        <em>안내 문구 자리</em>
+                        <button class="vn">인증번호 전송</button>
+                      </div>
+                      <!-- caution -->
+                      <div class="form-wrap code">
+                        <p class="text-sm essential">인증번호</p>
+                        <input type="tel" placeholder="인증번호 입력" class="body3_R" />
+                        <em>안내 문구 자리</em>
+                        <p class="time text-sm fit">00:00</p>
+                        <button>인증번호 인증</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn-wrap">
+                    <button class="w150 type1 cancel">취소</button>
+                    <button class="w150 type2 next disabled">다음</button>
+                  </div>
+                </div>
+                <div class="step2 last">
+                  <div class="text-wrap">
+                    <p class="body1_M">이메일</p>
+                    <h2>sample@sk.com</h2>
+                  </div>
+                  <!-- limit-true, mix-true, limit-err, mix-err -->
+                  <div class="form-wrap pw">
+                    <p class="text-sm essential">새 비밀번호</p>
+                    <input type="password" placeholder="비밀번호 입력" class="body3_R limit-err mix-true" />
+                    <div class="check-list">
+                      <em class="limit">
+                        <i class="ico-checkmark"></i>
+                        8~25자
+                      </em>
+                      <em class="mix">
+                        <i class="ico-checkmark"></i>
+                        알파벳/숫자/특수문자 포함
+                      </em>
+                    </div>
+                  </div>
+                  <!-- caution -->
+                  <div class="form-wrap chkPw">
+                    <p class="text-sm essential">새 비밀번호 확인</p>
+                    <input type="password" placeholder="비밀번호 확인 입력" class="body3_R" />
+                    <em>안내 문구 자리</em>
+                  </div>
+                  <div class="btn-wrap">
+                    <button class="type2 fit next reset">재설정하기</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="alert-popup">
+              <ul class="alert reset">
+                <li class="text-wrap body2_M">
+                  <p>비밀번호가 재설정 되었습니다.</p>
+                </li>
+                <li class="btn-wrap">
+                  <button class="type2">확인</button>
+                </li>
+              </ul>
+            </div>
+            <div class="toast-message hide">
+              <div>
+                <i class="ico-info w24"></i>
+                <p>인증번호가 전송되었습니다. 제한시간 3분 이내 입력해주세요.</p>
+              </div>
+              <i class="ico-close w24"></i>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="body2_M">
+        <p>CopyrightⓒSK Telecom Co., Ltd. All Rights Reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

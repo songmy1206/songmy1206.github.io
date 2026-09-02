@@ -1,0 +1,2351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="../images/icons/favicon.svg" />
+    <link rel="stylesheet" href="../css/import.css" />
+    <link rel="stylesheet" href="../css/map.css" />
+
+    <script src="../js/common.js"></script>
+    <script src="../js/map.js"></script>
+
+    <title>vn-map</title>
+  </head>
+  <body class="map">
+    <section class="map__left">
+      <header>
+        <div class="header__left">
+          <div class="left-logo">
+            <i class="logo__icon ico-logo i35"></i>
+            <p class="logo__text">GIS Disaster Monitoring <br />System for Danang</p>
+          </div>
+        </div>
+        <div class="header__right">
+          <div class="right-btn">
+            <button class="btn__dashboard"><i class="basic-ico bgsz40 sz40 icon105" aria-label="basicicon105"></i></button>
+            <button class="btn__user active"><i class="basic-ico bgsz40 sz40 icon92" aria-label="basicicon92"></i></button>
+          </div>
+        </div>
+      </header>
+      <div class="left-contents tab">
+        <div class="tab-nav">
+          <ul class="tab-nav__list">
+            <li class="tab-nav__item active"><p>phát sinh cháy rừng</p></li>
+            <li class="tab-nav__item"><p>tai nạn</p></li>
+          </ul>
+        </div>
+        <div class="tab-contents">
+          <ul class="tab-contents__list">
+            <li class="tab-contents__item tab1 active">
+              <div class="select-wrap">
+                <div class="select1">
+                  <strong>tình trạng hiện tại</strong>
+                  <select name="status" class="selectbox ver1">
+                    <option value="status1">status1</option>
+                    <option value="status2">status2</option>
+                    <option value="status3">status3</option>
+                    <option value="status4">status4</option>
+                  </select>
+                </div>
+                <div class="select2">
+                  <strong>thời gian tìm kiếm</strong>
+                  <div class="calendar">
+                    <div class="range-bar">
+                      <div class="date-field">
+                        <i class="basic-ico bgsz20 sz20 icon37" aria-label="basicicon37"></i>
+                        <span class="start-display">2025.06.12</span>
+                      </div>
+                      <span class="separator"></span>
+                      <div class="date-field">
+                        <i class="basic-ico bgsz20 sz20 icon37" aria-label="basicicon37"></i>
+                        <span class="end-display">2025.06.12</span>
+                      </div>
+                      <i class="basic-ico bgsz15 sz15 icon100" aria-label="basicicon100"></i>
+                    </div>
+                    <div class="date-picker" style="display: none">
+                      <div class="date-picker__list">
+                        <div class="date-picker__item">
+                          <p>năm</p>
+                          <div class="column year-col"></div>
+                        </div>
+                        <div class="date-picker__item">
+                          <p>tháng</p>
+                          <div class="column month-col"></div>
+                        </div>
+                        <div class="date-picker__item">
+                          <p>ngày</p>
+                          <div class="column day-col"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="sort">
+                <li class="active"><p>thứ tự đăng ký</p></li>
+                <li class="divider"><i class="ico-divider"></i></li>
+                <li><p>theo thứ tự thời gian</p></li>
+              </ul>
+              <div class="scroll-contents">
+                <ul class="scroll-contents__list">
+                  <li class="scroll-contents__item">
+                    <div class="icon-label">
+                      <i class="basic-ico bgsz25 sz25 icon1" aria-label="basicicon01"></i>
+                    </div>
+                    <div class="item-detail">
+                      <p>Cháy rừng Sơn Trà, Đà Nẵng. Cháy rừng Sơn Trà, Đà Nẵng. Cháy rừng Sơn Trà, Đà Nẵng.</p>
+                      <p class="time">2025-01-12 15:21:59</p>
+                      <div>
+                        <i class="basic-ico bgsz20 sz20 icon79" aria-label="basicicon79"></i>
+                        <div class="alert alert1">
+                          <em>phát sinh cháy rừng</em>
+                          <i class="basic-ico bgsz30 sz30 icon54" aria-label="basicicon54"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="scroll-contents__item">
+                    <div class="icon-label">
+                      <i class="basic-ico bgsz25 sz25 icon1" aria-label="basicicon01"></i>
+                    </div>
+                    <div class="item-detail">
+                      <p>Cháy rừng Sơn Trà, Đà Nẵng.</p>
+                      <p class="time">2025-01-12 15:21:59</p>
+                      <div>
+                        <i class="basic-ico bgsz20 sz20 icon79" aria-label="basicicon79"></i>
+                        <div class="alert alert2">
+                          <em>đang tiến hóa</em>
+                          <i class="basic-ico bgsz30 sz30 icon56" aria-label="basicicon56"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="scroll-contents__item">
+                    <div class="icon-label">
+                      <i class="basic-ico bgsz25 sz25 icon1" aria-label="basicicon01"></i>
+                    </div>
+                    <div class="item-detail">
+                      <p>Cháy rừng Sơn Trà, Đà Nẵng.</p>
+                      <p class="time">2025-01-12 15:21:59</p>
+                      <div>
+                        <i class="basic-ico bgsz20 sz20 icon79" aria-label="basicicon79"></i>
+                        <div class="alert alert3">
+                          <em>Kết thúc tình huống</em>
+                          <i class="basic-ico bgsz30 sz30 icon53" aria-label="basicicon53"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="scroll-contents__item">
+                    <div class="icon-label">
+                      <i class="basic-ico bgsz25 sz25 icon1" aria-label="basicicon01"></i>
+                    </div>
+                    <div class="item-detail">
+                      <p>Cháy rừng Sơn Trà, Đà Nẵng.</p>
+                      <p class="time">2025-01-12 15:21:59</p>
+                      <div>
+                        <i class="basic-ico bgsz20 sz20 icon79" aria-label="basicicon79"></i>
+                        <div class="alert alert2">
+                          <em>đang tiến hóa</em>
+                          <i class="basic-ico bgsz30 sz30 icon56" aria-label="basicicon56"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="scroll-contents__item">
+                    <div class="icon-label">
+                      <i class="basic-ico bgsz25 sz25 icon1" aria-label="basicicon01"></i>
+                    </div>
+                    <div class="item-detail">
+                      <p>Cháy rừng Sơn Trà, Đà Nẵng.</p>
+                      <p class="time">2025-01-12 15:21:59</p>
+                      <div>
+                        <i class="basic-ico bgsz20 sz20 icon79" aria-label="basicicon79"></i>
+                        <div class="alert alert2">
+                          <em>đang tiến hóa</em>
+                          <i class="basic-ico bgsz30 sz30 icon56" aria-label="basicicon56"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="scroll-contents__item">
+                    <div class="icon-label">
+                      <i class="basic-ico bgsz25 sz25 icon1" aria-label="basicicon01"></i>
+                    </div>
+                    <div class="item-detail">
+                      <p>Cháy rừng Sơn Trà, Đà Nẵng.</p>
+                      <p class="time">2025-01-12 15:21:59</p>
+                      <div>
+                        <i class="basic-ico bgsz20 sz20 icon79" aria-label="basicicon79"></i>
+                        <div class="alert alert2">
+                          <em>đang tiến hóa</em>
+                          <i class="basic-ico bgsz30 sz30 icon56" aria-label="basicicon56"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="scroll-contents__item">
+                    <div class="icon-label">
+                      <i class="basic-ico bgsz25 sz25 icon1" aria-label="basicicon01"></i>
+                    </div>
+                    <div class="item-detail">
+                      <p>Cháy rừng Sơn Trà, Đà Nẵng.</p>
+                      <p class="time">2025-01-12 15:21:59</p>
+                      <div>
+                        <i class="basic-ico bgsz20 sz20 icon79" aria-label="basicicon79"></i>
+                        <div class="alert alert2">
+                          <em>đang tiến hóa</em>
+                          <i class="basic-ico bgsz30 sz30 icon56" aria-label="basicicon56"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="scroll-contents__item">
+                    <div class="icon-label">
+                      <i class="basic-ico bgsz25 sz25 icon1" aria-label="basicicon01"></i>
+                    </div>
+                    <div class="item-detail">
+                      <p>Cháy rừng Sơn Trà, Đà Nẵng.</p>
+                      <p class="time">2025-01-12 15:21:59</p>
+                      <div>
+                        <i class="basic-ico bgsz20 sz20 icon79" aria-label="basicicon79"></i>
+                        <div class="alert alert2">
+                          <em>đang tiến hóa</em>
+                          <i class="basic-ico bgsz30 sz30 icon56" aria-label="basicicon56"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="scroll-contents__item">
+                    <div class="icon-label">
+                      <i class="basic-ico bgsz25 sz25 icon1" aria-label="basicicon01"></i>
+                    </div>
+                    <div class="item-detail">
+                      <p>Cháy rừng Sơn Trà, Đà Nẵng.</p>
+                      <p class="time">2025-01-12 15:21:59</p>
+                      <div>
+                        <i class="basic-ico bgsz20 sz20 icon79" aria-label="basicicon79"></i>
+                        <div class="alert alert2">
+                          <em>đang tiến hóa</em>
+                          <i class="basic-ico bgsz30 sz30 icon56" aria-label="basicicon56"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="scroll-contents__item">
+                    <div class="icon-label">
+                      <i class="basic-ico bgsz25 sz25 icon1" aria-label="basicicon01"></i>
+                    </div>
+                    <div class="item-detail">
+                      <p>Cháy rừng Sơn Trà, Đà Nẵng.</p>
+                      <p class="time">2025-01-12 15:21:59</p>
+                      <div>
+                        <i class="basic-ico bgsz20 sz20 icon79" aria-label="basicicon79"></i>
+                        <div class="alert alert2">
+                          <em>đang tiến hóa</em>
+                          <i class="basic-ico bgsz30 sz30 icon56" aria-label="basicicon56"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents__button">
+                <button class="tab-nav1__btn ver1">
+                  <i class="basic-ico bgsz25 sz25 icon73" aria-label="basicicon73"></i>
+                  <em>đăng ký cháy rừng</em>
+                </button>
+              </div>
+            </li>
+            <li class="tab-contents__item tab2">
+              <div class="select-wrap">
+                <div class="select1">
+                  <strong>tình trạng hiện tại</strong>
+                  <select name="status" class="selectbox ver1">
+                    <option value="status1">status1</option>
+                    <option value="status2">status2</option>
+                    <option value="status3">status3</option>
+                    <option value="status4">status4</option>
+                  </select>
+                </div>
+                <div class="select2">
+                  <strong>thời gian tìm kiếm</strong>
+                  <div class="calendar">
+                    <div class="range-bar">
+                      <div class="date-field">
+                        <i class="basic-ico bgsz20 sz20 icon37" aria-label="basicicon37"></i>
+                        <span class="start-display">2025.06.12</span>
+                      </div>
+                      <span class="separator"></span>
+                      <div class="date-field">
+                        <i class="basic-ico bgsz20 sz20 icon37" aria-label="basicicon37"></i>
+                        <span class="end-display">2025.06.12</span>
+                      </div>
+                      <i class="basic-ico bgsz15 sz15 icon100" aria-label="basicicon100"></i>
+                    </div>
+                    <div class="date-picker" style="display: none">
+                      <div class="date-picker__list">
+                        <div class="date-picker__item">
+                          <p>năm</p>
+                          <div class="column year-col"></div>
+                        </div>
+                        <div class="date-picker__item">
+                          <p>tháng</p>
+                          <div class="column month-col"></div>
+                        </div>
+                        <div class="date-picker__item">
+                          <p>ngày</p>
+                          <div class="column day-col"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="sort">
+                <li class="active"><p>thứ tự đăng ký</p></li>
+                <li class="divider"><i class="ico-divider"></i></li>
+                <li><p>theo thứ tự thời gian</p></li>
+              </ul>
+              <div class="scroll-contents">
+                <ul class="scroll-contents__list">
+                  <li class="scroll-contents__item">
+                    <div class="icon-label">
+                      <i class="basic-ico bgsz25 sz25 icon2" aria-label="basicicon02"></i>
+                    </div>
+                    <div class="item-detail">
+                      <p class="time">2025-01-12 15:21:59</p>
+                      <p>Bão nhiệt đới OOOOOOOOO phát sinh</p>
+                      <div class="file-wrap">
+                        <div class="file-download__btn">
+                          <em>Tải tệp đã đăng ký</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                        </div>
+
+                        <i class="basic-ico bgsz20 sz20 icon79" aria-label="basicicon79"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="scroll-contents__item">
+                    <div class="icon-label">
+                      <i class="basic-ico bgsz25 sz25 icon1" aria-label="basicicon01"></i>
+                    </div>
+                    <div class="item-detail">
+                      <p class="time">2025-01-12 15:21:59</p>
+                      <p>Cháy rừng OOOOOOOOO phát sinh</p>
+                      <div class="file-wrap">
+                        <div class="file-download__btn">
+                          <em>Tải tệp đã đăng ký</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                        </div>
+                        <i class="basic-ico bgsz20 sz20 icon79" aria-label="basicicon79"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="scroll-contents__item">
+                    <div class="icon-label">
+                      <i class="basic-ico bgsz25 sz25 icon3" aria-label="basicicon03"></i>
+                    </div>
+                    <div class="item-detail">
+                      <p class="time">2025-01-12 15:21:59</p>
+                      <p>OOOOOOOOOO phát sinh</p>
+                      <div class="file-wrap">
+                        <div class="file-download__btn">
+                          <em>Tải tệp đã đăng ký</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                        </div>
+                        <i class="basic-ico bgsz20 sz20 icon79" aria-label="basicicon79"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="scroll-contents__item">
+                    <div class="icon-label">
+                      <i class="basic-ico bgsz25 sz25 icon5" aria-label="basicicon05"></i>
+                    </div>
+                    <div class="item-detail">
+                      <p class="time">2025-01-12 15:21:59</p>
+                      <p>Đợt nắng nóng OOOOOOOOO phát sinh</p>
+                      <div class="file-wrap">
+                        <div class="file-download__btn">
+                          <em>Tải tệp đã đăng ký</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                        </div>
+                        <i class="basic-ico bgsz20 sz20 icon79" aria-label="basicicon79"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="scroll-contents__item">
+                    <div class="icon-label">
+                      <i class="basic-ico bgsz25 sz25 icon4" aria-label="basicicon04"></i>
+                    </div>
+                    <div class="item-detail">
+                      <p class="time">2025-01-12 15:21:59</p>
+                      <p>OOOOOOOOOO phát sinh</p>
+                      <div class="file-wrap">
+                        <div class="file-download__btn">
+                          <em>Tải tệp đã đăng ký</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                        </div>
+                        <i class="basic-ico bgsz20 sz20 icon79" aria-label="basicicon79"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="scroll-contents__item">
+                    <div class="icon-label">
+                      <i class="basic-ico bgsz25 sz25 icon6" aria-label="basicicon06"></i>
+                    </div>
+                    <div class="item-detail">
+                      <p class="time">2025-01-12 15:21:59</p>
+                      <p>OOOOOOOOOO phát sinh</p>
+                      <div class="file-wrap">
+                        <div class="file-download__btn">
+                          <em>Tải tệp đã đăng ký</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                        </div>
+                        <i class="basic-ico bgsz20 sz20 icon79" aria-label="basicicon79"></i>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents__button">
+                <button class="tab-nav2__btn ver1">
+                  <i class="basic-ico bgsz25 sz25 icon73" aria-label="basicicon73"></i>
+                  <em>đăng ký xảy ra tai nạn</em>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- tab1 / wildfire -->
+      <div class="left-contents__popup popup-regist popup tab1 drag" data-container=".map">
+        <div class="popup-contents">
+          <div class="popup-contents__title">
+            <div class="icon-label">
+              <i class="basic-ico bgsz25 sz25 icon73" aria-label="basicicon73"></i>
+              <p>đăng ký cháy rừng - tab1</p>
+              <i class="ico-divider"></i>
+              <em>Thông tin đăng ký thiên tai</em>
+            </div>
+            <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+          </div>
+          <ul class="popup-contents__list">
+            <li class="popup-contents__item">
+              <!-- all edit -->
+              <!-- article.disabled > div.active(제외) -->
+              <article class="list-info">
+                <div class="grid2">
+                  <p class="asterisk">tên thông báo tai nạn</p>
+                  <input type="text" placeholder="Nhà Nguyễn" />
+                </div>
+                <div class="disabled">
+                  <p class="asterisk">sự phân biệt thiên tai</p>
+                  <select name="classify" class="selectbox ver2">
+                    <option value="classify1">classify1</option>
+                    <option value="classify2">classify2</option>
+                    <option value="classify3">classify3</option>
+                    <option value="classify4">classify4</option>
+                  </select>
+                </div>
+                <div>
+                  <p class="asterisk">người đăng ký</p>
+                  <input type="text" placeholder="mục nhập tên người đăng ký" />
+                </div>
+                <div>
+                  <p class="asterisk">thời gian xảy ra tai nạn</p>
+                  <input type="datetime-local" step="1" />
+                </div>
+                <div>
+                  <p class="asterisk">tình trạng hiện tại</p>
+                  <select name="status" class="selectbox ver2">
+                    <option value="status1">status1</option>
+                    <option value="status2">status2</option>
+                    <option value="status3">status3</option>
+                    <option value="status4">status4</option>
+                  </select>
+                </div>
+                <div class="grid2 disabled">
+                  <p class="asterisk">đăng ký vị trí tai nạn</p>
+                  <div class="input-wrap">
+                    <input type="text" placeholder="lựa chọn trực tiếp trên bản đồ" readonly />
+                    <button class="ver1 map-select">
+                      <i class="basic-ico bgsz20 sz20 icon97" aria-label="basicicon97"></i>
+                      <em>Chọn vị trí trên bản đồ</em>
+                    </button>
+                  </div>
+                </div>
+                <div class="grid2 disabled">
+                  <p>Phạm vi / lĩnh vực tai nạn</p>
+                  <div class="input-wrap">
+                    <input type="text" placeholder="lựa chọn trực tiếp trên bản đồ" readonly />
+                    <button class="ver1 map-select">
+                      <i class="basic-ico bgsz20 sz20 icon97" aria-label="basicicon97"></i>
+                      <em>Chọn vị trí trên bản đồ</em>
+                    </button>
+                  </div>
+                </div>
+                <div class="grid2">
+                  <p class="asterisk">sự đăng ký ghi chú</p>
+                  <textarea>mục ghi chú</textarea>
+                </div>
+                <div>
+                  <p class="asterisk">Đăng ký thời gian thông báo thiên tai</p>
+                  <input type="datetime-local" step="1" />
+                </div>
+                <div>
+                  <p class="asterisk">Giai đoạn phát lệnh báo động</p>
+                  <select name="stage" class="selectbox ver2">
+                    <option value="stage1">stage1</option>
+                    <option value="stage2">stage2</option>
+                    <option value="stage3">stage3</option>
+                    <option value="stage4">stage4</option>
+                  </select>
+                </div>
+                <div class="upload__area grid2">
+                  <input type="file" multiple="" />
+                  <div class="upload-list">
+                    <i class="upload-list__img"></i>
+                    <div class="text">
+                      <strong>Drag&Drop files here</strong>
+                      <p>Đăng ký nhiều tập tin (tối đa OOO MB)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="check-evacation grid2">
+                  <label for="regist1">
+                    <i class="basic-ico bgsz20 sz20 icon50" aria-label="basicicon50"></i>
+                    <em>Ban hành lệnh sơ tán</em>
+                    <input type="checkbox" id="regist1" />
+                    <i class="icon-checkbox"></i>
+                  </label>
+                </div>
+              </article>
+
+              <!-- integration btn -->
+              <div class="integration-btn">
+                <button class="ver1">
+                  <i class="basic-ico bgsz20 sz20 icon39" aria-label="basicicon39"></i>
+                  <em>việc đăng ký</em>
+                </button>
+                <button class="point">
+                  <i class="basic-ico bgsz20 sz20 icon42" aria-label="basicicon42"></i>
+                  <em>sự huỷ bỏ</em>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- tab2 / disaster -->
+      <div class="left-contents__popup popup-regist popup tab2 drag" data-container=".map">
+        <div class="popup-contents">
+          <div class="popup-contents__title">
+            <div class="icon-label">
+              <i class="basic-ico bgsz20 sz20 icon73" aria-label="basicicon73"></i>
+              <p>đăng ký gặp nạn - tab2</p>
+              <i class="ico-divider"></i>
+              <em>Thông tin đăng ký thiên tai</em>
+            </div>
+            <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+          </div>
+          <ul class="popup-contents__list">
+            <li class="popup-contents__item">
+              <!-- all edit -->
+              <!-- article.disabled > div.active(제외) -->
+              <article class="list-info">
+                <div class="grid2">
+                  <p class="asterisk">tên thông báo tai nạn</p>
+                  <input type="text" placeholder="Nhà Nguyễn" />
+                </div>
+                <div class="disabled">
+                  <p class="asterisk">sự phân biệt thiên tai</p>
+                  <select name="classify" class="selectbox ver2">
+                    <option value="classify1">classify1</option>
+                    <option value="classify2">classify2</option>
+                    <option value="classify3">classify3</option>
+                    <option value="classify4">classify4</option>
+                  </select>
+                </div>
+                <div>
+                  <p class="asterisk">người đăng ký</p>
+                  <input type="text" placeholder="mục nhập tên người đăng ký" />
+                </div>
+                <div>
+                  <p class="asterisk">thời gian xảy ra tai nạn</p>
+                  <input type="datetime-local" step="1" />
+                </div>
+                <div>
+                  <p class="asterisk">tình trạng hiện tại</p>
+                  <select name="status" class="selectbox ver2">
+                    <option value="status1">status1</option>
+                    <option value="status2">status2</option>
+                    <option value="status3">status3</option>
+                    <option value="status4">status4</option>
+                  </select>
+                </div>
+                <div class="grid2 disabled">
+                  <p class="asterisk">đăng ký vị trí tai nạn</p>
+                  <div class="input-wrap">
+                    <input type="text" placeholder="lựa chọn trực tiếp trên bản đồ" readonly />
+                    <button class="ver1 map-select">
+                      <i class="basic-ico bgsz20 sz20 icon97" aria-label="basicicon97"></i>
+                      <em>Chọn vị trí trên bản đồ</em>
+                    </button>
+                  </div>
+                </div>
+                <div class="grid2 disabled">
+                  <p>Phạm vi / lĩnh vực tai nạn</p>
+                  <div class="input-wrap">
+                    <input type="text" placeholder="lựa chọn trực tiếp trên bản đồ" readonly />
+                    <button class="ver1 map-select">
+                      <i class="basic-ico bgsz20 sz20 icon97" aria-label="basicicon97"></i>
+                      <em>Chọn vị trí trên bản đồ</em>
+                    </button>
+                  </div>
+                </div>
+                <div class="grid2">
+                  <p class="asterisk">sự đăng ký ghi chú</p>
+                  <textarea>mục ghi chú</textarea>
+                </div>
+                <div>
+                  <p class="asterisk">Đăng ký thời gian thông báo thiên tai</p>
+                  <input type="datetime-local" step="1" />
+                </div>
+                <div>
+                  <p class="asterisk">Giai đoạn phát lệnh báo động</p>
+                  <select name="stage" class="selectbox ver2">
+                    <option value="stage1">stage1</option>
+                    <option value="stage2">stage2</option>
+                    <option value="stage3">stage3</option>
+                    <option value="stage4">stage4</option>
+                  </select>
+                </div>
+                <div class="upload__area grid2">
+                  <input type="file" multiple="" />
+                  <div class="upload-list">
+                    <i class="upload-list__img"></i>
+                    <div class="text">
+                      <strong>Drag&Drop files here</strong>
+                      <p>Đăng ký nhiều tập tin (tối đa OOO MB)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="check-evacation grid2">
+                  <label for="regist2">
+                    <i class="basic-ico bgsz20 sz20 icon50" aria-label="basicicon50"></i>
+                    <em>Ban hành lệnh sơ tán</em>
+                    <input type="checkbox" id="regist2" />
+                    <i class="icon-checkbox"></i>
+                  </label>
+                </div>
+              </article>
+
+              <!-- integration btn -->
+              <div class="integration-btn">
+                <button class="ver1">
+                  <i class="basic-ico bgsz20 sz20 icon39" aria-label="basicicon39"></i>
+                  <em>việc đăng ký</em>
+                </button>
+                <button class="point">
+                  <i class="basic-ico bgsz20 sz20 icon42" aria-label="basicicon42"></i>
+                  <em>sự huỷ bỏ</em>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="map__right">
+      <!-- tab1 / wildfire -->
+      <div class="right-contents__detail popup tab1">
+        <div class="popup-contents">
+          <div class="popup-contents__title">
+            <div class="icon-label">
+              <i class="basic-ico bgsz20 sz20 icon27" aria-label="basicicon27"></i>
+              <p>chi tiết thông tin tai nạn - tab1</p>
+              <strong class="tag1">Cháy rừng</strong>
+              <!-- <strong class="tag2">bão</strong> -->
+              <!-- <strong class="tag3">nước lũ</strong> -->
+              <!-- <strong class="tag4">sự nóng bức</strong> -->
+              <!-- <strong class="tag5">động đất</strong> -->
+              <!-- <strong class="tag6">khí áp thấp</strong> -->
+            </div>
+            <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+          </div>
+          <ul class="popup-contents__list">
+            <li class="popup-contents__item">
+              <!-- all edit -->
+              <!-- .disabled > div.active(제외) -->
+              <article class="disabled list-info">
+                <div>
+                  <input type="text" placeholder="Cháy rừng Sơn Trà, Đà Nẵng._15:21:59 12/01/2025" />
+                </div>
+                <div>
+                  <p class="asterisk">người đăng ký</p>
+                  <input type="text" placeholder="Nhà Nguyễn" />
+                </div>
+                <div>
+                  <p class="asterisk">sự phân biệt tai nạn</p>
+                  <select name="disaster" class="selectbox ver2">
+                    <option value="disaster1">disaster1</option>
+                    <option value="disaster2">disaster2</option>
+                    <option value="disaster3">disaster3</option>
+                    <option value="disaster4">disaster4</option>
+                  </select>
+                </div>
+                <div>
+                  <p class="asterisk">thời gian xảy ra cháy rừng</p>
+                  <input type="datetime-local" step="1" />
+                </div>
+                <div>
+                  <p>Thời gian kết thúc cháy rừng</p>
+                  <input type="datetime-local" step="1" />
+                </div>
+              </article>
+              <!-- timeline edit -->
+              <!-- article.disabled > div.active(제외) -->
+              <article class="disabled list-timeline">
+                <div class="sub-title">
+                  <i class="basic-ico bgsz20 sz20 icon61" aria-label="basicicon61"></i>
+                  <strong>quản lý dòng thời gian / lịch sử</strong>
+                </div>
+                <div>
+                  <p>Nhập vị trí cháy rừng</p>
+                  <input type="text" placeholder="Linh Ung Son Tra Pagoda, " />
+                </div>
+                <div class="btn-wrap edit-btn">
+                  <button class="ver1 map-select">
+                    <i class="basic-ico bgsz20 sz20 icon97" aria-label="basicicon97"></i>
+                    <em>Chọn vị trí trên bản đồ</em>
+                  </button>
+                </div>
+                <div>
+                  <p>phạm vi cháy rừng</p>
+                  <input type="text" placeholder="10ha" />
+                </div>
+                <div class="btn-wrap edit-btn">
+                  <button class="ver1 map-select">
+                    <i class="basic-ico bgsz20 sz20 icon97" aria-label="basicicon97"></i>
+                    <em>Chọn lĩnh vực trực tiếp trên bản đồ</em>
+                  </button>
+                </div>
+                <div>
+                  <p class="asterisk">thời gian trạng thái</p>
+                  <input type="datetime-local" step="1" />
+                </div>
+                <div>
+                  <p class="asterisk">tình trạng hiện tại</p>
+                  <select name="current-status" class="selectbox ver2">
+                    <option value="Disaster occurrence">Sự xảy ra tai nạn</option>
+                    <option value="ongoing">đang diễn ra</option>
+                    <option value="Situation Terminated">Tình hình chấm dứt</option>
+                  </select>
+                </div>
+                <div>
+                  <p>Giai đoạn phát lệnh báo động</p>
+                  <select name="stage" class="selectbox ver2">
+                    <option value="stage1">stage1</option>
+                    <option value="stage2">stage2</option>
+                    <option value="stage3">stage3</option>
+                    <option value="stage4">stage4</option>
+                  </select>
+                </div>
+                <div class="check-evacation">
+                  <label for="issue1">
+                    <i class="basic-ico bgsz20 sz20 icon50" aria-label="basicicon50"></i>
+                    <em>Ban hành lệnh sơ tán</em>
+                    <input type="checkbox" id="issue1" />
+                    <i class="icon-checkbox"></i>
+                  </label>
+                </div>
+                <div>
+                  <textarea name="" id="">Cảnh báo tắt trong lúc đám cháy rừng đang được dập tắt</textarea>
+                </div>
+                <div class="btn-wrap">
+                  <div>
+                    <button class="ver2 view">
+                      <em>mục lục tệp tin</em>
+                    </button>
+                    <button class="ver2 edit">
+                      <i class="basic-ico bgsz20 sz20 icon66" aria-label="basicicon66"></i>
+                      <em>thuỷ tinh</em>
+                    </button>
+                    <div>
+                      <button class="ver3">
+                        <em>hủy bỏ</em>
+                      </button>
+                      <button class="ver3">
+                        <em>ứng dụng</em>
+                      </button>
+                    </div>
+                  </div>
+                  <div>
+                    <button class="ver1 add">
+                      <i class="basic-ico bgsz20 sz20 icon64" aria-label="basicicon64"></i>
+                      <em>bổ sung mới</em>
+                    </button>
+                  </div>
+                </div>
+                <div class="scroll-contents">
+                  <ul class="scroll-contents__list">
+                    <li class="border-wrap">
+                      <i class="basic-ico bgsz20 sz20 icon45" aria-label="basicicon45"></i>
+                      <div class="scroll-contents__item">
+                        <div class="icon-label">
+                          <div class="state1">
+                            <i class="basic-ico bgsz20 sz20 icon53" aria-label="basicicon53"></i>
+                            <em>Kết thúc tình huống</em>
+                          </div>
+                          <div class="alarm1">
+                            <i class="basic-ico bgsz20 sz20 icon52" aria-label="basicicon52"></i>
+                            <em>Không có</em>
+                          </div>
+                        </div>
+                        <div class="item-detail">
+                          <p>Cháy rừng Sơn Trà, Đà Nẵng. Cháy rừng Sơn Trà, Đà Nẵng. Cháy rừng Sơn Trà, Đà Nẵng.</p>
+                        </div>
+                      </div>
+                      <div class="upload-info">
+                        <div>
+                          <i class="basic-ico bgsz20 sz20 icon93" aria-label="basicicon93"></i>
+                          <em>2025-01-12 22:01:14</em>
+                        </div>
+                        <div class="icon-wrap">
+                          <i class="basic-ico bgsz20 sz20 icon30" aria-label="basicicon30"></i>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="border-wrap">
+                      <i class="basic-ico bgsz20 sz20 icon45" aria-label="basicicon45"></i>
+                      <div class="scroll-contents__item">
+                        <div class="icon-label">
+                          <div class="state2">
+                            <i class="basic-ico bgsz20 sz20 icon56" aria-label="basicicon56"></i>
+                            <em>đang tiến hành</em>
+                          </div>
+                          <div class="alarm2">
+                            <i class="basic-ico bgsz20 sz20 icon51" aria-label="basicicon51"></i>
+                            <em>Tắt báo động</em>
+                          </div>
+                        </div>
+                        <div class="item-detail">
+                          <p>Cháy rừng Sơn Trà, Đà Nẵng.</p>
+                        </div>
+                      </div>
+                      <div class="upload-info">
+                        <div>
+                          <i class="basic-ico bgsz20 sz20 icon93" aria-label="basicicon93"></i>
+                          <em>2025-01-12 22:01:14</em>
+                        </div>
+                        <div class="icon-wrap">
+                          <i class="basic-ico bgsz20 sz20 icon30" aria-label="basicicon30"></i>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="border-wrap">
+                      <i class="basic-ico bgsz20 sz20 icon45" aria-label="basicicon45"></i>
+                      <div class="scroll-contents__item">
+                        <div class="icon-label">
+                          <div class="state3">
+                            <i class="basic-ico bgsz20 sz20 icon54" aria-label="basicicon54"></i>
+                            <em>phát sinh cháy rừng</em>
+                          </div>
+                          <div class="alarm3">
+                            <i class="basic-ico bgsz20 sz20 icon50" aria-label="basicicon50"></i>
+                            <em>Báo động cấp độ 1</em>
+                          </div>
+                        </div>
+                        <div class="item-detail">
+                          <p>Cháy rừng Sơn Trà, Đà Nẵng.</p>
+                        </div>
+                      </div>
+                      <div class="upload-info">
+                        <div>
+                          <i class="basic-ico bgsz20 sz20 icon93" aria-label="basicicon93"></i>
+                          <em>2025-01-12 22:01:14</em>
+                        </div>
+                        <div class="icon-wrap">
+                          <i class="basic-ico bgsz20 sz20 icon30" aria-label="basicicon30"></i>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+              <!-- integration btn -->
+              <div class="integration-btn">
+                <button class="ver1 edit">
+                  <i class="basic-ico bgsz20 sz20 icon39" aria-label="basicicon39"></i>
+                  <em>Chỉnh sửa</em>
+                </button>
+                <button class="point">
+                  <i class="basic-ico bgsz20 sz20 icon42" aria-label="basicicon42"></i>
+                  <em>Xóa</em>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+        <div class="popup-contents">
+          <div class="popup-contents__title">
+            <div class="icon-label">
+              <i class="basic-ico bgsz20 sz20 icon32" aria-label="basicicon32"></i>
+              <p>Tải tập tin - tab1</p>
+            </div>
+            <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+          </div>
+          <ul class="popup-contents__list">
+            <li class="popup-contents__item">
+              <article class="file-upload">
+                <div class="upload__area">
+                  <input type="file" multiple />
+                  <div class="upload-list">
+                    <i class="basic-ico bgsz30 sz30 icon75" aria-label="basicicon75"></i>
+                    <div class="text">
+                      <strong>Kéo và thả tập tin vào đây</strong>
+                      <p>
+                        Đăng ký nhiều tập tin <br />
+                        (tối đa OOO MB)
+                      </p>
+                    </div>
+                  </div>
+                  <div class="scroll-contents">
+                    <ul class="scroll-contents__list">
+                      <li class="scroll-contents__item progress-box">
+                        <div class="icon-label">
+                          <div>
+                            <strong>defaultfile defaultfile defaultfile defaultfile.doc</strong>
+                            <p>128Mb</p>
+                          </div>
+                          <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                        </div>
+                        <div class="progress-bar">
+                          <input type="number" value="100" min="0" max="100" />
+                          <div class="bar-wrap">
+                            <div class="bar"></div>
+                          </div>
+                        </div>
+                        <div class="item-loading">
+                          <p>tải lên <b>100</b>%</p>
+                          <p>0Kb/sec</p>
+                        </div>
+                      </li>
+                      <li class="scroll-contents__item progress-box">
+                        <div class="icon-label">
+                          <div>
+                            <strong>defaultfile.doc</strong>
+                            <p>128Mb</p>
+                          </div>
+                          <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                        </div>
+                        <div class="progress-bar">
+                          <input type="number" value="90" min="0" max="100" />
+                          <div class="bar-wrap">
+                            <div class="bar"></div>
+                          </div>
+                        </div>
+                        <div class="item-loading">
+                          <p>tải lên <b>90</b>%</p>
+                          <p>0Kb/sec</p>
+                        </div>
+                      </li>
+                      <li class="scroll-contents__item progress-box">
+                        <div class="icon-label">
+                          <div>
+                            <strong>defaultfile.doc</strong>
+                            <p>128Mb</p>
+                          </div>
+                          <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                        </div>
+                        <div class="progress-bar">
+                          <input type="number" value="80" min="0" max="100" />
+                          <div class="bar-wrap">
+                            <div class="bar"></div>
+                          </div>
+                        </div>
+                        <div class="item-loading">
+                          <p>tải lên <b>80</b>%</p>
+                          <p>0Kb/sec</p>
+                        </div>
+                      </li>
+                      <li class="scroll-contents__item progress-box">
+                        <div class="icon-label">
+                          <div>
+                            <strong>defaultfile defaultfile defaultfile.doc</strong>
+                            <p>128Mb</p>
+                          </div>
+                          <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                        </div>
+                        <div class="progress-bar">
+                          <input type="number" value="70" min="0" max="100" />
+                          <div class="bar-wrap">
+                            <div class="bar"></div>
+                          </div>
+                        </div>
+                        <div class="item-loading">
+                          <p>tải lên <b>70</b>%</p>
+                          <p>0Kb/sec</p>
+                        </div>
+                      </li>
+                      <li class="scroll-contents__item progress-box">
+                        <div class="icon-label">
+                          <div>
+                            <strong>defaultfile.doc</strong>
+                            <p>128Mb</p>
+                          </div>
+                          <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                        </div>
+                        <div class="progress-bar">
+                          <input type="number" value="60" min="0" max="100" />
+                          <div class="bar-wrap">
+                            <div class="bar"></div>
+                          </div>
+                        </div>
+                        <div class="item-loading">
+                          <p>tải lên <b>60</b>%</p>
+                          <p>0Kb/sec</p>
+                        </div>
+                      </li>
+                      <li class="scroll-contents__item progress-box">
+                        <div class="icon-label">
+                          <div>
+                            <strong>defaultfile.doc</strong>
+                            <p>128Mb</p>
+                          </div>
+                          <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                        </div>
+                        <div class="progress-bar">
+                          <input type="number" value="50" min="0" max="100" />
+                          <div class="bar-wrap">
+                            <div class="bar"></div>
+                          </div>
+                        </div>
+                        <div class="item-loading">
+                          <p>tải lên <b>50</b>%</p>
+                          <p>0Kb/sec</p>
+                        </div>
+                      </li>
+                      <li class="scroll-contents__item progress-box">
+                        <div class="icon-label">
+                          <div>
+                            <strong>defaultfile.doc</strong>
+                            <p>128Mb</p>
+                          </div>
+                          <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                        </div>
+                        <div class="progress-bar">
+                          <input type="number" value="40" min="0" max="100" />
+                          <div class="bar-wrap">
+                            <div class="bar"></div>
+                          </div>
+                        </div>
+                        <div class="item-loading">
+                          <p>tải lên <b>40</b>%</p>
+                          <p>0Kb/sec</p>
+                        </div>
+                      </li>
+                      <li class="scroll-contents__item progress-box">
+                        <div class="icon-label">
+                          <div>
+                            <strong>defaultfile.doc</strong>
+                            <p>128Mb</p>
+                          </div>
+                          <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                        </div>
+                        <div class="progress-bar">
+                          <input type="number" value="30" min="0" max="100" />
+                          <div class="bar-wrap">
+                            <div class="bar"></div>
+                          </div>
+                        </div>
+                        <div class="item-loading">
+                          <p>tải lên <b>30</b>%</p>
+                          <p>0Kb/sec</p>
+                        </div>
+                      </li>
+                      <li class="scroll-contents__item progress-box">
+                        <div class="icon-label">
+                          <div>
+                            <strong>defaultfile.doc</strong>
+                            <p>128Mb</p>
+                          </div>
+                          <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                        </div>
+                        <div class="progress-bar">
+                          <input type="number" value="20" min="0" max="100" />
+                          <div class="bar-wrap">
+                            <div class="bar"></div>
+                          </div>
+                        </div>
+                        <div class="item-loading">
+                          <p>tải lên <b>20</b>%</p>
+                          <p>0Kb/sec</p>
+                        </div>
+                      </li>
+                      <li class="scroll-contents__item progress-box">
+                        <div class="icon-label">
+                          <div>
+                            <strong>defaultfile.doc</strong>
+                            <p>128Mb</p>
+                          </div>
+                          <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                        </div>
+                        <div class="progress-bar">
+                          <input type="number" value="10" min="0" max="100" />
+                          <div class="bar-wrap">
+                            <div class="bar"></div>
+                          </div>
+                        </div>
+                        <div class="item-loading">
+                          <p>tải lên <b>10</b>%</p>
+                          <p>0Kb/sec</p>
+                        </div>
+                      </li>
+                      <li class="scroll-contents__item progress-box">
+                        <div class="icon-label">
+                          <div>
+                            <strong>defaultfile.doc</strong>
+                            <p>128Mb</p>
+                          </div>
+                          <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                        </div>
+                        <div class="progress-bar">
+                          <input type="number" value="0" min="0" max="100" />
+                          <div class="bar-wrap">
+                            <div class="bar"></div>
+                          </div>
+                        </div>
+                        <div class="item-loading">
+                          <p>tải lên <b>0</b>%</p>
+                          <p>0Kb/sec</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="ver1">
+                    <i class="basic-ico bgsz20 sz20 icon75" aria-label="basicicon75"></i>
+                    <em>Tải tập tin</em>
+                  </button>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+      <div class="right-contents__timeline-upload popup tab1 drag" data-container=".map">
+        <div class="popup-contents">
+          <div class="popup-contents__title">
+            <div class="icon-label">
+              <i class="basic-ico bgsz20 sz20 icon32" aria-label="basicicon32"></i>
+              <p>Tệp tải lên theo dòng thời gian - tab1</p>
+            </div>
+            <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+          </div>
+          <ul class="popup-contents__list">
+            <li class="popup-contents__item">
+              <article class="file-upload">
+                <div class="file-upload__info">
+                  <p>Tải đầu tiên</p>
+                  <div><em>22:01:14 12/01/2025</em></div>
+                </div>
+                <div class="file-upload__info">
+                  <p>Tình trạng</p>
+                  <div class="state1">
+                    <i class="basic-ico bgsz20 sz20 icon53" aria-label="basicicon53"></i>
+                    <em>Kết thúc tình huống</em>
+                  </div>
+                  <!-- <div class="state2">
+                    <i class="basic-ico bgsz20 sz20 icon56" aria-label="basicicon56"></i>
+                    <em>đang tiến hành</em>
+                  </div> -->
+                  <!-- <div class="state3">
+                    <i class="basic-ico bgsz20 sz20 icon54" aria-label="basicicon54"></i>
+                    <em>phát sinh cháy rừng</em>
+                  </div> -->
+                </div>
+                <div class="file-upload__info">
+                  <p>Giai đoạn cảnh báo</p>
+                  <div class="alarm1">
+                    <i class="basic-ico bgsz20 sz20 icon52" aria-label="basicicon52"></i>
+                    <em>Không có</em>
+                  </div>
+                  <!-- <div class="alarm2">
+                    <i class="basic-ico bgsz20 sz20 icon51" aria-label="basicicon51"></i>
+                    <em>Tắt báo động</em>
+                  </div> -->
+                  <!-- <div class="alarm3">
+                    <i class="basic-ico bgsz20 sz20 icon50" aria-label="basicicon50"></i>
+                    <em>Báo động cấp độ 1</em>
+                  </div> -->
+                </div>
+                <div class="upload__area">
+                  <input type="file" multiple />
+                  <div class="upload-list">
+                    <i class="basic-ico bgsz30 sz30 icon75" aria-label="basicicon75"></i>
+                    <div class="text">
+                      <strong>Kéo và thả tập tin vào đây</strong>
+                      <p>
+                        Đăng ký nhiều tập tin <br />
+                        (tối đa OOO MB)
+                      </p>
+                    </div>
+                  </div>
+                  <button class="ver1">
+                    <i class="basic-ico bgsz20 sz20 icon75" aria-label="basicicon75"></i>
+                    <em>Thêm tập tin tải lên</em>
+                  </button>
+                </div>
+              </article>
+              <article class="file-download">
+                <button>
+                  <em>Tải tập tin đầy đủ</em>
+                  <i class="basic-ico bgsz20 sz20 icon82" aria-label="basicicon82"></i>
+                </button>
+                <div class="file-download__title">
+                  <p>tên tập tin</p>
+                  <p>dung tích</p>
+                </div>
+                <div class="scroll-contents">
+                  <!-- empty -->
+                  <ul class="scroll-contents__list">
+                    <li class="no-list">
+                      <i class="no-list__img"></i>
+                      <em
+                        >Không có tệp nào <br />
+                        được tải lên</em
+                      >
+                    </li>
+
+                    <li class="scroll-contents__item progress-box">
+                      <div class="icon-label">
+                        <div>
+                          <strong>defaultfile defaultfile defaultfile defaultfile.doc</strong>
+                          <p>128Mb</p>
+                        </div>
+                        <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                      </div>
+                      <div class="progress-bar">
+                        <input type="number" value="100" min="0" max="100" />
+                        <div class="bar-wrap">
+                          <div class="bar"></div>
+                        </div>
+                      </div>
+                      <div class="item-loading">
+                        <p>tải lên <b>100</b>%</p>
+                        <p>0Kb/sec</p>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item progress-box">
+                      <div class="icon-label">
+                        <div>
+                          <strong>defaultfile.doc</strong>
+                          <p>128Mb</p>
+                        </div>
+                        <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                      </div>
+                      <div class="progress-bar">
+                        <input type="number" value="50" min="0" max="100" />
+                        <div class="bar-wrap">
+                          <div class="bar"></div>
+                        </div>
+                      </div>
+                      <div class="item-loading">
+                        <p>tải lên <b>50</b>%</p>
+                        <p>0Kb/sec</p>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item progress-box">
+                      <div class="icon-label">
+                        <div>
+                          <strong>defaultfile.doc</strong>
+                          <p>128Mb</p>
+                        </div>
+                        <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                      </div>
+                      <div class="progress-bar">
+                        <input type="number" value="0" min="0" max="100" />
+                        <div class="bar-wrap">
+                          <div class="bar"></div>
+                        </div>
+                      </div>
+                      <div class="item-loading">
+                        <p>tải lên <b>0</b>%</p>
+                        <p>0Kb/sec</p>
+                      </div>
+                    </li>
+
+                    <li class="scroll-contents__item">
+                      <div class="icon-label">
+                        <div>
+                          <i class="basic-ico bgsz20 sz20 icon32" aria-label="basicicon32"></i>
+                          <strong>Thành phố Đà Nẵng Sơn Trà tài liệu.doc</strong>
+                        </div>
+                        <div>
+                          <em>128Mb</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                          <i class="basic-ico bgsz15 sz15 icon42" aria-label="basicicon42"></i>
+                        </div>
+                      </div>
+                      <div class="item-detail">
+                        <p>22:01:14 12/01/2025</p>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="icon-label">
+                        <div>
+                          <i class="basic-ico bgsz20 sz20 icon32" aria-label="basicicon32"></i>
+                          <strong>Thành phố Đà Nẵng Sơn Trà tài liệu Thành phố Đà Nẵng Sơn Trà tài liệu.doc</strong>
+                        </div>
+                        <div>
+                          <em>128Mb</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                          <i class="basic-ico bgsz15 sz15 icon42" aria-label="basicicon42"></i>
+                        </div>
+                      </div>
+                      <div class="item-detail">
+                        <p>22:01:14 12/01/2025</p>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="icon-label">
+                        <div>
+                          <i class="basic-ico bgsz20 sz20 icon32" aria-label="basicicon32"></i>
+                          <strong>Thành phố Đà Nẵng Sơn Trà tài liệu.doc</strong>
+                        </div>
+                        <div>
+                          <em>128Mb</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                          <i class="basic-ico bgsz15 sz15 icon42" aria-label="basicicon42"></i>
+                        </div>
+                      </div>
+                      <div class="item-detail">
+                        <p>22:01:14 12/01/2025</p>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="icon-label">
+                        <div>
+                          <i class="basic-ico bgsz20 sz20 icon32" aria-label="basicicon32"></i>
+                          <strong>Thành phố Đà Nẵng Sơn Trà tài liệu.doc</strong>
+                        </div>
+                        <div>
+                          <em>128Mb</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                          <i class="basic-ico bgsz15 sz15 icon42" aria-label="basicicon42"></i>
+                        </div>
+                      </div>
+                      <div class="item-detail">
+                        <p>22:01:14 12/01/2025</p>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="icon-label">
+                        <div>
+                          <i class="basic-ico bgsz20 sz20 icon32" aria-label="basicicon32"></i>
+                          <strong>Thành phố Đà Nẵng Sơn Trà tài liệu.doc</strong>
+                        </div>
+                        <div>
+                          <em>128Mb</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                          <i class="basic-ico bgsz15 sz15 icon42" aria-label="basicicon42"></i>
+                        </div>
+                      </div>
+                      <div class="item-detail">
+                        <p>22:01:14 12/01/2025</p>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="icon-label">
+                        <div>
+                          <i class="basic-ico bgsz20 sz20 icon32" aria-label="basicicon32"></i>
+                          <strong>Thành phố Đà Nẵng Sơn Trà tài liệu.doc</strong>
+                        </div>
+                        <div>
+                          <em>128Mb</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                          <i class="basic-ico bgsz15 sz15 icon42" aria-label="basicicon42"></i>
+                        </div>
+                      </div>
+                      <div class="item-detail">
+                        <p>22:01:14 12/01/2025</p>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="icon-label">
+                        <div>
+                          <i class="basic-ico bgsz20 sz20 icon32" aria-label="basicicon32"></i>
+                          <strong>Thành phố Đà Nẵng Sơn Trà tài liệu.doc</strong>
+                        </div>
+                        <div>
+                          <em>128Mb</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                          <i class="basic-ico bgsz15 sz15 icon42" aria-label="basicicon42"></i>
+                        </div>
+                      </div>
+                      <div class="item-detail">
+                        <p>22:01:14 12/01/2025</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+              <div class="integration-btn">
+                <button class="ver1">
+                  <i class="basic-ico bgsz25 sz25 icon39" aria-label="basicicon39"></i>
+                  <em>sự lưu trữ</em>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="right-contents__popup popup-regist popup tab1 drag" data-container=".map">
+        <div class="popup-contents">
+          <div class="popup-contents__title">
+            <div class="icon-label">
+              <i class="basic-ico bgsz25 sz25 icon73" aria-label="basicicon73"></i>
+              <p>đăng ký lý lịch - tab1</p>
+            </div>
+            <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+          </div>
+          <ul class="popup-contents__list">
+            <li class="popup-contents__item">
+              <!-- all edit -->
+              <!-- article.disabled > div.active(제외) -->
+              <article class="list-info">
+                <div>
+                  <p class="asterisk">thời gian xảy ra tai nạn</p>
+                  <input type="datetime-local" step="1" />
+                </div>
+                <div>
+                  <p class="asterisk">tình trạng hiện tại</p>
+                  <select name="status" class="selectbox ver2">
+                    <option value="status1">status1</option>
+                    <option value="status2">status2</option>
+                    <option value="status3">status3</option>
+                    <option value="status4">status4</option>
+                  </select>
+                </div>
+                <div class="grid2 disabled">
+                  <p class="asterisk">đăng ký vị trí tai nạn</p>
+                  <div class="input-wrap">
+                    <input type="text" placeholder="lựa chọn trực tiếp trên bản đồ" readonly="" />
+                    <button class="ver1 map-select">
+                      <i class="basic-ico bgsz20 sz20 icon97" aria-label="basicicon97"></i>
+                      <em>Chọn vị trí trên bản đồ</em>
+                    </button>
+                  </div>
+                </div>
+                <div class="grid2 disabled">
+                  <p>Phạm vi / lĩnh vực tai nạn</p>
+                  <div class="input-wrap">
+                    <input type="text" placeholder="lựa chọn trực tiếp trên bản đồ" readonly="" />
+                    <button class="ver1 map-select">
+                      <i class="basic-ico bgsz20 sz20 icon97" aria-label="basicicon97"></i>
+                      <em>Chọn vị trí trên bản đồ</em>
+                    </button>
+                  </div>
+                </div>
+                <div class="grid2">
+                  <p class="asterisk">sự đăng ký ghi chú</p>
+                  <textarea>mục ghi chú</textarea>
+                </div>
+                <div>
+                  <p class="asterisk">Đăng ký thời gian thông báo thiên tai</p>
+                  <input type="datetime-local" step="1" />
+                </div>
+                <div>
+                  <p class="asterisk">Giai đoạn phát lệnh báo động</p>
+                  <select name="stage" class="selectbox ver2">
+                    <option value="stage1">stage1</option>
+                    <option value="stage2">stage2</option>
+                    <option value="stage3">stage3</option>
+                    <option value="stage4">stage4</option>
+                  </select>
+                </div>
+                <div class="upload__area grid2">
+                  <input type="file" multiple="" />
+                  <div class="upload-list">
+                    <i class="upload-list__img"></i>
+                    <div class="text">
+                      <strong>Drag&amp;Drop files here</strong>
+                      <p>Đăng ký nhiều tập tin (tối đa OOO MB)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="check-evacation grid2">
+                  <label for="add1">
+                    <i class="basic-ico bgsz20 sz20 icon50" aria-label="basicicon50"></i>
+                    <em>Ban hành lệnh sơ tán</em>
+                    <input type="checkbox" id="add1" />
+                    <i class="icon-checkbox"></i>
+                  </label>
+                </div>
+              </article>
+
+              <!-- integration btn -->
+              <div class="integration-btn">
+                <button class="ver1">
+                  <i class="basic-ico bgsz20 sz20 icon39" aria-label="basicicon39"></i>
+                  <em>việc đăng ký</em>
+                </button>
+                <button class="point">
+                  <i class="basic-ico bgsz20 sz20 icon42" aria-label="basicicon42"></i>
+                  <em>sự huỷ bỏ</em>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- tab2 / disaster -->
+      <div class="right-contents__detail popup tab2">
+        <div class="popup-contents">
+          <div class="popup-contents__title">
+            <div class="icon-label">
+              <i class="basic-ico bgsz20 sz20 icon27" aria-label="basicicon27"></i>
+              <p>chi tiết thông tin tai nạn - tab2</p>
+              <!-- <strong class="tag1">Cháy rừng</strong> -->
+              <strong class="tag2">bão</strong>
+              <!-- <strong class="tag3">nước lũ</strong> -->
+              <!-- <strong class="tag4">sự nóng bức</strong> -->
+              <!-- <strong class="tag5">động đất</strong> -->
+              <!-- <strong class="tag6">khí áp thấp</strong> -->
+            </div>
+            <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+          </div>
+          <ul class="popup-contents__list">
+            <li class="popup-contents__item">
+              <!-- all edit -->
+              <!-- article.disabled > div.active(제외) -->
+              <article class="disabled list-info">
+                <div>
+                  <input type="text" placeholder="Cháy rừng Sơn Trà, Đà Nẵng._15:21:59 12/01/2025" />
+                </div>
+                <div>
+                  <p class="asterisk">người đăng ký</p>
+                  <input type="text" placeholder="Nhà Nguyễn" />
+                </div>
+                <div>
+                  <p class="asterisk">sự phân biệt tai nạn</p>
+                  <select name="disaster" class="selectbox ver2">
+                    <option value="disaster1">disaster1</option>
+                    <option value="disaster2">disaster2</option>
+                    <option value="disaster3">disaster3</option>
+                    <option value="disaster4">disaster4</option>
+                  </select>
+                </div>
+                <div>
+                  <p class="asterisk">thời gian xảy ra cháy rừng</p>
+                  <input type="datetime-local" step="1" />
+                </div>
+                <div>
+                  <p>Thời gian kết thúc cháy rừng</p>
+                  <input type="datetime-local" step="1" />
+                </div>
+              </article>
+              <!-- timeline edit -->
+              <!-- article.disabled > div.active(제외) -->
+              <article class="disabled list-timeline">
+                <div class="sub-title">
+                  <i class="basic-ico bgsz20 sz20 icon61" aria-label="basicicon61"></i>
+                  <strong>quản lý dòng thời gian / lịch sử</strong>
+                </div>
+                <div>
+                  <p>Nhập vị trí cháy rừng</p>
+                  <input type="text" placeholder="Linh Ung Son Tra Pagoda, " />
+                </div>
+                <div class="btn-wrap edit-btn">
+                  <button class="ver1 map-select">
+                    <i class="basic-ico bgsz20 sz20 icon97" aria-label="basicicon97"></i>
+                    <em>Chọn vị trí trên bản đồ</em>
+                  </button>
+                </div>
+                <div>
+                  <p>phạm vi cháy rừng</p>
+                  <input type="text" placeholder="10ha" />
+                </div>
+                <div class="btn-wrap edit-btn">
+                  <button class="ver1 map-select">
+                    <i class="basic-ico bgsz20 sz20 icon97" aria-label="basicicon97"></i>
+                    <em>Chọn lĩnh vực trực tiếp trên bản đồ</em>
+                  </button>
+                </div>
+                <div>
+                  <p class="asterisk">thời gian trạng thái</p>
+                  <input type="datetime-local" step="1" />
+                </div>
+                <div>
+                  <p class="asterisk">tình trạng hiện tại</p>
+                  <select name="current-status" class="selectbox ver2">
+                    <option value="Disaster occurrence">Sự xảy ra tai nạn</option>
+                    <option value="ongoing">đang diễn ra</option>
+                    <option value="Situation Terminated">Tình hình chấm dứt</option>
+                  </select>
+                </div>
+                <div>
+                  <p>Giai đoạn phát lệnh báo động</p>
+                  <select name="stage" class="selectbox ver2">
+                    <option value="stage1">stage1</option>
+                    <option value="stage2">stage2</option>
+                    <option value="stage3">stage3</option>
+                    <option value="stage4">stage4</option>
+                  </select>
+                </div>
+                <div class="check-evacation">
+                  <label for="issue2">
+                    <i class="basic-ico bgsz20 sz20 icon50" aria-label="basicicon50"></i>
+                    <em>Ban hành lệnh sơ tán</em>
+                    <input type="checkbox" id="issue2" />
+                    <i class="icon-checkbox"></i>
+                  </label>
+                </div>
+                <div>
+                  <textarea name="" id="">Cảnh báo tắt trong lúc đám cháy rừng đang được dập tắt</textarea>
+                </div>
+                <div class="btn-wrap">
+                  <div>
+                    <button class="ver2 view">
+                      <em>mục lục tệp tin</em>
+                    </button>
+                    <button class="ver2 edit">
+                      <i class="basic-ico bgsz20 sz20 icon66" aria-label="basicicon66"></i>
+                      <em>thuỷ tinh</em>
+                    </button>
+                    <div>
+                      <button class="ver3">
+                        <em>hủy bỏ</em>
+                      </button>
+                      <button class="ver3">
+                        <em>ứng dụng</em>
+                      </button>
+                    </div>
+                  </div>
+                  <div>
+                    <button class="ver1 add">
+                      <i class="basic-ico bgsz20 sz20 icon64" aria-label="basicicon64"></i>
+                      <em>bổ sung mới</em>
+                    </button>
+                  </div>
+                </div>
+                <div class="scroll-contents">
+                  <ul class="scroll-contents__list">
+                    <li class="border-wrap">
+                      <div class="scroll-contents__item">
+                        <i class="basic-ico bgsz20 sz20 icon45" aria-label="basicicon45"></i>
+                        <div class="icon-label">
+                          <div class="state1">
+                            <i class="basic-ico bgsz20 sz20 icon53" aria-label="basicicon53"></i>
+                            <em>Kết thúc tình huống</em>
+                          </div>
+                          <div class="alarm1">
+                            <i class="basic-ico bgsz20 sz20 icon52" aria-label="basicicon52"></i>
+                            <em>Không có</em>
+                          </div>
+                        </div>
+                        <div class="item-detail">
+                          <p>Cháy rừng Sơn Trà, Đà Nẵng. Cháy rừng Sơn Trà, Đà Nẵng. Cháy rừng Sơn Trà, Đà Nẵng.</p>
+                        </div>
+                      </div>
+                      <div class="upload-info">
+                        <div>
+                          <i class="basic-ico bgsz20 sz20 icon93" aria-label="basicicon93"></i>
+                          <em>2025-01-12 22:01:14</em>
+                        </div>
+                        <div class="icon-wrap">
+                          <i class="basic-ico bgsz20 sz20 icon30" aria-label="basicicon30"></i>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="border-wrap">
+                      <div class="scroll-contents__item">
+                        <i class="basic-ico bgsz20 sz20 icon45" aria-label="basicicon45"></i>
+                        <div class="icon-label">
+                          <div class="state2">
+                            <i class="basic-ico bgsz20 sz20 icon56" aria-label="basicicon56"></i>
+                            <em>đang tiến hành</em>
+                          </div>
+                          <div class="alarm2">
+                            <i class="basic-ico bgsz20 sz20 icon51" aria-label="basicicon51"></i>
+                            <em>Tắt báo động</em>
+                          </div>
+                        </div>
+                        <div class="item-detail">
+                          <p>Cháy rừng Sơn Trà, Đà Nẵng.</p>
+                        </div>
+                      </div>
+                      <div class="upload-info">
+                        <div>
+                          <i class="basic-ico bgsz20 sz20 icon93" aria-label="basicicon93"></i>
+                          <em>2025-01-12 22:01:14</em>
+                        </div>
+                        <div class="icon-wrap">
+                          <i class="basic-ico bgsz20 sz20 icon30" aria-label="basicicon30"></i>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="border-wrap">
+                      <div class="scroll-contents__item">
+                        <i class="basic-ico bgsz20 sz20 icon45" aria-label="basicicon45"></i>
+                        <div class="icon-label">
+                          <div class="state3">
+                            <i class="basic-ico bgsz20 sz20 icon54" aria-label="basicicon54"></i>
+                            <em>phát sinh cháy rừng</em>
+                          </div>
+                          <div class="alarm3">
+                            <i class="basic-ico bgsz20 sz20 icon50" aria-label="basicicon50"></i>
+                            <em>Báo động cấp độ 1</em>
+                          </div>
+                        </div>
+                        <div class="item-detail">
+                          <p>Cháy rừng Sơn Trà, Đà Nẵng.</p>
+                        </div>
+                      </div>
+                      <div class="upload-info">
+                        <div>
+                          <i class="basic-ico bgsz20 sz20 icon93" aria-label="basicicon93"></i>
+                          <em>2025-01-12 22:01:14</em>
+                        </div>
+                        <div class="icon-wrap">
+                          <i class="basic-ico bgsz20 sz20 icon30" aria-label="basicicon30"></i>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+              <!-- integration btn -->
+              <div class="integration-btn">
+                <button class="ver1 edit">
+                  <i class="basic-ico bgsz20 sz20 icon39" aria-label="basicicon39"></i>
+                  <em>Chỉnh sửa</em>
+                </button>
+                <button class="point">
+                  <i class="basic-ico bgsz20 sz20 icon42" aria-label="basicicon42"></i>
+                  <em>Xóa</em>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+        <div class="popup-contents">
+          <div class="popup-contents__title">
+            <div class="icon-label">
+              <i class="basic-ico bgsz20 sz20 icon32" aria-label="basicicon32"></i>
+              <p>Tải tập tin - tab2</p>
+            </div>
+            <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+          </div>
+          <ul class="popup-contents__list">
+            <li class="popup-contents__item">
+              <article class="file-upload">
+                <div class="upload__area">
+                  <input type="file" multiple />
+                  <div class="upload-list">
+                    <i class="basic-ico bgsz30 sz30 icon75" aria-label="basicicon75"></i>
+                    <div class="text">
+                      <strong>Kéo và thả tập tin vào đây</strong>
+                      <p>
+                        Đăng ký nhiều tập tin <br />
+                        (tối đa OOO MB)
+                      </p>
+                    </div>
+                  </div>
+                  <div class="scroll-contents">
+                    <ul class="scroll-contents__list">
+                      <li class="scroll-contents__item progress-box">
+                        <div class="icon-label">
+                          <div>
+                            <strong>defaultfile defaultfile defaultfile defaultfile.doc</strong>
+                            <p>128Mb</p>
+                          </div>
+                          <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                        </div>
+                        <div class="progress-bar">
+                          <input type="number" value="100" min="0" max="100" />
+                          <div class="bar-wrap">
+                            <div class="bar"></div>
+                          </div>
+                        </div>
+                        <div class="item-loading">
+                          <p>tải lên <b>100</b>%</p>
+                          <p>0Kb/sec</p>
+                        </div>
+                      </li>
+                      <li class="scroll-contents__item progress-box">
+                        <div class="icon-label">
+                          <div>
+                            <strong>defaultfile.doc</strong>
+                            <p>128Mb</p>
+                          </div>
+                          <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                        </div>
+                        <div class="progress-bar">
+                          <input type="number" value="90" min="0" max="100" />
+                          <div class="bar-wrap">
+                            <div class="bar"></div>
+                          </div>
+                        </div>
+                        <div class="item-loading">
+                          <p>tải lên <b>90</b>%</p>
+                          <p>0Kb/sec</p>
+                        </div>
+                      </li>
+                      <li class="scroll-contents__item progress-box">
+                        <div class="icon-label">
+                          <div>
+                            <strong>defaultfile.doc</strong>
+                            <p>128Mb</p>
+                          </div>
+                          <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                        </div>
+                        <div class="progress-bar">
+                          <input type="number" value="80" min="0" max="100" />
+                          <div class="bar-wrap">
+                            <div class="bar"></div>
+                          </div>
+                        </div>
+                        <div class="item-loading">
+                          <p>tải lên <b>80</b>%</p>
+                          <p>0Kb/sec</p>
+                        </div>
+                      </li>
+                      <li class="scroll-contents__item progress-box">
+                        <div class="icon-label">
+                          <div>
+                            <strong>defaultfile defaultfile defaultfile.doc</strong>
+                            <p>128Mb</p>
+                          </div>
+                          <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                        </div>
+                        <div class="progress-bar">
+                          <input type="number" value="70" min="0" max="100" />
+                          <div class="bar-wrap">
+                            <div class="bar"></div>
+                          </div>
+                        </div>
+                        <div class="item-loading">
+                          <p>tải lên <b>70</b>%</p>
+                          <p>0Kb/sec</p>
+                        </div>
+                      </li>
+                      <li class="scroll-contents__item progress-box">
+                        <div class="icon-label">
+                          <div>
+                            <strong>defaultfile.doc</strong>
+                            <p>128Mb</p>
+                          </div>
+                          <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                        </div>
+                        <div class="progress-bar">
+                          <input type="number" value="60" min="0" max="100" />
+                          <div class="bar-wrap">
+                            <div class="bar"></div>
+                          </div>
+                        </div>
+                        <div class="item-loading">
+                          <p>tải lên <b>60</b>%</p>
+                          <p>0Kb/sec</p>
+                        </div>
+                      </li>
+                      <li class="scroll-contents__item progress-box">
+                        <div class="icon-label">
+                          <div>
+                            <strong>defaultfile.doc</strong>
+                            <p>128Mb</p>
+                          </div>
+                          <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                        </div>
+                        <div class="progress-bar">
+                          <input type="number" value="50" min="0" max="100" />
+                          <div class="bar-wrap">
+                            <div class="bar"></div>
+                          </div>
+                        </div>
+                        <div class="item-loading">
+                          <p>tải lên <b>50</b>%</p>
+                          <p>0Kb/sec</p>
+                        </div>
+                      </li>
+                      <li class="scroll-contents__item progress-box">
+                        <div class="icon-label">
+                          <div>
+                            <strong>defaultfile.doc</strong>
+                            <p>128Mb</p>
+                          </div>
+                          <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                        </div>
+                        <div class="progress-bar">
+                          <input type="number" value="40" min="0" max="100" />
+                          <div class="bar-wrap">
+                            <div class="bar"></div>
+                          </div>
+                        </div>
+                        <div class="item-loading">
+                          <p>tải lên <b>40</b>%</p>
+                          <p>0Kb/sec</p>
+                        </div>
+                      </li>
+                      <li class="scroll-contents__item progress-box">
+                        <div class="icon-label">
+                          <div>
+                            <strong>defaultfile.doc</strong>
+                            <p>128Mb</p>
+                          </div>
+                          <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                        </div>
+                        <div class="progress-bar">
+                          <input type="number" value="30" min="0" max="100" />
+                          <div class="bar-wrap">
+                            <div class="bar"></div>
+                          </div>
+                        </div>
+                        <div class="item-loading">
+                          <p>tải lên <b>30</b>%</p>
+                          <p>0Kb/sec</p>
+                        </div>
+                      </li>
+                      <li class="scroll-contents__item progress-box">
+                        <div class="icon-label">
+                          <div>
+                            <strong>defaultfile.doc</strong>
+                            <p>128Mb</p>
+                          </div>
+                          <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                        </div>
+                        <div class="progress-bar">
+                          <input type="number" value="20" min="0" max="100" />
+                          <div class="bar-wrap">
+                            <div class="bar"></div>
+                          </div>
+                        </div>
+                        <div class="item-loading">
+                          <p>tải lên <b>20</b>%</p>
+                          <p>0Kb/sec</p>
+                        </div>
+                      </li>
+                      <li class="scroll-contents__item progress-box">
+                        <div class="icon-label">
+                          <div>
+                            <strong>defaultfile.doc</strong>
+                            <p>128Mb</p>
+                          </div>
+                          <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                        </div>
+                        <div class="progress-bar">
+                          <input type="number" value="10" min="0" max="100" />
+                          <div class="bar-wrap">
+                            <div class="bar"></div>
+                          </div>
+                        </div>
+                        <div class="item-loading">
+                          <p>tải lên <b>10</b>%</p>
+                          <p>0Kb/sec</p>
+                        </div>
+                      </li>
+                      <li class="scroll-contents__item progress-box">
+                        <div class="icon-label">
+                          <div>
+                            <strong>defaultfile.doc</strong>
+                            <p>128Mb</p>
+                          </div>
+                          <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                        </div>
+                        <div class="progress-bar">
+                          <input type="number" value="0" min="0" max="100" />
+                          <div class="bar-wrap">
+                            <div class="bar"></div>
+                          </div>
+                        </div>
+                        <div class="item-loading">
+                          <p>tải lên <b>0</b>%</p>
+                          <p>0Kb/sec</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="ver1">
+                    <i class="basic-ico bgsz20 sz20 icon75" aria-label="basicicon75"></i>
+                    <em>Tải tập tin</em>
+                  </button>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+      <div class="right-contents__timeline-upload popup tab2 drag" data-container=".map">
+        <div class="popup-contents">
+          <div class="popup-contents__title">
+            <div class="icon-label">
+              <i class="basic-ico bgsz20 sz20 icon32" aria-label="basicicon32"></i>
+              <p>Tệp tải lên theo dòng thời gian - tab2</p>
+            </div>
+            <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+          </div>
+          <ul class="popup-contents__list">
+            <li class="popup-contents__item">
+              <article class="file-upload">
+                <div class="file-upload__info">
+                  <p>Tải đầu tiên</p>
+                  <div><em>22:01:14 12/01/2025</em></div>
+                </div>
+                <div class="file-upload__info">
+                  <p>Tình trạng</p>
+                  <div class="state1">
+                    <i class="basic-ico bgsz20 sz20 icon53" aria-label="basicicon53"></i>
+                    <em>Kết thúc tình huống</em>
+                  </div>
+                  <!-- <div class="state2">
+                    <i class="basic-ico bgsz20 sz20 icon56" aria-label="basicicon56"></i>
+                    <em>đang tiến hành</em>
+                  </div> -->
+                  <!-- <div class="state3">
+                    <i class="basic-ico bgsz20 sz20 icon54" aria-label="basicicon54"></i>
+                    <em>phát sinh cháy rừng</em>
+                  </div> -->
+                </div>
+                <div class="file-upload__info">
+                  <p>Giai đoạn cảnh báo</p>
+                  <div class="alarm1">
+                    <i class="basic-ico bgsz20 sz20 icon52" aria-label="basicicon52"></i>
+                    <em>Không có</em>
+                  </div>
+                  <!-- <div class="alarm2">
+                    <i class="basic-ico bgsz20 sz20 icon51" aria-label="basicicon51"></i>
+                    <em>Tắt báo động</em>
+                  </div> -->
+                  <!-- <div class="alarm3">
+                    <i class="basic-ico bgsz20 sz20 icon50" aria-label="basicicon50"></i>
+                    <em>Báo động cấp độ 1</em>
+                  </div> -->
+                </div>
+                <div class="upload__area">
+                  <input type="file" multiple />
+                  <div class="upload-list">
+                    <i class="basic-ico bgsz30 sz30 icon75" aria-label="basicicon75"></i>
+                    <div class="text">
+                      <strong>Kéo và thả tập tin vào đây</strong>
+                      <p>
+                        Đăng ký nhiều tập tin <br />
+                        (tối đa OOO MB)
+                      </p>
+                    </div>
+                  </div>
+                  <button class="ver1">
+                    <i class="basic-ico bgsz20 sz20 icon75" aria-label="basicicon75"></i>
+                    <em>Thêm tập tin tải lên</em>
+                  </button>
+                </div>
+              </article>
+              <article class="file-download">
+                <button>
+                  <em>Tải tập tin đầy đủ</em>
+                  <i class="basic-ico bgsz20 sz20 icon82" aria-label="basicicon82"></i>
+                </button>
+                <div class="file-download__title">
+                  <p>tên tập tin</p>
+                  <p>dung tích</p>
+                </div>
+                <div class="scroll-contents">
+                  <!-- empty -->
+                  <ul class="scroll-contents__list">
+                    <li class="no-list">
+                      <i class="no-list__img"></i>
+                      <em
+                        >Không có tệp nào <br />
+                        được tải lên</em
+                      >
+                    </li>
+
+                    <li class="scroll-contents__item progress-box">
+                      <div class="icon-label">
+                        <div>
+                          <strong>defaultfile defaultfile defaultfile defaultfile.doc</strong>
+                          <p>128Mb</p>
+                        </div>
+                        <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                      </div>
+                      <div class="progress-bar">
+                        <input type="number" value="100" min="0" max="100" />
+                        <div class="bar-wrap">
+                          <div class="bar"></div>
+                        </div>
+                      </div>
+                      <div class="item-loading">
+                        <p>tải lên <b>100</b>%</p>
+                        <p>0Kb/sec</p>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item progress-box">
+                      <div class="icon-label">
+                        <div>
+                          <strong>defaultfile.doc</strong>
+                          <p>128Mb</p>
+                        </div>
+                        <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                      </div>
+                      <div class="progress-bar">
+                        <input type="number" value="50" min="0" max="100" />
+                        <div class="bar-wrap">
+                          <div class="bar"></div>
+                        </div>
+                      </div>
+                      <div class="item-loading">
+                        <p>tải lên <b>50</b>%</p>
+                        <p>0Kb/sec</p>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item progress-box">
+                      <div class="icon-label">
+                        <div>
+                          <strong>defaultfile.doc</strong>
+                          <p>128Mb</p>
+                        </div>
+                        <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+                      </div>
+                      <div class="progress-bar">
+                        <input type="number" value="0" min="0" max="100" />
+                        <div class="bar-wrap">
+                          <div class="bar"></div>
+                        </div>
+                      </div>
+                      <div class="item-loading">
+                        <p>tải lên <b>0</b>%</p>
+                        <p>0Kb/sec</p>
+                      </div>
+                    </li>
+
+                    <li class="scroll-contents__item">
+                      <div class="icon-label">
+                        <div>
+                          <i class="basic-ico bgsz20 sz20 icon32" aria-label="basicicon32"></i>
+                          <strong>Thành phố Đà Nẵng Sơn Trà tài liệu.doc</strong>
+                        </div>
+                        <div>
+                          <em>128Mb</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                          <i class="basic-ico bgsz15 sz15 icon42" aria-label="basicicon42"></i>
+                        </div>
+                      </div>
+                      <div class="item-detail">
+                        <p>22:01:14 12/01/2025</p>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="icon-label">
+                        <div>
+                          <i class="basic-ico bgsz20 sz20 icon32" aria-label="basicicon32"></i>
+                          <strong>Thành phố Đà Nẵng Sơn Trà tài liệu Thành phố Đà Nẵng Sơn Trà tài liệu.doc</strong>
+                        </div>
+                        <div>
+                          <em>128Mb</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                          <i class="basic-ico bgsz15 sz15 icon42" aria-label="basicicon42"></i>
+                        </div>
+                      </div>
+                      <div class="item-detail">
+                        <p>22:01:14 12/01/2025</p>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="icon-label">
+                        <div>
+                          <i class="basic-ico bgsz20 sz20 icon32" aria-label="basicicon32"></i>
+                          <strong>Thành phố Đà Nẵng Sơn Trà tài liệu.doc</strong>
+                        </div>
+                        <div>
+                          <em>128Mb</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                          <i class="basic-ico bgsz15 sz15 icon42" aria-label="basicicon42"></i>
+                        </div>
+                      </div>
+                      <div class="item-detail">
+                        <p>22:01:14 12/01/2025</p>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="icon-label">
+                        <div>
+                          <i class="basic-ico bgsz20 sz20 icon32" aria-label="basicicon32"></i>
+                          <strong>Thành phố Đà Nẵng Sơn Trà tài liệu.doc</strong>
+                        </div>
+                        <div>
+                          <em>128Mb</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                          <i class="basic-ico bgsz15 sz15 icon42" aria-label="basicicon42"></i>
+                        </div>
+                      </div>
+                      <div class="item-detail">
+                        <p>22:01:14 12/01/2025</p>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="icon-label">
+                        <div>
+                          <i class="basic-ico bgsz20 sz20 icon32" aria-label="basicicon32"></i>
+                          <strong>Thành phố Đà Nẵng Sơn Trà tài liệu.doc</strong>
+                        </div>
+                        <div>
+                          <em>128Mb</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                          <i class="basic-ico bgsz15 sz15 icon42" aria-label="basicicon42"></i>
+                        </div>
+                      </div>
+                      <div class="item-detail">
+                        <p>22:01:14 12/01/2025</p>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="icon-label">
+                        <div>
+                          <i class="basic-ico bgsz20 sz20 icon32" aria-label="basicicon32"></i>
+                          <strong>Thành phố Đà Nẵng Sơn Trà tài liệu.doc</strong>
+                        </div>
+                        <div>
+                          <em>128Mb</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                          <i class="basic-ico bgsz15 sz15 icon42" aria-label="basicicon42"></i>
+                        </div>
+                      </div>
+                      <div class="item-detail">
+                        <p>22:01:14 12/01/2025</p>
+                      </div>
+                    </li>
+                    <li class="scroll-contents__item">
+                      <div class="icon-label">
+                        <div>
+                          <i class="basic-ico bgsz20 sz20 icon32" aria-label="basicicon32"></i>
+                          <strong>Thành phố Đà Nẵng Sơn Trà tài liệu.doc</strong>
+                        </div>
+                        <div>
+                          <em>128Mb</em>
+                          <i class="basic-ico bgsz20 sz20 icon81" aria-label="basicicon81"></i>
+                          <i class="basic-ico bgsz15 sz15 icon42" aria-label="basicicon42"></i>
+                        </div>
+                      </div>
+                      <div class="item-detail">
+                        <p>22:01:14 12/01/2025</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+              <div class="integration-btn">
+                <button class="ver1">
+                  <i class="basic-ico bgsz25 sz25 icon39" aria-label="basicicon39"></i>
+                  <em>sự lưu trữ</em>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="right-contents__popup popup-regist popup tab2 drag" data-container=".map">
+        <div class="popup-contents">
+          <div class="popup-contents__title">
+            <div class="icon-label">
+              <i class="basic-ico bgsz25 sz25 icon73" aria-label="basicicon73"></i>
+              <p>đăng ký lý lịch - tab2</p>
+            </div>
+            <i class="basic-ico bgsz15 sz15 icon25" aria-label="basicicon25"></i>
+          </div>
+          <ul class="popup-contents__list">
+            <li class="popup-contents__item">
+              <!-- all edit -->
+              <!-- article.disabled > div.active(제외) -->
+              <article class="list-info">
+                <div>
+                  <p class="asterisk">thời gian xảy ra tai nạn</p>
+                  <input type="datetime-local" step="1" />
+                </div>
+                <div>
+                  <p class="asterisk">tình trạng hiện tại</p>
+                  <select name="status" class="selectbox ver2">
+                    <option value="status1">status1</option>
+                    <option value="status2">status2</option>
+                    <option value="status3">status3</option>
+                    <option value="status4">status4</option>
+                  </select>
+                </div>
+                <div class="grid2 disabled">
+                  <p class="asterisk">đăng ký vị trí tai nạn</p>
+                  <div class="input-wrap">
+                    <input type="text" placeholder="lựa chọn trực tiếp trên bản đồ" readonly="" />
+                    <button class="ver1 map-select">
+                      <i class="basic-ico bgsz20 sz20 icon97" aria-label="basicicon97"></i>
+                      <em>Chọn vị trí trên bản đồ</em>
+                    </button>
+                  </div>
+                </div>
+                <div class="grid2 disabled">
+                  <p>Phạm vi / lĩnh vực tai nạn</p>
+                  <div class="input-wrap">
+                    <input type="text" placeholder="lựa chọn trực tiếp trên bản đồ" readonly="" />
+                    <button class="ver1 map-select">
+                      <i class="basic-ico bgsz20 sz20 icon97" aria-label="basicicon97"></i>
+                      <em>Chọn vị trí trên bản đồ</em>
+                    </button>
+                  </div>
+                </div>
+                <div class="grid2">
+                  <p class="asterisk">sự đăng ký ghi chú</p>
+                  <textarea>mục ghi chú</textarea>
+                </div>
+                <div>
+                  <p class="asterisk">Đăng ký thời gian thông báo thiên tai</p>
+                  <input type="datetime-local" step="1" />
+                </div>
+                <div>
+                  <p class="asterisk">Giai đoạn phát lệnh báo động</p>
+                  <select name="stage" class="selectbox ver2">
+                    <option value="stage1">stage1</option>
+                    <option value="stage2">stage2</option>
+                    <option value="stage3">stage3</option>
+                    <option value="stage4">stage4</option>
+                  </select>
+                </div>
+                <div class="upload__area grid2">
+                  <input type="file" multiple="" />
+                  <div class="upload-list">
+                    <i class="upload-list__img"></i>
+                    <div class="text">
+                      <strong>Drag&amp;Drop files here</strong>
+                      <p>Đăng ký nhiều tập tin (tối đa OOO MB)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="check-evacation grid2">
+                  <label for="add2">
+                    <i class="basic-ico bgsz20 sz20 icon50" aria-label="basicicon50"></i>
+                    <em>Ban hành lệnh sơ tán</em>
+                    <input type="checkbox" id="add2" />
+                    <i class="icon-checkbox"></i>
+                  </label>
+                </div>
+              </article>
+
+              <!-- integration btn -->
+              <div class="integration-btn">
+                <button class="ver1">
+                  <i class="basic-ico bgsz20 sz20 icon39" aria-label="basicicon39"></i>
+                  <em>việc đăng ký</em>
+                </button>
+                <button class="point">
+                  <i class="basic-ico bgsz20 sz20 icon42" aria-label="basicicon42"></i>
+                  <em>sự huỷ bỏ</em>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

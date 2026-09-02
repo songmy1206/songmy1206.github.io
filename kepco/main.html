@@ -1,0 +1,4741 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/core.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/color.css" />
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <!-- js -->
+    <script src="js/main.js"></script>
+    <!-- sortable -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+
+    <title>kepco 안티드론 관제 시스템</title>
+  </head>
+  <body>
+    <div class="main-wrap">
+      <!-- header -->
+      <header>
+        <div class="header-logo">
+          <a href="#"><img src="images/main/logo-kepco.svg" alt="main-logo" /></a>
+          <span>안티드론 관제 시스템</span>
+        </div>
+        <div class="header-btn">
+          <ul>
+            <li class="header-btn_1 alert-num">
+              <i></i>
+              <p>스케줄 알림</p>
+            </li>
+            <li class="header-btn_2">
+              <i></i>
+              <p>드론 알림</p>
+            </li>
+            <li class="header-btn_3 alert"><i></i></li>
+            <li class="header-btn_4"><i></i></li>
+            <li class="header-btn_5"><i></i></li>
+            <li class="header-btn_6"><i></i></li>
+          </ul>
+        </div>
+      </header>
+
+      <!-- nav -->
+      <nav>
+        <ul>
+          <li class="main-nav_1">
+            <i></i>
+            <p>드론접속</p>
+          </li>
+          <li class="main-nav_2">
+            <i></i>
+            <p>통합임무</p>
+          </li>
+          <li class="main-nav_3">
+            <i></i>
+            <p>지오펜스</p>
+          </li>
+          <li class="main-nav_4">
+            <i></i>
+            <p>임무스케줄</p>
+          </li>
+        </ul>
+        <ul>
+          <li class="main-nav_5">
+            <i></i>
+            <p>권한관리</p>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- widget tab-->
+      <div class="widget tab toggle-hide">
+        <div class="sh-btn">
+          <i class="next hide"></i>
+          <i class="prev"></i>
+        </div>
+        <div class="tab-slider">
+          <i class="slider-icon prev hide"></i>
+          <ul class="tabs">
+            <li class="active">
+              <i class="c-default variant1"></i>
+              <p>tab1tab1</p>
+              <i class="cancel"></i>
+            </li>
+            <li>
+              <i class="c-default variant2"></i>
+              <p>tab2tab2</p>
+              <i class="cancel"></i>
+            </li>
+            <li>
+              <i class="c-default variant3"></i>
+              <p>tab3tab3</p>
+              <i class="cancel"></i>
+            </li>
+          </ul>
+          <i class="slider-icon next hide"></i>
+        </div>
+        <div class="tab-contents-wrap">
+          <div class="tab-content">
+            <ul class="sub-tabs">
+              <li class="active">
+                <p>sub-tab1</p>
+                <em></em>
+              </li>
+              <li>
+                <p>sub-tab2</p>
+                <em></em>
+              </li>
+            </ul>
+
+            <div class="st-contents-wrap">
+              <div class="sub-tab-contents">
+                <div class="st-content">
+                  <div class="tc-name">이력정보</div>
+                  <ul class="tc-detail1">
+                    <li>
+                      <strong>이력명</strong>
+                      <p>tab1</p>
+                    </li>
+                    <li>
+                      <strong>이력명</strong>
+                      <p>test</p>
+                    </li>
+                    <li>
+                      <strong>시작시간</strong>
+                      <p>2023-09-19 13:34:08</p>
+                    </li>
+                    <li>
+                      <strong>종료시간</strong>
+                      <p>2023-09-19 13:34:08</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="st-content">
+                  <div class="tc-name">sub-tab1</div>
+                  <ul class="tc-detail2">
+                    <li>
+                      <em>가동시간</em>
+                      <p>00:01:17</p>
+                    </li>
+                    <li>
+                      <em>총시간</em>
+                      <p>00:02:29</p>
+                    </li>
+                    <li>
+                      <em>배터리전압</em>
+                      <p>56%</p>
+                    </li>
+                    <li>
+                      <em>배터리전압</em>
+                      <p>56%</p>
+                    </li>
+                    <li>
+                      <em>미션진행 거리</em>
+                      <p>224.29m</p>
+                    </li>
+                    <li>
+                      <em>미션진행 거리</em>
+                      <p>224.29m</p>
+                    </li>
+                    <li>
+                      <em>해발고도</em>
+                      <p>224.29m</p>
+                    </li>
+                    <li>
+                      <em>지형 고도</em>
+                      <p>224.29m</p>
+                    </li>
+                    <li>
+                      <em>개체 속도</em>
+                      <p>0.05㎧</p>
+                    </li>
+                    <li>
+                      <em>방향</em>
+                      <p>-110.00º</p>
+                    </li>
+                    <li>
+                      <em>위치</em>
+                      <p>127.281170 37.097917</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="sub-tab-contents hide">
+                <div class="st-content">
+                  <div class="tc-name">이력정보</div>
+                  <ul class="tc-detail1">
+                    <li>
+                      <strong>이력명</strong>
+                      <p>tab1</p>
+                    </li>
+                    <li>
+                      <strong>이력명</strong>
+                      <p>test</p>
+                    </li>
+                    <li>
+                      <strong>시작시간</strong>
+                      <p>2023-09-19 13:34:08</p>
+                    </li>
+                    <li>
+                      <strong>종료시간</strong>
+                      <p>2023-09-19 13:34:08</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="st-content">
+                  <div class="tc-name">sub-tab2</div>
+                  <ul class="tc-detail2">
+                    <li>
+                      <em>가동시간</em>
+                      <p>00:01:17</p>
+                    </li>
+                    <li>
+                      <em>총시간</em>
+                      <p>00:02:29</p>
+                    </li>
+                    <li>
+                      <em>배터리전압</em>
+                      <p>56%</p>
+                    </li>
+                    <li>
+                      <em>배터리전압</em>
+                      <p>56%</p>
+                    </li>
+                    <li>
+                      <em>미션진행 거리</em>
+                      <p>224.29m</p>
+                    </li>
+                    <li>
+                      <em>미션진행 거리</em>
+                      <p>224.29m</p>
+                    </li>
+                    <li>
+                      <em>해발고도</em>
+                      <p>224.29m</p>
+                    </li>
+                    <li>
+                      <em>지형 고도</em>
+                      <p>224.29m</p>
+                    </li>
+                    <li>
+                      <em>개체 속도</em>
+                      <p>0.05㎧</p>
+                    </li>
+                    <li>
+                      <em>방향</em>
+                      <p>-110.00º</p>
+                    </li>
+                    <li>
+                      <em>위치</em>
+                      <p>127.281170 37.097917</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content hide">
+            <ul class="sub-tabs">
+              <li class="active">
+                <p>sub-tab1</p>
+                <em></em>
+              </li>
+              <li>
+                <p>sub-tab2</p>
+                <em></em>
+              </li>
+            </ul>
+
+            <div class="st-contents-wrap">
+              <div class="sub-tab-contents">
+                <div class="st-content">
+                  <div class="tc-name">이력정보</div>
+                  <ul class="tc-detail1">
+                    <li>
+                      <strong>이력명</strong>
+                      <p>tab2</p>
+                    </li>
+                    <li>
+                      <strong>이력명</strong>
+                      <p>test</p>
+                    </li>
+                    <li>
+                      <strong>시작시간</strong>
+                      <p>2023-09-19 13:34:08</p>
+                    </li>
+                    <li>
+                      <strong>종료시간</strong>
+                      <p>2023-09-19 13:34:08</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="st-content">
+                  <div class="tc-name">sub-tab1</div>
+                  <ul class="tc-detail2">
+                    <li>
+                      <em>가동시간</em>
+                      <p>00:01:17</p>
+                    </li>
+                    <li>
+                      <em>총시간</em>
+                      <p>00:02:29</p>
+                    </li>
+                    <li>
+                      <em>배터리전압</em>
+                      <p>56%</p>
+                    </li>
+                    <li>
+                      <em>배터리전압</em>
+                      <p>56%</p>
+                    </li>
+                    <li>
+                      <em>미션진행 거리</em>
+                      <p>224.29m</p>
+                    </li>
+                    <li>
+                      <em>미션진행 거리</em>
+                      <p>224.29m</p>
+                    </li>
+                    <li>
+                      <em>해발고도</em>
+                      <p>224.29m</p>
+                    </li>
+                    <li>
+                      <em>지형 고도</em>
+                      <p>224.29m</p>
+                    </li>
+                    <li>
+                      <em>개체 속도</em>
+                      <p>0.05㎧</p>
+                    </li>
+                    <li>
+                      <em>방향</em>
+                      <p>-110.00º</p>
+                    </li>
+                    <li>
+                      <em>위치</em>
+                      <p>127.281170 37.097917</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="sub-tab-contents hide">
+                <div class="st-content">
+                  <div class="tc-name">이력정보</div>
+                  <ul class="tc-detail1">
+                    <li>
+                      <strong>이력명</strong>
+                      <p>tab2</p>
+                    </li>
+                    <li>
+                      <strong>이력명</strong>
+                      <p>test</p>
+                    </li>
+                    <li>
+                      <strong>시작시간</strong>
+                      <p>2023-09-19 13:34:08</p>
+                    </li>
+                    <li>
+                      <strong>종료시간</strong>
+                      <p>2023-09-19 13:34:08</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="st-content">
+                  <div class="tc-name">sub-tab2</div>
+                  <ul class="tc-detail2">
+                    <li>
+                      <em>가동시간</em>
+                      <p>00:01:17</p>
+                    </li>
+                    <li>
+                      <em>총시간</em>
+                      <p>00:02:29</p>
+                    </li>
+                    <li>
+                      <em>배터리전압</em>
+                      <p>56%</p>
+                    </li>
+                    <li>
+                      <em>배터리전압</em>
+                      <p>56%</p>
+                    </li>
+                    <li>
+                      <em>미션진행 거리</em>
+                      <p>224.29m</p>
+                    </li>
+                    <li>
+                      <em>미션진행 거리</em>
+                      <p>224.29m</p>
+                    </li>
+                    <li>
+                      <em>해발고도</em>
+                      <p>224.29m</p>
+                    </li>
+                    <li>
+                      <em>지형 고도</em>
+                      <p>224.29m</p>
+                    </li>
+                    <li>
+                      <em>개체 속도</em>
+                      <p>0.05㎧</p>
+                    </li>
+                    <li>
+                      <em>방향</em>
+                      <p>-110.00º</p>
+                    </li>
+                    <li>
+                      <em>위치</em>
+                      <p>127.281170 37.097917</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content hide">
+            <ul class="sub-tabs">
+              <li class="active">
+                <p>sub-tab1</p>
+                <em></em>
+              </li>
+              <li>
+                <p>sub-tab2</p>
+                <em></em>
+              </li>
+            </ul>
+
+            <div class="st-contents-wrap">
+              <div class="sub-tab-contents">
+                <div class="st-content">
+                  <div class="tc-name">이력정보</div>
+                  <ul class="tc-detail1">
+                    <li>
+                      <strong>이력명</strong>
+                      <p>tab3</p>
+                    </li>
+                    <li>
+                      <strong>이력명</strong>
+                      <p>test</p>
+                    </li>
+                    <li>
+                      <strong>시작시간</strong>
+                      <p>2023-09-19 13:34:08</p>
+                    </li>
+                    <li>
+                      <strong>종료시간</strong>
+                      <p>2023-09-19 13:34:08</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="st-content">
+                  <div class="tc-name">sub-tab1</div>
+                  <ul class="tc-detail2">
+                    <li>
+                      <em>가동시간</em>
+                      <p>00:01:17</p>
+                    </li>
+                    <li>
+                      <em>총시간</em>
+                      <p>00:02:29</p>
+                    </li>
+                    <li>
+                      <em>배터리전압</em>
+                      <p>56%</p>
+                    </li>
+                    <li>
+                      <em>배터리전압</em>
+                      <p>56%</p>
+                    </li>
+                    <li>
+                      <em>미션진행 거리</em>
+                      <p>224.29m</p>
+                    </li>
+                    <li>
+                      <em>미션진행 거리</em>
+                      <p>224.29m</p>
+                    </li>
+                    <li>
+                      <em>해발고도</em>
+                      <p>224.29m</p>
+                    </li>
+                    <li>
+                      <em>지형 고도</em>
+                      <p>224.29m</p>
+                    </li>
+                    <li>
+                      <em>개체 속도</em>
+                      <p>0.05㎧</p>
+                    </li>
+                    <li>
+                      <em>방향</em>
+                      <p>-110.00º</p>
+                    </li>
+                    <li>
+                      <em>위치</em>
+                      <p>127.281170 37.097917</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="sub-tab-contents hide">
+                <div class="st-content">
+                  <div class="tc-name">이력정보</div>
+                  <ul class="tc-detail1">
+                    <li>
+                      <strong>이력명</strong>
+                      <p>tab3</p>
+                    </li>
+                    <li>
+                      <strong>이력명</strong>
+                      <p>test</p>
+                    </li>
+                    <li>
+                      <strong>시작시간</strong>
+                      <p>2023-09-19 13:34:08</p>
+                    </li>
+                    <li>
+                      <strong>종료시간</strong>
+                      <p>2023-09-19 13:34:08</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="st-content">
+                  <div class="tc-name">sub-tab2</div>
+                  <ul class="tc-detail2">
+                    <li>
+                      <em>가동시간</em>
+                      <p>00:01:17</p>
+                    </li>
+                    <li>
+                      <em>총시간</em>
+                      <p>00:02:29</p>
+                    </li>
+                    <li>
+                      <em>배터리전압</em>
+                      <p>56%</p>
+                    </li>
+                    <li>
+                      <em>배터리전압</em>
+                      <p>56%</p>
+                    </li>
+                    <li>
+                      <em>미션진행 거리</em>
+                      <p>224.29m</p>
+                    </li>
+                    <li>
+                      <em>미션진행 거리</em>
+                      <p>224.29m</p>
+                    </li>
+                    <li>
+                      <em>해발고도</em>
+                      <p>224.29m</p>
+                    </li>
+                    <li>
+                      <em>지형 고도</em>
+                      <p>224.29m</p>
+                    </li>
+                    <li>
+                      <em>개체 속도</em>
+                      <p>0.05㎧</p>
+                    </li>
+                    <li>
+                      <em>방향</em>
+                      <p>-110.00º</p>
+                    </li>
+                    <li>
+                      <em>위치</em>
+                      <p>127.281170 37.097917</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- widget tab popup -->
+      <div class="tab-content-popup popUp hide">
+        <div class="title partition-title">
+          <div>
+            <p>depth1 title</p>
+            <div class="partition"></div>
+            <strong>depth2 title</strong>
+          </div>
+          <i class="close"></i>
+        </div>
+        <ul class="nav-sub-contents">
+          <li class="nav-sub-content"></li>
+        </ul>
+      </div>
+
+      <!-- widget popup -->
+      <div class="popUp widget w350 widget1 hide">
+        <div class="title">
+          <div>
+            <p>스케줄알림</p>
+          </div>
+          <i class="close"></i>
+        </div>
+        <div class="w-popup-content">
+          <ul>
+            <li class="date">2024-02-27</li>
+            <li class="nav-content">
+              <img src="https://picsum.photos/60/60" alt="thumb1" />
+              <div class="nav-content-sub">
+                <div class="nav-content-name">
+                  <h4>Q1234567890</h4>
+                  <i class="more20 i20"></i>
+                </div>
+                <div class="nav-content-detail">
+                  <strong>스케줄내용</strong>
+                  <p>14:18:36</p>
+                </div>
+                <div class="nav-content-text">알림 내용을 적는 곳입니다.</div>
+              </div>
+            </li>
+            <li class="accor-contents hide">
+              <div class="accor-contents-title">
+                <i class="i30 setting c-default"></i>
+                <strong>임무 정보</strong>
+              </div>
+              <ul class="accor-contents-name">
+                <li>
+                  <div>
+                    <i class="list-disc"></i>
+                    <p>진행 예정 임무 명</p>
+                  </div>
+                  <input type="text" />
+                </li>
+                <li>
+                  <div>
+                    <i class="list-disc"></i>
+                    <p>스케줄 액션</p>
+                    <div class="btn popup-btn-fe">
+                      <button><i class="location"></i>경로확인</button>
+                      <button><i class="play"></i>진행</button>
+                      <button><i class="cancel"></i>취소</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-content warning">
+              <img src="https://picsum.photos/60/60" alt="thumb1" />
+              <div class="nav-content-sub">
+                <div class="nav-content-name">
+                  <h4>Q1234567890</h4>
+                  <i class="more20 i20"></i>
+                </div>
+                <div class="nav-content-detail">
+                  <strong>스케줄내용</strong>
+                  <p>14:18:36</p>
+                </div>
+                <div class="nav-content-text">알림 내용을 적는 곳입니다.</div>
+              </div>
+            </li>
+            <li class="accor-contents hide">
+              <div class="accor-contents-title">
+                <i class="i30 setting c-default"></i>
+                <strong>임무 정보</strong>
+              </div>
+              <ul class="accor-contents-name">
+                <li>
+                  <div>
+                    <i class="list-disc"></i>
+                    <p>진행 예정 임무 명</p>
+                  </div>
+                  <input type="text" />
+                </li>
+                <li>
+                  <div>
+                    <i class="list-disc"></i>
+                    <p>스케줄 액션</p>
+                    <div class="btn popup-btn-fe">
+                      <button><i class="location"></i>경로확인</button>
+                      <button><i class="play"></i>진행</button>
+                      <button><i class="cancel"></i>취소</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-content caution">
+              <img src="https://picsum.photos/60/60" alt="thumb1" />
+              <div class="nav-content-sub">
+                <div class="nav-content-name">
+                  <h4>Q1234567890</h4>
+                  <i class="more20 i20"></i>
+                </div>
+                <div class="nav-content-detail">
+                  <strong>스케줄내용</strong>
+                  <p>14:18:36</p>
+                </div>
+                <div class="nav-content-text">알림 내용을 적는 곳입니다.</div>
+              </div>
+            </li>
+            <li class="accor-contents hide">
+              <div class="accor-contents-title">
+                <i class="i30 setting c-default"></i>
+                <strong>임무 정보</strong>
+              </div>
+              <ul class="accor-contents-name">
+                <li>
+                  <div>
+                    <i class="list-disc"></i>
+                    <p>진행 예정 임무 명</p>
+                  </div>
+                  <input type="text" />
+                </li>
+                <li>
+                  <div>
+                    <i class="list-disc"></i>
+                    <p>스케줄 액션</p>
+                    <div class="btn popup-btn-fe">
+                      <button><i class="location"></i>경로확인</button>
+                      <button><i class="play"></i>진행</button>
+                      <button><i class="cancel"></i>취소</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-content">
+              <img src="https://picsum.photos/60/60" alt="thumb1" />
+              <div class="nav-content-sub">
+                <div class="nav-content-name">
+                  <h4>Q1234567890</h4>
+                  <i class="more20 i20"></i>
+                </div>
+                <div class="nav-content-detail">
+                  <strong>스케줄내용</strong>
+                  <p>14:18:36</p>
+                </div>
+                <div class="nav-content-text">알림 내용을 적는 곳입니다.</div>
+              </div>
+            </li>
+            <li class="accor-contents hide">
+              <div class="accor-contents-title">
+                <i class="i30 setting c-default"></i>
+                <strong>임무 정보</strong>
+              </div>
+              <ul class="accor-contents-name">
+                <li>
+                  <div>
+                    <i class="list-disc"></i>
+                    <p>진행 예정 임무 명</p>
+                  </div>
+                  <input type="text" />
+                </li>
+                <li>
+                  <div>
+                    <i class="list-disc"></i>
+                    <p>스케줄 액션</p>
+                    <div class="btn popup-btn-fe">
+                      <button><i class="location"></i>경로확인</button>
+                      <button><i class="play"></i>진행</button>
+                      <button><i class="cancel"></i>취소</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-content warning">
+              <img src="https://picsum.photos/60/60" alt="thumb1" />
+              <div class="nav-content-sub">
+                <div class="nav-content-name">
+                  <h4>Q1234567890</h4>
+                  <i class="more20 i20"></i>
+                </div>
+                <div class="nav-content-detail">
+                  <strong>스케줄내용</strong>
+                  <p>14:18:36</p>
+                </div>
+                <div class="nav-content-text">알림 내용을 적는 곳입니다.</div>
+              </div>
+            </li>
+            <li class="accor-contents hide">
+              <div class="accor-contents-title">
+                <i class="i30 setting c-default"></i>
+                <strong>임무 정보</strong>
+              </div>
+              <ul class="accor-contents-name">
+                <li>
+                  <div>
+                    <i class="list-disc"></i>
+                    <p>진행 예정 임무 명</p>
+                  </div>
+                  <input type="text" />
+                </li>
+                <li>
+                  <div>
+                    <i class="list-disc"></i>
+                    <p>스케줄 액션</p>
+                    <div class="btn popup-btn-fe">
+                      <button><i class="location"></i>경로확인</button>
+                      <button><i class="play"></i>진행</button>
+                      <button><i class="cancel"></i>취소</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-content caution">
+              <img src="https://picsum.photos/60/60" alt="thumb1" />
+              <div class="nav-content-sub">
+                <div class="nav-content-name">
+                  <h4>Q1234567890</h4>
+                  <i class="more20 i20"></i>
+                </div>
+                <div class="nav-content-detail">
+                  <strong>스케줄내용</strong>
+                  <p>14:18:36</p>
+                </div>
+                <div class="nav-content-text">알림 내용을 적는 곳입니다. 알림 내용을 적는 곳입니다. 알림 내용을 적는 곳입니다. 알림 내용을 적는 곳입니다. 알림 내용을 적는 곳입니다.</div>
+              </div>
+            </li>
+            <li class="accor-contents hide">
+              <div class="accor-contents-title">
+                <i class="i30 setting c-default"></i>
+                <strong>임무 정보</strong>
+              </div>
+              <ul class="accor-contents-name">
+                <li>
+                  <div>
+                    <i class="list-disc"></i>
+                    <p>진행 예정 임무 명</p>
+                  </div>
+                  <input type="text" />
+                </li>
+                <li>
+                  <div>
+                    <i class="list-disc"></i>
+                    <p>스케줄 액션</p>
+                    <div class="btn popup-btn-fe">
+                      <button><i class="location"></i>경로확인</button>
+                      <button><i class="play"></i>진행</button>
+                      <button><i class="cancel"></i>취소</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="popUp widget w350 widget2 hide">
+        <div class="title">
+          <div>
+            <p>드론알림</p>
+          </div>
+          <i class="close"></i>
+        </div>
+        <div class="w-popup-content">
+          <ul>
+            <li class="date">2024-02-27</li>
+            <li class="nav-content">
+              <img src="https://picsum.photos/60/60" alt="thumb1" />
+              <div class="nav-content-sub">
+                <div class="nav-content-name">
+                  <h4>Q1234567890</h4>
+                  <i class="delete i20"></i>
+                </div>
+                <div class="nav-content-detail">
+                  <strong>접속알림</strong>
+                  <p>14:18:36</p>
+                </div>
+                <div class="nav-content-text">알림 내용을 적는 곳입니다.</div>
+              </div>
+            </li>
+            <li class="nav-content warning">
+              <img src="https://picsum.photos/60/60" alt="thumb1" />
+              <div class="nav-content-sub">
+                <div class="nav-content-name">
+                  <h4>Q1234567890</h4>
+                  <i class="delete i20"></i>
+                </div>
+                <div class="nav-content-detail">
+                  <strong>접속알림</strong>
+                  <p>14:18:36</p>
+                </div>
+                <div class="nav-content-text">알림 내용을 적는 곳입니다.</div>
+              </div>
+            </li>
+            <li class="nav-content caution">
+              <img src="https://picsum.photos/60/60" alt="thumb1" />
+              <div class="nav-content-sub">
+                <div class="nav-content-name">
+                  <h4>Q1234567890</h4>
+                  <i class="delete i20"></i>
+                </div>
+                <div class="nav-content-detail">
+                  <strong>접속알림</strong>
+                  <p>14:18:36</p>
+                </div>
+                <div class="nav-content-text">알림 내용을 적는 곳입니다.</div>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li class="date">2024-02-26</li>
+            <li class="nav-content">
+              <img src="https://picsum.photos/60/60" alt="thumb1" />
+              <div class="nav-content-sub">
+                <div class="nav-content-name">
+                  <h4>Q1234567890</h4>
+                  <i class="delete i20"></i>
+                </div>
+                <div class="nav-content-detail">
+                  <strong>접속알림</strong>
+                  <p>14:18:36</p>
+                </div>
+                <div class="nav-content-text">알림 내용을 적는 곳입니다. 알림 내용을 적는 곳입니다.</div>
+              </div>
+            </li>
+            <li class="nav-content warning">
+              <img src="https://picsum.photos/60/60" alt="thumb1" />
+              <div class="nav-content-sub">
+                <div class="nav-content-name">
+                  <h4>Q1234567890</h4>
+                  <i class="delete i20"></i>
+                </div>
+                <div class="nav-content-detail">
+                  <strong>접속알림</strong>
+                  <p>14:18:36</p>
+                </div>
+                <div class="nav-content-text">알림 내용을 적는 곳입니다. 알림 내용을 적는 곳입니다.</div>
+              </div>
+            </li>
+            <li class="nav-content caution">
+              <img src="https://picsum.photos/60/60" alt="thumb1" />
+              <div class="nav-content-sub">
+                <div class="nav-content-name">
+                  <h4>Q1234567890</h4>
+                  <i class="delete i20"></i>
+                </div>
+                <div class="nav-content-detail">
+                  <strong>접속알림</strong>
+                  <p>14:18:36</p>
+                </div>
+                <div class="nav-content-text">알림 내용을 적는 곳입니다. 알림 내용을 적는 곳입니다.</div>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li class="date">2024-02-25</li>
+            <li class="nav-content">
+              <img src="https://picsum.photos/60/60" alt="thumb1" />
+              <div class="nav-content-sub">
+                <div class="nav-content-name">
+                  <h4>Q1234567890</h4>
+                  <i class="delete i20"></i>
+                </div>
+                <div class="nav-content-detail">
+                  <strong>접속알림</strong>
+                  <p>14:18:36</p>
+                </div>
+                <div class="nav-content-text">
+                  알림 내용을 적는 곳입니다. 알림 내용을 적는 곳입니다. 알림 내용을 적는 곳입니다. 알림 내용을 적는 곳입니다. 알림 내용을 적는 곳입니다. 알림 내용을 적는 곳입니다.
+                </div>
+              </div>
+            </li>
+            <li class="nav-content warning">
+              <img src="https://picsum.photos/60/60" alt="thumb1" />
+              <div class="nav-content-sub">
+                <div class="nav-content-name">
+                  <h4>Q1234567890</h4>
+                  <i class="delete i20"></i>
+                </div>
+                <div class="nav-content-detail">
+                  <strong>접속알림</strong>
+                  <p>14:18:36</p>
+                </div>
+                <div class="nav-content-text">알림 내용을 적는 곳입니다. 알림 내용을 적는 곳입니다. 알림 내용을 적는 곳입니다.</div>
+              </div>
+            </li>
+            <li class="nav-content caution">
+              <img src="https://picsum.photos/60/60" alt="thumb1" />
+              <div class="nav-content-sub">
+                <div class="nav-content-name">
+                  <h4>Q1234567890</h4>
+                  <i class="delete i20"></i>
+                </div>
+                <div class="nav-content-detail">
+                  <strong>접속알림</strong>
+                  <p>14:18:36</p>
+                </div>
+                <div class="nav-content-text">알림 내용을 적는 곳입니다. 알림 내용을 적는 곳입니다. 알림 내용을 적는 곳입니다.</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="popUp widget widget3 hide">
+        <div class="title">
+          <div>
+            <p>우주전파 환경정보</p>
+          </div>
+          <i class="close"></i>
+        </div>
+        <div class="table">
+          <table>
+            <tr>
+              <th>시간</th>
+              <th>태양흑점폭발</th>
+              <th>태양인자유입</th>
+              <th>지자기교란</th>
+            </tr>
+            <tr>
+              <td>현재</td>
+              <td>
+                <div>
+                  <i class="g0 i20 c-default"></i>
+                  <p>G0</p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <i class="s0 i20 c-default"></i>
+                  <p>S0</p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <i class="r0 i20 c-default"></i>
+                  <p>R0</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>-24hr</td>
+              <td>
+                <div>
+                  <i class="g1 i20 c-default"></i>
+                  <p>G1</p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <i class="s1 i20 c-default"></i>
+                  <p>S1</p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <i class="r1 i20 c-default"></i>
+                  <p>R1</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>-48hr</td>
+              <td>
+                <div>
+                  <i class="g2 i20 c-default"></i>
+                  <p>G2</p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <i class="s2 i20 c-default"></i>
+                  <p>S2</p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <i class="r2 c-default"></i>
+                  <p>R2</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>-48hr</td>
+              <td>
+                <div>
+                  <i class="g3 i20 c-default"></i>
+                  <p>G3</p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <i class="s3 i20 c-default"></i>
+                  <p>S3</p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <i class="r3 i20 c-default"></i>
+                  <p>R3</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>-48hr</td>
+              <td>
+                <div>
+                  <i class="g4 i20 c-default"></i>
+                  <p>G4</p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <i class="s4 i20 c-default"></i>
+                  <p>S4</p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <i class="r4 i20 c-default"></i>
+                  <p>R4</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>-48hr</td>
+              <td>
+                <div>
+                  <i class="g5 i20 c-default"></i>
+                  <p>G5</p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <i class="s5 i20 c-default"></i>
+                  <p>S5</p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <i class="r5 i20 c-default"></i>
+                  <p>R5</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="popUp widget w350 pb15 widget4 hide">
+        <div class="title">
+          <div>
+            <p>기상 예보</p>
+          </div>
+          <i class="close"></i>
+        </div>
+        <ul class="nav-sub-contents">
+          <li class="nav-sub-content">
+            <div class="title">
+              <p>중심점 위치</p>
+            </div>
+            <ul class="ns-content-wrap row">
+              <li class="ns-content">
+                <div class="content-name">
+                  <i class="list-disc"></i>
+                  <p>Lon</p>
+                </div>
+                <div class="form-container">
+                  <input type="text" class="form" />
+                </div>
+              </li>
+              <li class="ns-content">
+                <div class="content-name">
+                  <i class="list-disc"></i>
+                  <p>Lat</p>
+                </div>
+                <div class="form-container">
+                  <input type="text" class="form" />
+                </div>
+              </li>
+              <li class="ns-content">
+                <div class="content-name">
+                  <i class="list-disc"></i>
+                  <p>Alt</p>
+                </div>
+                <div class="form-container">
+                  <input type="text" class="form" />
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-sub-content">
+            <div class="title">
+              <p>기상정보</p>
+              <div class="date-picker">
+                <i class="prev"></i>
+                <p class="date">2024-03-18</p>
+                <i class="next"></i>
+              </div>
+            </div>
+            <ul class="widget4-contents">
+              <li>
+                <em>기온</em>
+                <p>24℃</p>
+              </li>
+              <li>
+                <emp>바람</emp>
+                <p>남서 18.2 ㎧</p>
+              </li>
+              <li>
+                <em>습도</em>
+                <p>56%</p>
+              </li>
+              <li>
+                <em>강수량</em>
+                <p>10㎜</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- nav contents -->
+      <!-- 드론접속 -->
+      <div class="main-nav_1 nav-contents hide">
+        <section class="nav-content-wrap">
+          <ul>
+            <li class="nav-content warning b-bottom">
+              <img src="https://picsum.photos/70/70" alt="thumb1" />
+              <div class="nav-content-sub">
+                <div class="nav-content-name">
+                  <h4>Q1234567890</h4>
+                  <div>
+                    <i class="pin"></i>
+                    <i class="more"></i>
+                  </div>
+                </div>
+                <div class="nav-content-text">
+                  <div class="nc-text1">
+                    <span><strong>위도</strong>125.71548751</span>
+                    <span><strong>경도</strong>125.71548751</span>
+                  </div>
+                  <div>
+                    <span><strong>고도</strong>1550m</span>
+                    <span><strong>수평</strong>1555m/s</span>
+                    <span><strong>수직</strong>1555m/s</span>
+                    <span><strong>거리</strong>1555m</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-content-hide hide">
+              <div class="sub-btn nc-sub-wrap">
+                <button class="nc-sub-btn_1"><i></i> <span>상세정보</span></button>
+                <button class="nc-sub-btn_2"><i></i> <span>임무설정</span></button>
+                <button class="nc-sub-btn_3"><i></i> <span>임무이력</span></button>
+                <button class="nc-sub-btn_4"><i></i> <span>로봇설정</span></button>
+                <button class="nc-sub-btn_5"><i></i> <span>권한설정</span></button>
+              </div>
+            </li>
+            <li class="nav-content b-bottom">
+              <img src="https://picsum.photos/70/70" alt="thumb2" />
+              <div class="nav-content-sub">
+                <div class="nav-content-name">
+                  <h4>Q1234567890</h4>
+                  <div>
+                    <i class="pin active"></i>
+                    <i class="more"></i>
+                  </div>
+                </div>
+                <div class="nav-content-text">
+                  <div class="nc-text1">
+                    <span><strong>위도</strong>125.71548751</span> <span><strong>경도</strong>125.71548751</span>
+                  </div>
+                  <div>
+                    <span><strong>고도</strong>1550m</span>
+                    <span><strong>수평</strong>1555m/s</span>
+                    <span><strong>수직</strong>1555m/s</span>
+                    <span><strong>거리</strong>1555m</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-content-hide hide">
+              <div class="sub-btn nc-sub-wrap">
+                <button class="nc-sub-btn_1"><i></i> <span>상세정보</span></button>
+                <button class="nc-sub-btn_2"><i></i> <span>임무설정</span></button>
+                <button class="nc-sub-btn_3"><i></i> <span>임무이력</span></button>
+                <button class="nc-sub-btn_4"><i></i> <span>로봇설정</span></button>
+                <button class="nc-sub-btn_5"><i></i> <span>권한설정</span></button>
+              </div>
+            </li>
+          </ul>
+          <div class="main-btn">
+            <button class="full">내 드론 관리</button>
+          </div>
+        </section>
+        <!-- 내 드론 관리 -->
+        <section class="close-wrap nc1-contents hide">
+          <h4>내 드론 관리</h4>
+          <div class="nc1-content dl-list">
+            <div class="nc1-content-title title">
+              <dl>
+                <dt>번호</dt>
+                <dt>드론명</dt>
+                <dt>드론설명</dt>
+                <dt>나의 권한</dt>
+                <dt>이미지</dt>
+                <dt>활성화</dt>
+                <dt>수정</dt>
+              </dl>
+            </div>
+            <ul class="list-contents">
+              <li class="nc1-content1">
+                <dl>
+                  <dt>1</dt>
+                  <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                  <dt class="text-ellipsis">드론설명드론설명드론설명드론설명드론설명드론설명</dt>
+                  <dt>관리자</dt>
+                  <dt>
+                    <label class="img-upload-btn hide" for="img-upload"><i class="upload"></i>이미지 업로드</label>
+                    <input type="file" id="img-upload" />
+                    <p class="img-viewer img1"><i class="viewer"></i>이미지 보기</p>
+                  </dt>
+                  <dt>
+                    <section class="selectbox state">
+                      <button type="button" class="selectbox-btn activate">활성화</button>
+                      <ul class="selectbox-option hide">
+                        <li><button type="button" class="btn-color-change option-btn disabled">비활성화</button></li>
+                        <li><button type="button" class="btn-color-change option-btn activate">활성화</button></li>
+                      </ul>
+                    </section>
+                  </dt>
+                  <dt><i class="edit i20"></i></dt>
+                </dl>
+              </li>
+              <li class="nc1-content2">
+                <dl>
+                  <dt>2</dt>
+                  <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                  <dt class="text-ellipsis">드론설명드론설명드론설명드론설명드론설명드론설명드론설명드론설명드론설명드론설명드론설명드론설명드론설명드론설명드론설명드론설명드론설명드론설명</dt>
+                  <dt>관제</dt>
+                  <dt>
+                    <label class="img-upload-btn" for="img-upload"><i class="upload"></i>이미지 업로드</label>
+                    <input type="file" id="img-upload" />
+                    <p class="img-viewer hide img2"><i class="viewer"></i>이미지 보기</p>
+                  </dt>
+                  <dt>
+                    <section class="selectbox state">
+                      <button type="button" class="selectbox-btn activate">활성화</button>
+                      <ul class="selectbox-option hide">
+                        <li><button type="button" class="option-btn disabled">비활성화</button></li>
+                        <li><button type="button" class="option-btn activate">활성화</button></li>
+                      </ul>
+                    </section>
+                  </dt>
+                  <dt><i class="edit i20"></i></dt>
+                </dl>
+              </li>
+              <li class="nc1-content3">
+                <dl>
+                  <dt>3</dt>
+                  <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                  <dt class="text-ellipsis">드론설명드론설명드론설명드론설명드론설명드론설명드론설명드론설명드론설명드론설명드론설명드론설명드론설명드론설명드론설명드론설명드론설명드론설명</dt>
+                  <dt>뷰어</dt>
+                  <dt>
+                    <label class="img-upload-btn hide" for="img-upload"><i class="upload"></i>이미지 업로드</label>
+                    <input type="file" id="img-upload" />
+                    <p class="img-viewer img3"><i class="viewer"></i>이미지 보기</p>
+                  </dt>
+                  <dt>
+                    <section class="selectbox state">
+                      <button type="button" class="selectbox-btn activate">활성화</button>
+                      <ul class="selectbox-option hide">
+                        <li><button type="button" class="option-btn disabled">비활성화</button></li>
+                        <li><button type="button" class="option-btn activate">활성화</button></li>
+                      </ul>
+                    </section>
+                  </dt>
+                  <dt><i class="edit i20"></i></dt>
+                </dl>
+              </li>
+              <li class="nc1-content4">
+                <dl>
+                  <dt>1</dt>
+                  <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                  <dt class="text-ellipsis">드론설명드론설명드론설명드론설명드론설명드론설명</dt>
+                  <dt>관리자</dt>
+                  <dt>
+                    <label class="img-upload-btn" for="img-upload"><i class="upload"></i>이미지 업로드</label>
+                    <input type="file" id="img-upload" />
+                    <p class="img-viewer hide img4"><i class="viewer"></i>이미지 보기</p>
+                  </dt>
+                  <dt>
+                    <section class="selectbox state">
+                      <button type="button" class="selectbox-btn activate">활성화</button>
+                      <ul class="selectbox-option hide">
+                        <li><button type="button" class="btn-color-change option-btn disabled">비활성화</button></li>
+                        <li><button type="button" class="btn-color-change option-btn activate">활성화</button></li>
+                      </ul>
+                    </section>
+                  </dt>
+                  <dt><i class="edit i20"></i></dt>
+                </dl>
+              </li>
+              <li class="nc1-content5">
+                <dl>
+                  <dt>1</dt>
+                  <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                  <dt class="text-ellipsis">드론설명드론설명드론설명드론설명드론설명드론설명</dt>
+                  <dt>관리자</dt>
+                  <dt>
+                    <label class="img-upload-btn hide" for="img-upload"><i class="upload"></i>이미지 업로드</label>
+                    <input type="file" id="img-upload" />
+                    <p class="img-viewer img5"><i class="viewer"></i>이미지 보기</p>
+                  </dt>
+                  <dt>
+                    <section class="selectbox state">
+                      <button type="button" class="selectbox-btn activate">활성화</button>
+                      <ul class="selectbox-option hide">
+                        <li><button type="button" class="btn-color-change option-btn disabled">비활성화</button></li>
+                        <li><button type="button" class="btn-color-change option-btn activate">활성화</button></li>
+                      </ul>
+                    </section>
+                  </dt>
+                  <dt><i class="edit i20"></i></dt>
+                </dl>
+              </li>
+              <li class="nc1-content6">
+                <dl>
+                  <dt>1</dt>
+                  <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                  <dt class="text-ellipsis">드론설명드론설명드론설명드론설명드론설명드론설명</dt>
+                  <dt>관리자</dt>
+                  <dt>
+                    <label class="img-upload-btn" for="img-upload"><i class="upload"></i>이미지 업로드</label>
+                    <input type="file" id="img-upload" />
+                    <p class="img-viewer hide img6"><i class="viewer"></i>이미지 보기</p>
+                  </dt>
+                  <dt>
+                    <section class="selectbox state">
+                      <button type="button" class="selectbox-btn activate">활성화</button>
+                      <ul class="selectbox-option hide">
+                        <li><button type="button" class="btn-color-change option-btn disabled">비활성화</button></li>
+                        <li><button type="button" class="btn-color-change option-btn activate">활성화</button></li>
+                      </ul>
+                    </section>
+                  </dt>
+                  <dt><i class="edit i20"></i></dt>
+                </dl>
+              </li>
+              <li class="nc1-content7">
+                <dl>
+                  <dt>1</dt>
+                  <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                  <dt class="text-ellipsis">드론설명드론설명드론설명드론설명드론설명드론설명</dt>
+                  <dt>관리자</dt>
+                  <dt>
+                    <label class="img-upload-btn hide" for="img-upload"><i class="upload"></i>이미지 업로드</label>
+                    <input type="file" id="img-upload" />
+                    <p class="img-viewer img7"><i class="viewer"></i>이미지 보기</p>
+                  </dt>
+                  <dt>
+                    <section class="selectbox state">
+                      <button type="button" class="selectbox-btn activate">활성화</button>
+                      <ul class="selectbox-option hide">
+                        <li><button type="button" class="btn-color-change option-btn disabled">비활성화</button></li>
+                        <li><button type="button" class="btn-color-change option-btn activate">활성화</button></li>
+                      </ul>
+                    </section>
+                  </dt>
+                  <dt><i class="edit i20"></i></dt>
+                </dl>
+              </li>
+              <li class="nc1-content8">
+                <dl>
+                  <dt>1</dt>
+                  <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                  <dt class="text-ellipsis">드론설명드론설명드론설명드론설명드론설명드론설명</dt>
+                  <dt>관리자</dt>
+                  <dt>
+                    <label class="img-upload-btn" for="img-upload"><i class="upload"></i>이미지 업로드</label>
+                    <input type="file" id="img-upload" />
+                    <p class="img-viewer hide img8"><i class="viewer"></i>이미지 보기</p>
+                  </dt>
+                  <dt>
+                    <section class="selectbox state">
+                      <button type="button" class="selectbox-btn activate">활성화</button>
+                      <ul class="selectbox-option hide">
+                        <li><button type="button" class="btn-color-change option-btn disabled">비활성화</button></li>
+                        <li><button type="button" class="btn-color-change option-btn activate">활성화</button></li>
+                      </ul>
+                    </section>
+                  </dt>
+                  <dt><i class="edit i20"></i></dt>
+                </dl>
+              </li>
+              <li class="nc1-content9">
+                <dl>
+                  <dt>1</dt>
+                  <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                  <dt class="text-ellipsis">드론설명드론설명드론설명드론설명드론설명드론설명</dt>
+                  <dt>관리자</dt>
+                  <dt>
+                    <label class="img-upload-btn hide" for="img-upload"><i class="upload"></i>이미지 업로드</label>
+                    <input type="file" id="img-upload" />
+                    <p class="img-viewer img9"><i class="viewer"></i>이미지 보기</p>
+                  </dt>
+                  <dt>
+                    <section class="selectbox state">
+                      <button type="button" class="selectbox-btn activate">활성화</button>
+                      <ul class="selectbox-option hide">
+                        <li><button type="button" class="btn-color-change option-btn disabled">비활성화</button></li>
+                        <li><button type="button" class="btn-color-change option-btn activate">활성화</button></li>
+                      </ul>
+                    </section>
+                  </dt>
+                  <dt><i class="edit i20"></i></dt>
+                </dl>
+              </li>
+              <li class="nc1-content10">
+                <dl>
+                  <dt>1</dt>
+                  <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                  <dt class="text-ellipsis">드론설명드론설명드론설명드론설명드론설명드론설명</dt>
+                  <dt>관리자</dt>
+                  <dt>
+                    <label class="img-upload-btn" for="img-upload"><i class="upload"></i>이미지 업로드</label>
+                    <input type="file" id="img-upload" />
+                    <p class="img-viewer hide img10"><i class="viewer"></i>이미지 보기</p>
+                  </dt>
+                  <dt>
+                    <section class="selectbox state">
+                      <button type="button" class="selectbox-btn activate">활성화</button>
+                      <ul class="selectbox-option hide">
+                        <li><button type="button" class="btn-color-change option-btn disabled">비활성화</button></li>
+                        <li><button type="button" class="btn-color-change option-btn activate">활성화</button></li>
+                      </ul>
+                    </section>
+                  </dt>
+                  <dt><i class="edit i20"></i></dt>
+                </dl>
+              </li>
+            </ul>
+
+            <div class="contents-page">
+              <ul>
+                <li class="page-prev"></li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li class="active">5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li class="page-next"></li>
+              </ul>
+            </div>
+          </div>
+          <div class="apply-btn f-initial">
+            <button class="cancel">취소</button>
+            <button class="apply">적용</button>
+          </div>
+          <div class="popUp detail-popup w350 hide">
+            <div class="title partition-title">
+              <div>
+                <p>임무 스케줄</p>
+                <div class="partition"></div>
+                <strong>스케줄 생성</strong>
+              </div>
+              <i class="close"></i>
+            </div>
+            <ul class="nav-sub-contents">
+              <li class="nav-sub-content">
+                <div class="title">
+                  <p>드론명</p>
+                </div>
+                <ul class="ns-content-wrap">
+                  <li class="ns-content">
+                    <div class="form-container">
+                      <input type="text" class="form" />
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-sub-content nav2-sub2-content">
+                <div class="title">
+                  <p>드론 설명</p>
+                </div>
+                <ul class="ns-content-wrap n2s2-content-wrap">
+                  <li class="column ns-content n2s2-content">
+                    <div class="form-container">
+                      <textarea name="" id="" cols="30" rows="10" class="textarea form"></textarea>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="btn popup-btn-fe">
+              <button class="cancel"><i class="cancel"></i>취소</button>
+              <button><i class="play"></i>등록</button>
+            </div>
+          </div>
+          <div class="popUp img-popup hide">
+            <div class="title partition-title">
+              <div>
+                <p>나의 드론 관리</p>
+                <div class="partition"></div>
+                <strong>이미지 보기</strong>
+              </div>
+              <i class="close"></i>
+            </div>
+            <div class="click-img">
+              <img src="https://via.placeholder.com/320x210" alt="클릭이미지" />
+            </div>
+          </div>
+        </section>
+        <section class="nc-sub-contents-wrap hide">
+          <!-- 상세정보 -->
+          <div class="close-wrap nc-sub nc-sub1 hide">
+            <div class="nc-sub-name">
+              <h4>상세정보</h4>
+              <i class="close"></i>
+            </div>
+            <div class="nc-sub1-contents">
+              <div class="nc-sc nc-sub1-content1">
+                <h6 class="b-bottom">Airframe<i class="alarm c-default default"></i></h6>
+                <div>
+                  <p><strong>System ID</strong>2</p>
+                  <p><strong>Airframe type</strong>Simulation (Copter)</p>
+                  <p><strong>Vehicle</strong>SIH Quadcopter X</p>
+                  <p><strong>Firmware Version</strong>1.9.2</p>
+                  <p><strong>Custom Fw. Ver.</strong>0.0.0</p>
+                </div>
+              </div>
+              <div class="nc-sc nc-sub1-content2">
+                <h6 class="b-bottom">Sensors<i class="alarm c-default warning"></i></h6>
+                <div>
+                  <p><strong>Compass 0</strong>Setup required</p>
+                  <p><strong>Gyro</strong>Setup required</p>
+                  <p><strong>Accelerometer</strong>Setup required</p>
+                </div>
+              </div>
+              <div class="nc-sc nc-sub1-content3">
+                <h6 class="b-bottom">Radio<i class="alarm c-default caution"></i></h6>
+                <div>
+                  <p><strong>Roll</strong>Setup required</p>
+                  <p><strong>Pitch</strong>Setup required</p>
+                  <p><strong>Yaw</strong>Setup required</p>
+                  <p><strong>Throttle</strong>Setup required</p>
+                  <p><strong>Aux1</strong>Disabled</p>
+                  <p><strong>Aux2</strong>Disabled</p>
+                </div>
+              </div>
+              <div class="nc-sc nc-sub1-content4">
+                <h6 class="b-bottom">Flight Modes<i class="alarm c-default default"></i></h6>
+                <div>
+                  <p><strong>Modeswitch</strong>Setup required</p>
+                  <p><strong>FlightMode 1</strong>Unassigned</p>
+                  <p><strong>FlightMode 2</strong>Unassigned</p>
+                  <p><strong>FlightMode 3</strong>Unassigned</p>
+                  <p><strong>FlightMode 4</strong>Unassigned</p>
+                  <p><strong>FlightMode 5</strong>Unassigned</p>
+                  <p><strong>FlightMode 6</strong>Unassigned</p>
+                </div>
+              </div>
+              <div class="nc-sc nc-sub1-content5">
+                <h6 class="b-bottom">Power<i class="alarm c-default default"></i></h6>
+                <div>
+                  <p><strong>BatteryFull</strong>4.05 V</p>
+                  <p><strong>BatteryEmpty</strong>3.50 V</p>
+                  <p><strong>NumberofCells</strong>0</p>
+                </div>
+              </div>
+              <div class="nc-sc nc-sub1-content6">
+                <h6 class="b-bottom">Safety<i class="alarm c-default default"></i></h6>
+                <div>
+                  <p><strong>LowBattery Failsafe</strong>Warning</p>
+                  <p><strong>RCLoss Failsafe</strong>Return mode</p>
+                  <p><strong>RCLoss Timeout</strong>0.5 s</p>
+                  <p><strong>DataLink Loss Failsafe</strong>Disabled</p>
+                  <p><strong>RTLClimb To</strong>30.0 m</p>
+                  <p><strong>RTL.Then</strong>Land immediately</p>
+                </div>
+              </div>
+              <div class="nc-sc nc-sub1-content7">
+                <h6 class="b-bottom">Camera<i class="alarm c-default default"></i></h6>
+                <div>
+                  <p><strong>Triggerinterface</strong></p>
+                  <p><strong>Triggermode</strong>Disable</p>
+                </div>
+              </div>
+            </div>
+            <div class="apply-btn f-initial">
+              <button class="cancel">취소</button>
+              <button class="apply">적용</button>
+            </div>
+          </div>
+          <!-- 임무설정 -->
+          <div class="close-wrap sub-common nc-sub2 hide">
+            <div class="nc-sub-name">
+              <h4>임무설정</h4>
+            </div>
+            <div class="content-search">
+              <input type="search" />
+              <i class="search"></i>
+            </div>
+            <div class="accor-wrap">
+              <ul class="accor">
+                <li>
+                  <div class="accor-name">
+                    <div>
+                      <i class="accor-default"></i>
+                      <p>테스트그룹</p>
+                    </div>
+                  </div>
+                  <ul class="accor-sub hide">
+                    <li>
+                      <div class="accor-sub-name">
+                        <div>
+                          <i class="accor-sub-default"></i>
+                          <p>테스트그룹열림</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="accor-sub-name">
+                        <div>
+                          <i class="accor-sub-default"></i>
+                          <p>테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="accor-name">
+                    <div>
+                      <i class="accor-default"></i>
+                      <p>테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹</p>
+                    </div>
+                  </div>
+                  <ul class="accor-sub hide">
+                    <li>
+                      <div class="accor-sub-name">
+                        <div>
+                          <i class="accor-sub-default"></i>
+                          <p>클립상세팝업</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="accor-sub-name">
+                        <div>
+                          <i class="accor-sub-default"></i>
+                          <p>테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="popUp nc-sub2-popup pb20 hide">
+              <div class="title nc-sub2-popup-title">
+                <p>임무요약정보</p>
+                <i class="close"></i>
+              </div>
+              <div class="nc-sub2-popup-detail">
+                <ul>
+                  <li>
+                    <strong>임무코드</strong>
+                    <p>20341219134320341219133</p>
+                  </li>
+                  <li>
+                    <strong>임무명</strong>
+                    <p>테스트 #2</p>
+                  </li>
+                  <li>
+                    <strong>임무설정속도</strong>
+                    <p>6 ㎧</p>
+                  </li>
+                  <li>
+                    <strong>총임무거리</strong>
+                    <p>648.88 m</p>
+                  </li>
+                  <li>
+                    <strong>총임무시간</strong>
+                    <p>106.67초</p>
+                  </li>
+                  <li>
+                    <strong>임무설명</strong>
+                    <p>테스트를 하기위한 임무 생성입니다</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="apply-btn">
+              <button class="cancel">취소</button>
+              <button class="apply">적용</button>
+            </div>
+          </div>
+          <!-- 임무이력 -->
+          <div class="close-wrap nc-sub nc-sub3 hide">
+            <div class="nc-sub3-contents">
+              <div class="nc-sub-name">
+                <h4>임무이력</h4>
+                <i class="close"></i>
+              </div>
+              <div class="calandar"></div>
+              <div class="popUp nc-sub3-popup">
+                <div class="title">
+                  <p>임무이력명 임무이력명 임무이력명 임무이력명 임무이력명</p>
+                  <i class="close"></i>
+                </div>
+                <div class="nc-sub3-popup-detail">
+                  <ul>
+                    <li>
+                      <strong>드론명</strong>
+                      <p>QRH5</p>
+                    </li>
+                    <li>
+                      <strong>임무명</strong>
+                      <p>신규임무230613</p>
+                    </li>
+                    <li>
+                      <strong>총 임무 거리</strong>
+                      <p>523.38 m</p>
+                    </li>
+                    <li>
+                      <strong>총 임무 시간</strong>
+                      <p>00시간 03분 35초</p>
+                    </li>
+                    <li class="map">지도</li>
+                  </ul>
+                </div>
+                <div class="popup-btn btn">
+                  <div>
+                    <button><i class="edit"></i><span>이력명 수정</span></button>
+                    <button><i class="delete"></i><span>이력 삭제</span></button>
+                  </div>
+                  <div>
+                    <button><i class="play"></i><span>이력 재생</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 로봇설정 -->
+          <div class="popUp nc-sub4-popup">
+            <div class="title">
+              <p>로봇 설정 옵션</p>
+              <i class="close"></i>
+            </div>
+            <div class="nc-sub4-popup-detail">
+              <ul>
+                <li class="popup4-accor">
+                  <div class="popup4-accor-title sub-title">
+                    <div class="popup4-accor-icon p4a-icon1"><i></i></div>
+                    <div class="popup4-accor-text">
+                      <strong>배터리 부족 알림</strong>
+                      <p>배터리 부족 알림을 알려주는 기준 설정</p>
+                    </div>
+                  </div>
+                  <div class="popup4-accor-hide hide">
+                    <dl>
+                      <dt><i class="list-disc"></i> 알림액션</dt>
+                      <dt>
+                        <div class="selectbox">
+                          <button type="button" class="selectbox-btn">1</button>
+                          <ul class="selectbox-option hide">
+                            <li><button type="button" class="option-btn">1</button></li>
+                            <li><button type="button" class="option-btn">2</button></li>
+                          </ul>
+                        </div>
+                      </dt>
+                    </dl>
+                    <dl>
+                      <dt><i class="list-disc"></i> 알림기준</dt>
+                      <dt><input type="text" /></dt>
+                    </dl>
+                  </div>
+                </li>
+                <li class="popup4-accor">
+                  <div class="popup4-accor-title sub-title">
+                    <div class="popup4-accor-icon p4a-icon2"><i></i></div>
+                    <div class="popup4-accor-text">
+                      <strong>신호 Loss 감지</strong>
+                      <p>로봇과 조종기의 신호 Loss 기준 설정</p>
+                    </div>
+                  </div>
+                  <div class="popup4-accor-hide hide">
+                    <dl>
+                      <dt><i class="list-disc"></i> 기능액션</dt>
+                      <dt>
+                        <div class="selectbox">
+                          <button type="button" class="selectbox-btn">1</button>
+                          <ul class="selectbox-option hide">
+                            <li><button type="button" class="option-btn">1</button></li>
+                            <li><button type="button" class="option-btn">2</button></li>
+                          </ul>
+                        </div>
+                      </dt>
+                    </dl>
+                    <dl>
+                      <dt><i class="list-disc"></i> Loss 시간</dt>
+                      <dt><input type="text" /></dt>
+                    </dl>
+                  </div>
+                </li>
+                <li class="popup4-accor">
+                  <div class="popup4-accor-title sub-title">
+                    <div class="popup4-accor-icon p4a-icon3"><i></i></div>
+                    <div class="popup4-accor-text">
+                      <strong>지오팬스 침입 감지</strong>
+                      <p>지오팬스에 침입 시 진행 할 액션</p>
+                    </div>
+                  </div>
+                  <div class="popup4-accor-hide hide">
+                    <dl>
+                      <dt><i class="list-disc"></i> 기능활성</dt>
+                      <dt>
+                        <div class="selectbox">
+                          <button type="button" class="selectbox-btn">1</button>
+                          <ul class="selectbox-option hide">
+                            <li><button type="button" class="option-btn">1</button></li>
+                            <li><button type="button" class="option-btn">2</button></li>
+                          </ul>
+                        </div>
+                      </dt>
+                    </dl>
+                    <dl>
+                      <dt><i class="list-disc"></i> 기능액션</dt>
+                      <dt><input type="text" /></dt>
+                    </dl>
+                  </div>
+                </li>
+                <li class="popup4-accor">
+                  <div class="popup4-accor-title sub-title">
+                    <div class="popup4-accor-icon p4a-icon4"><i></i></div>
+                    <div class="popup4-accor-text">
+                      <strong>SafeRTL</strong>
+                      <p>RTL을 진행 할 때 상승 고도 설정</p>
+                    </div>
+                  </div>
+                  <div class="popup4-accor-hide hide">
+                    <dl>
+                      <dt><i class="list-disc"></i> 리턴고도설정</dt>
+                      <dt><input type="text" /></dt>
+                    </dl>
+                  </div>
+                </li>
+                <li class="popup4-accor">
+                  <div class="popup4-accor-title sub-title">
+                    <div class="popup4-accor-icon p4a-icon5"><i></i></div>
+                    <div class="popup4-accor-text">
+                      <strong>오브젝트 감지</strong>
+                      <p>로봇의 오브젝트 감지 옵션을 설정</p>
+                    </div>
+                  </div>
+                  <div class="popup4-accor-hide hide">
+                    <dl>
+                      <dt><i class="list-disc"></i> 기능활성</dt>
+                      <dt>
+                        <div class="selectbox">
+                          <button type="button" class="selectbox-btn">1</button>
+                          <ul class="selectbox-option hide">
+                            <li><button type="button" class="option-btn">1</button></li>
+                            <li><button type="button" class="option-btn">2</button></li>
+                          </ul>
+                        </div>
+                      </dt>
+                    </dl>
+                    <dl>
+                      <dt><i class="list-disc"></i> 기능액션</dt>
+                      <dt>
+                        <div class="selectbox">
+                          <button type="button" class="selectbox-btn">1</button>
+                          <ul class="selectbox-option hide">
+                            <li><button type="button" class="option-btn">1</button></li>
+                            <li><button type="button" class="option-btn">2</button></li>
+                          </ul>
+                        </div>
+                      </dt>
+                    </dl>
+                    <dl>
+                      <dt><i class="list-disc"></i> 알림기준</dt>
+                      <dt><input type="text" /></dt>
+                    </dl>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="btn popup-btn-fe">
+              <button class="cancel"><i class="cancel"></i>취소</button>
+              <button><i class="save"></i>저장</button>
+            </div>
+          </div>
+          <!-- 권한설정 -->
+          <div class="popUp nc-sub5-popup">
+            <div class="title partition-title">
+              <div>
+                <p>권한설정</p>
+                <div class="partition"></div>
+                <strong>Q1234567890</strong>
+              </div>
+              <i class="close"></i>
+            </div>
+            <div class="nc-sub5-popup-detail">
+              <ul>
+                <li class="sub5-popup-content nc-sub5-popup-top">
+                  <div class="popup5-detail-title sub-title">
+                    <div class="popup5-icon"><i class="c-default"></i></div>
+                    <strong>드론관리자</strong>
+                  </div>
+                  <ul class="popup5-name">
+                    <li><p>Default0</p></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="nc-sub5-popup-bottom">
+                <li class="sub5-popup-content sub5-popup-left sortable-list">
+                  <div class="popup5-detail-title sub-title">
+                    <div class="popup5-icon"><i class="c-default"></i></div>
+                    <strong>사용자 목록</strong>
+                  </div>
+                  <ul class="popup5-name">
+                    <li><p>Default1</p></li>
+                    <li><p>Default2</p></li>
+                    <li><p>Default3</p></li>
+                    <li><p>Default4</p></li>
+                    <li><p>Default5</p></li>
+                    <li><p>Default6</p></li>
+                    <li><p>Default7</p></li>
+                    <li><p>Default8</p></li>
+                  </ul>
+                </li>
+                <li class="sub5-popup-content sub5-popup-center sortable-list">
+                  <div class="popup5-detail-title sub-title">
+                    <div class="popup5-icon"><i class="c-default"></i></div>
+                    <strong>관제 권한</strong>
+                  </div>
+                  <ul class="popup5-name">
+                    <li><p>Default9</p></li>
+                    <li><p>Default10</p></li>
+                  </ul>
+                </li>
+                <li class="sub5-popup-content sub5-popup-right sortable-list">
+                  <div class="popup5-detail-title sub-title">
+                    <div class="popup5-icon"><i class="c-default"></i></div>
+                    <strong>모니터링 권한</strong>
+                  </div>
+                  <ul class="popup5-name">
+                    <li><p>Default11</p></li>
+                    <li><p>Default12</p></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="btn popup-btn-fe">
+              <button class="cancel"><i class="cancel"></i>취소</button>
+              <button><i class="save"></i>저장</button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- 통합임무 -->
+      <div class="main-nav_2 nav-contents hide">
+        <div class="nav-content">
+          <div class="content-search">
+            <input type="search" />
+            <i class="search"></i>
+          </div>
+          <div class="accor-wrap">
+            <ul class="accor">
+              <li>
+                <div class="accor-name">
+                  <div>
+                    <i class="accor-default"></i>
+                    <p>테스트그룹</p>
+                  </div>
+                </div>
+                <ul class="accor-sub hide">
+                  <li>
+                    <div class="accor-sub-name">
+                      <div>
+                        <i class="accor-sub-default"></i>
+                        <p>테스트그룹열림</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="accor-sub-name">
+                      <div>
+                        <i class="accor-sub-default"></i>
+                        <p>테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="accor-name">
+                  <div>
+                    <i class="accor-default"></i>
+                    <p>테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹</p>
+                  </div>
+                </div>
+                <ul class="accor-sub hide">
+                  <li>
+                    <div class="accor-sub-name">
+                      <div>
+                        <i class="accor-sub-default"></i>
+                        <p>클립상세팝업</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="accor-sub-name">
+                      <div>
+                        <i class="accor-sub-default"></i>
+                        <p>테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="popUp nc-sub2-popup hide">
+            <div class="title">
+              <p>임무요약정보</p>
+              <i class="close"></i>
+            </div>
+            <div class="nc-sub2-popup-detail">
+              <ul>
+                <li>
+                  <strong>임무코드</strong>
+                  <p>20341219134320341219133</p>
+                </li>
+                <li>
+                  <strong>임무명</strong>
+                  <p>테스트 #2</p>
+                </li>
+                <li>
+                  <strong>임무설정속도</strong>
+                  <p>6 ㎧</p>
+                </li>
+                <li>
+                  <strong>총임무거리</strong>
+                  <p>648.88 m</p>
+                </li>
+                <li>
+                  <strong>총임무시간</strong>
+                  <p>106.67초</p>
+                </li>
+                <li>
+                  <strong>임무설명</strong>
+                  <p>
+                    테스트를 하기위한 임무 생성입니다 테스트를 하기위한 임무 생성입니다 테스트를 하기위한 임무 생성입니다 테스트를 하기위한 임무 생성입니다 테스트를 하기위한 임무 생성입니다 테스트를
+                    하기위한 임무 생성입니다 테스트를 하기위한 임무 생성입니다 테스트를 하기위한 임무 생성입니다
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="btn popup-btn-fe popup-edit-btn">
+              <button><i class="delete"></i>임무 삭제</button>
+              <button><i class="edit"></i>임무 수정</button>
+            </div>
+          </div>
+          <div class="main-btn nav2-btn">
+            <button class="nav2-btn1">그룹관리</button>
+            <button class="nav2-btn2">신규 임무 생성</button>
+          </div>
+        </div>
+        <!-- 그룹관리 -->
+        <div class="prev-wrap sub-common nav-sub-wrap nav2-sub1-wrap hide">
+          <div class="nc-sub-name">
+            <i class="back"></i>
+            <h4>임무 그룹 관리</h4>
+          </div>
+          <div class="nc-sub-accor">
+            <div class="accor-wrap">
+              <ul class="accor">
+                <li>
+                  <div class="accor-name">
+                    <div>
+                      <i class="accor-default"></i>
+                      <p>테스트그룹</p>
+                    </div>
+                    <i class="delete"></i>
+                  </div>
+                  <ul class="accor-sub hide">
+                    <li>
+                      <div class="accor-sub-name">
+                        <div>
+                          <i class="accor-sub-default"></i>
+                          <p>테스트그룹열림</p>
+                        </div>
+                        <i class="delete"></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="accor-sub-name">
+                        <div>
+                          <i class="accor-sub-default"></i>
+                          <p>테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림</p>
+                        </div>
+                        <i class="delete"></i>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="accor-name">
+                    <div>
+                      <i class="accor-default"></i>
+                      <p>테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹</p>
+                    </div>
+                    <i class="delete"></i>
+                  </div>
+                  <ul class="accor-sub hide">
+                    <li>
+                      <div class="accor-sub-name">
+                        <div>
+                          <i class="accor-sub-default"></i>
+                          <p>클립상세팝업</p>
+                        </div>
+                        <i class="delete"></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="accor-sub-name">
+                        <div>
+                          <i class="accor-sub-default"></i>
+                          <p>테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림</p>
+                        </div>
+                        <i class="delete"></i>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="accor-contents hide">
+              <div class="accor-contents-title">
+                <i class="i30 setting c-default"></i>
+                <strong>그룹정보 설정</strong>
+              </div>
+              <ul class="accor-contents-name">
+                <li>
+                  <div>
+                    <i class="list-disc"></i>
+                    <p>선택한 그룹명</p>
+                  </div>
+                  <input type="text" class="readonly" readonly />
+                </li>
+                <li>
+                  <div>
+                    <i class="list-disc"></i>
+                    <p>그룹명 설정</p>
+                  </div>
+                  <input type="text" />
+                </li>
+              </ul>
+              <div class="btn popup-btn">
+                <div>
+                  <button><i class="folder"></i>동위추가</button>
+                  <button><i class="file"></i>하위추가</button>
+                </div>
+                <button><i class="edit"></i>수정</button>
+              </div>
+            </div>
+          </div>
+          <div class="apply-btn">
+            <button class="cancel">취소</button>
+            <button class="apply">적용</button>
+          </div>
+        </div>
+        <!-- 신규 임무 생성 -->
+        <div class="prev-wrap sub-common nav-sub-wrap nav2-sub2-wrap hide">
+          <div class="nc-sub-name">
+            <i class="back"></i>
+            <h4>신규 임무 생성</h4>
+          </div>
+          <ul class="nav-sub-contents nav2-sub2-contents">
+            <li class="nav-sub-content nav2-sub2-content">
+              <div class="title">
+                <p>임무기준점</p>
+                <i class="edit i20"></i>
+              </div>
+              <ul class="ns-content-wrap n2s2-content-wrap row">
+                <li class="ns-content n2s2-content">
+                  <div class="content-name">
+                    <i class="list-disc"></i>
+                    <p>Lon</p>
+                  </div>
+                  <div class="form-container">
+                    <input type="text" class="form" readonly />
+                  </div>
+                </li>
+                <li class="ns-content n2s2-content">
+                  <div class="content-name">
+                    <i class="list-disc"></i>
+                    <p>Lat</p>
+                  </div>
+                  <div class="form-container">
+                    <input type="text" class="form" readonly />
+                  </div>
+                </li>
+                <li class="ns-content n2s2-content">
+                  <div class="content-name">
+                    <i class="list-disc"></i>
+                    <p>Alt</p>
+                  </div>
+                  <div class="form-container">
+                    <input type="text" class="form" readonly />
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-sub-content nav2-sub2-content">
+              <div class="title">
+                <p>임무 필수 입력 정보</p>
+              </div>
+              <ul class="ns-content-wrap n2s2-content-wrap">
+                <li class="ns-content n2s2-content">
+                  <div class="content-name">
+                    <i class="list-disc"></i>
+                    <p>임무명</p>
+                  </div>
+                  <div class="form-container">
+                    <input type="text" class="form" class="" />
+                  </div>
+                </li>
+                <li class="ns-content n2s2-content">
+                  <div class="content-name">
+                    <i class="list-disc"></i>
+                    <p>임무 진행 모드</p>
+                  </div>
+                  <div class="selectbox form-container">
+                    <button type="button" class="selectbox-btn form">1</button>
+                    <ul class="selectbox-option hide">
+                      <li><button type="button" class="option-btn">1</button></li>
+                      <li><button type="button" class="option-btn">2</button></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="ns-content n2s2-content">
+                  <div class="content-name">
+                    <i class="list-disc"></i>
+                    <p>임무 진행 속도</p>
+                  </div>
+                  <div class="progress-container form-container">
+                    <input type="range" class="progress-slider" value="0" step="10" />
+                  </div>
+                </li>
+                <li class="ns-content n2s2-content">
+                  <div class="content-name">
+                    <i class="list-disc"></i>
+                    <p>임무 중 기체 방향</p>
+                  </div>
+                  <div class="selectbox form-container">
+                    <button type="button" class="selectbox-btn form">1</button>
+                    <ul class="selectbox-option hide">
+                      <li><button type="button" class="option-btn">1</button></li>
+                      <li><button type="button" class="option-btn">2</button></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="ns-content n2s2-content">
+                  <div class="content-name">
+                    <i class="list-disc"></i>
+                    <p>이륙 고도</p>
+                  </div>
+                  <div class="form-container">
+                    <input type="text" class="form" />
+                  </div>
+                </li>
+                <li class="ns-content n2s2-content">
+                  <div class="content-name">
+                    <i class="list-disc"></i>
+                    <p>임무 종료시 액션</p>
+                  </div>
+                  <div class="selectbox form-container">
+                    <button type="button" class="selectbox-btn form">1</button>
+                    <ul class="selectbox-option hide">
+                      <li><button type="button" class="option-btn">1</button></li>
+                      <li><button type="button" class="option-btn">2</button></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-sub-content nav2-sub2-content">
+              <div class="title">
+                <p>임무 필수 입력 정보</p>
+              </div>
+              <ul class="ns-content-wrap n2s2-content-wrap">
+                <li class="ns-content n2s2-content">
+                  <div class="content-name">
+                    <i class="list-disc"></i>
+                    <p>임무 진행 모드</p>
+                  </div>
+                  <div class="selectbox form-container">
+                    <button type="button" class="selectbox-btn form">1</button>
+                    <ul class="selectbox-option hide">
+                      <li><button type="button" class="option-btn">1</button></li>
+                      <li><button type="button" class="option-btn">2</button></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="ns-content n2s2-content">
+                  <div class="content-name">
+                    <i class="list-disc"></i>
+                    <p>SafeRTL 상승고도</p>
+                  </div>
+                  <div class="form-container">
+                    <input type="text" class="form" readonly />
+                  </div>
+                </li>
+                <li class="ns-content n2s2-content">
+                  <div class="content-name">
+                    <i class="list-disc"></i>
+                    <p>신호 Loss 액션</p>
+                  </div>
+                  <div class="selectbox form-container">
+                    <button type="button" class="selectbox-btn form">1</button>
+                    <ul class="selectbox-option hide">
+                      <li><button type="button" class="option-btn">1</button></li>
+                      <li><button type="button" class="option-btn">2</button></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="ns-content n2s2-content">
+                  <div class="content-name">
+                    <i class="list-disc"></i>
+                    <p>짐벌 컨트롤</p>
+                  </div>
+                  <div class="selectbox form-container">
+                    <button type="button" class="selectbox-btn form">1</button>
+                    <ul class="selectbox-option hide">
+                      <li><button type="button" class="option-btn">1</button></li>
+                      <li><button type="button" class="option-btn">2</button></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-sub-content nav2-sub2-content nav2-sub2-content4">
+              <div class="title">
+                <p>임무 경로 설정</p>
+                <strong>생성된 경로 : <em>40</em>개</strong>
+              </div>
+              <ul class="ns-content-wrap n2s2-content-wrap">
+                <li class="ns-content n2s2-content">
+                  <div class="content-name">
+                    <i class="list-disc"></i>
+                    <p>경로 생성 방식</p>
+                  </div>
+                  <div class="form-container">
+                    <div class="radio radio1">
+                      <input type="radio" id="radio1-btn1" name="radio1" /><label for="radio1-btn1" class="radio-btn1"><i class="hide"></i>수동</label>
+                      <input type="radio" id="radio1-btn2" name="radio1" /><label for="radio1-btn2" class="radio-btn2"><i class="hide"></i>자동경로</label>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-sub-content nav2-sub2-content">
+              <div class="title">
+                <p>임무 등록 정보</p>
+              </div>
+              <ul class="ns-content-wrap n2s2-content-wrap">
+                <li class="ns-content n2s2-content">
+                  <div class="content-name">
+                    <i class="list-disc"></i>
+                    <p>임무 그룹 설정</p>
+                  </div>
+                  <div class="selectbox form-container">
+                    <button type="button" class="selectbox-btn form">1</button>
+                    <ul class="selectbox-option hide">
+                      <li><button type="button" class="option-btn">1</button></li>
+                      <li><button type="button" class="option-btn">2</button></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="column ns-content n2s2-content">
+                  <div class="content-name">
+                    <i class="list-disc"></i>
+                    <p>임무설명</p>
+                  </div>
+                  <div class="form-container">
+                    <textarea name="" id="" cols="30" rows="10" class="textarea form"></textarea>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="apply-btn">
+            <button class="cancel">취소</button>
+            <button class="apply">완료</button>
+          </div>
+        </div>
+        <!-- 수동 경로 생성 -->
+        <div class="prev-wrap rb1-page-wrap radio-btn1 hide">
+          <div class="sub-common n2s2-content4-sub1">
+            <div class="nc-sub-name">
+              <i class="back"></i>
+              <h4>수동 경로 생성</h4>
+            </div>
+            <ul class="nav-sub-contents">
+              <li class="nav-sub-content">
+                <div class="title">
+                  <p>경로 검증 옵션 설정</p>
+                </div>
+                <ul class="ns-content-wrap">
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>건물 레이어</p>
+                    </div>
+                    <div class="btn">
+                      <strong><em>0</em>개 선택</strong>
+                      <button class="select1-btn">
+                        <i class="select"></i>
+                        <p>선택</p>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>지오펜스</p>
+                    </div>
+                    <div class="btn">
+                      <strong><em>0</em>개 선택</strong>
+                      <button class="select2-btn">
+                        <i class="select"></i>
+                        <p>선택</p>
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-sub-content">
+                <div class="title">
+                  <p>마우스 모드 선택</p>
+                </div>
+                <ul class="ns-content-wrap">
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>경로</p>
+                    </div>
+                    <div class="radio radio2">
+                      <input type="radio" id="radio2-btn1" name="radio2" /><label for="radio2-btn1"><i class="hide"></i>수정모드</label> <input type="radio" id="radio2-btn2" name="radio2" /><label
+                        for="radio2-btn2"
+                        ><i class="hide"></i>생성모드</label
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-sub-content table">
+                <table>
+                  <tr>
+                    <th>순번</th>
+                    <th>위도</th>
+                    <th>경도</th>
+                    <th>고도(m)</th>
+                    <th>옵션</th>
+                    <th>삭제</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>137.00000000</td>
+                    <td>137.00000000</td>
+                    <td>100</td>
+                    <td><i class="edit i20 table-btn"></i></td>
+                    <td><i class="delete i20"></i></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>137.00000000</td>
+                    <td>137.00000000</td>
+                    <td>100</td>
+                    <td><i class="edit i20 table-btn"></i></td>
+                    <td><i class="delete i20"></i></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>137.00000000</td>
+                    <td>137.00000000</td>
+                    <td>100</td>
+                    <td><i class="edit i20 table-btn"></i></td>
+                    <td><i class="delete i20"></i></td>
+                  </tr>
+                  <tr>
+                    <td colspan="6">
+                      <div class="btn merge">
+                        <div class="merge-title">
+                          <i class="alarm warning c-default"></i>
+                          <p><strong>위험</strong>(155)</p>
+                        </div>
+                        <button class="tab-btn">
+                          <i class="edit i20 table-btn"></i>
+                          <p>경로변경</p>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>137.00000000</td>
+                    <td>137.00000000</td>
+                    <td>100</td>
+                    <td><i class="edit i20 table-btn"></i></td>
+                    <td><i class="delete i20"></i></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>137.00000000</td>
+                    <td>137.00000000</td>
+                    <td>100</td>
+                    <td><i class="edit i20 table-btn"></i></td>
+                    <td><i class="delete"></i></td>
+                  </tr>
+                  <tr>
+                    <td colspan="6">
+                      <div class="btn merge">
+                        <div class="merge-title">
+                          <i class="alarm caution c-default"></i>
+                          <p><strong>주의</strong>(155)</p>
+                        </div>
+                        <button class="tab-btn">
+                          <i class="edit i20 table-btn"></i>
+                          <p>경로변경</p>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>137.00000000</td>
+                    <td>137.00000000</td>
+                    <td>100</td>
+                    <td><i class="edit i20 table-btn"></i></td>
+                    <td><i class="delete i20"></i></td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>137.00000000</td>
+                    <td>137.00000000</td>
+                    <td>100</td>
+                    <td><i class="edit i20 table-btn"></i></td>
+                    <td><i class="delete i20"></i></td>
+                  </tr>
+                  <tr>
+                    <td colspan="6">
+                      <div class="btn merge">
+                        <div class="merge-title">
+                          <i class="alarm warning c-default"></i>
+                          <p><strong>위험</strong>(155)</p>
+                        </div>
+                        <button class="tab-btn">
+                          <i class="edit i20 table-btn"></i>
+                          <p>경로변경</p>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>137.00000000</td>
+                    <td>137.00000000</td>
+                    <td>100</td>
+                    <td><i class="edit i20 table-btn"></i></td>
+                    <td><i class="delete i20"></i></td>
+                  </tr>
+                </table>
+              </li>
+            </ul>
+            <div class="apply-btn">
+              <button class="cancel">취소</button>
+              <button class="apply">저장</button>
+            </div>
+          </div>
+        </div>
+        <!-- 수동 경로 생성 팝업 -->
+        <div class="popUp n2s2-content-select1 w290 hide">
+          <div class="title partition-title">
+            <div>
+              <p>경로 검증 옵션 설정</p>
+              <div class="partition"></div>
+              <strong>건물 레이어 선택</strong>
+            </div>
+            <i class="close"></i>
+          </div>
+          <div class="n2s2-select-wrap">
+            <div class="select-detail">
+              <div class="sub-title">
+                <i class="i30 check-list c-default"></i>
+                <strong>선택된 건물 레이어</strong>
+              </div>
+              <ul class="select-list">
+                <li>
+                  <i class="list-disc"></i>
+                  <p>건물 레이어 1</p>
+                </li>
+                <li>
+                  <i class="list-disc"></i>
+                  <p>건물 레이어 2</p>
+                </li>
+                <li>
+                  <i class="list-disc"></i>
+                  <p>건물 레이어 3</p>
+                </li>
+                <li>
+                  <i class="list-disc"></i>
+                  <p>건물 레이어 4</p>
+                </li>
+                <li>
+                  <i class="list-disc"></i>
+                  <p>건물 레이어 5</p>
+                </li>
+                <li>
+                  <i class="list-disc"></i>
+                  <p>건물 레이어 6</p>
+                </li>
+                <li>
+                  <i class="list-disc"></i>
+                  <p>건물 레이어 7</p>
+                </li>
+                <li>
+                  <i class="list-disc"></i>
+                  <p>건물 레이어 8</p>
+                </li>
+                <li>
+                  <i class="list-disc"></i>
+                  <p>건물 레이어 9</p>
+                </li>
+                <li>
+                  <i class="list-disc"></i>
+                  <p>건물 레이어 10</p>
+                </li>
+                <li>
+                  <i class="list-disc"></i>
+                  <p>건물 레이어 11</p>
+                </li>
+              </ul>
+            </div>
+            <div class="move-btn">
+              <i class="i25 arrow-bottom"></i>
+              <i class="i25 arrow-top"></i>
+            </div>
+            <div class="select-detail">
+              <div class="sub-title">
+                <i class="i30 list c-default"></i>
+                <strong>건물 레이어 목록</strong>
+              </div>
+              <ul class="select-list">
+                <li>
+                  <i class="list-disc"></i>
+                  <p>건물 레이어</p>
+                </li>
+                <li>
+                  <i class="list-disc"></i>
+                  <p>건물 레이어</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="btn popup-btn-fe">
+            <button class="cancel"><i class="cancel"></i>취소</button>
+            <button><i class="save"></i>저장</button>
+          </div>
+        </div>
+        <div class="popUp n2s2-content-select2 w290 hide">
+          <div class="title partition-title">
+            <div>
+              <p>경로 검증 옵션 설정</p>
+              <div class="partition"></div>
+              <strong>지오팬스 선택</strong>
+            </div>
+            <i class="close"></i>
+          </div>
+          <div class="n2s2-select-wrap">
+            <div class="select-detail">
+              <div class="sub-title">
+                <i class="i30 check-list c-default"></i>
+                <strong>선택된 지오팬스</strong>
+              </div>
+              <ul class="select-list">
+                <li>
+                  <i class="list-disc"></i>
+                  <p>건물 레이어</p>
+                </li>
+                <li>
+                  <i class="list-disc"></i>
+                  <p>건물 레이어</p>
+                </li>
+              </ul>
+            </div>
+            <div class="move-btn">
+              <i class="i25 arrow-bottom"></i>
+              <i class="i25 arrow-top"></i>
+            </div>
+            <div class="select-detail">
+              <div class="sub-title">
+                <i class="i30 list c-default"></i>
+                <strong>지오팬스 목록</strong>
+              </div>
+              <div class="accor-wrap">
+                <ul class="accor">
+                  <li>
+                    <div class="accor-name">
+                      <div>
+                        <i class="accor-default"></i>
+                        <p>테스트그룹</p>
+                      </div>
+                    </div>
+                    <ul class="accor-sub hide">
+                      <li>
+                        <div class="accor-sub-name">
+                          <div>
+                            <i class="accor-sub-default"></i>
+                            <p>테스트그룹열림</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="accor-sub-name">
+                          <div>
+                            <i class="accor-sub-default"></i>
+                            <p>테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="accor-name">
+                      <div>
+                        <i class="accor-default"></i>
+                        <p>테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹</p>
+                      </div>
+                    </div>
+                    <ul class="accor-sub hide">
+                      <li>
+                        <div class="accor-sub-name">
+                          <div>
+                            <i class="accor-sub-default"></i>
+                            <p>클립상세팝업</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="accor-sub-name">
+                          <div>
+                            <i class="accor-sub-default"></i>
+                            <p>테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="accor-name">
+                      <div>
+                        <i class="accor-default"></i>
+                        <p>테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹</p>
+                      </div>
+                    </div>
+                    <ul class="accor-sub hide">
+                      <li>
+                        <div class="accor-sub-name">
+                          <div>
+                            <i class="accor-sub-default"></i>
+                            <p>클립상세팝업</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="accor-sub-name">
+                          <div>
+                            <i class="accor-sub-default"></i>
+                            <p>테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="btn popup-btn-fe">
+            <button class="cancel"><i class="cancel"></i>취소</button>
+            <button><i class="save"></i>저장</button>
+          </div>
+        </div>
+        <div class="popUp n2s2-content-table hide">
+          <div class="title partition-title">
+            <div>
+              <p>옵션 설정</p>
+              <div class="partition"></div>
+              <strong>웨이포인트</strong>
+            </div>
+            <i class="close"></i>
+          </div>
+          <div class="table">
+            <table>
+              <tr>
+                <th>순번</th>
+                <th>경도</th>
+                <th>파라미터</th>
+                <th>삭제</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>
+                  <div class="selectbox form-container">
+                    <button type="button" class="selectbox-btn form">1</button>
+                    <ul class="selectbox-option hide">
+                      <li><button type="button" class="option-btn">1</button></li>
+                      <li><button type="button" class="option-btn">2</button></li>
+                    </ul>
+                  </div>
+                </td>
+                <td>1000</td>
+                <td><i class="delete i20"></i></td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>
+                  <div class="selectbox form-container">
+                    <button type="button" class="selectbox-btn form">1</button>
+                    <ul class="selectbox-option hide">
+                      <li><button type="button" class="option-btn">1</button></li>
+                      <li><button type="button" class="option-btn">2</button></li>
+                    </ul>
+                  </div>
+                </td>
+                <td>1000</td>
+                <td><i class="delete i20"></i></td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>
+                  <div class="selectbox form-container">
+                    <button type="button" class="selectbox-btn form">1</button>
+                    <ul class="selectbox-option hide">
+                      <li><button type="button" class="option-btn">1</button></li>
+                      <li><button type="button" class="option-btn">2</button></li>
+                    </ul>
+                  </div>
+                </td>
+                <td>1000</td>
+                <td><i class="delete i20"></i></td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>
+                  <div class="selectbox form-container">
+                    <button type="button" class="selectbox-btn form">1</button>
+                    <ul class="selectbox-option hide">
+                      <li><button type="button" class="option-btn">1</button></li>
+                      <li><button type="button" class="option-btn">2</button></li>
+                    </ul>
+                  </div>
+                </td>
+                <td>1000</td>
+                <td><i class="delete i20"></i></td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>
+                  <div class="selectbox form-container">
+                    <button type="button" class="selectbox-btn form">1</button>
+                    <ul class="selectbox-option hide">
+                      <li><button type="button" class="option-btn">1</button></li>
+                      <li><button type="button" class="option-btn">2</button></li>
+                    </ul>
+                  </div>
+                </td>
+                <td>1000</td>
+                <td><i class="delete i20"></i></td>
+              </tr>
+            </table>
+          </div>
+          <div class="btn popup-btn-fe">
+            <button class="cancel"><i class="cancel"></i>취소</button>
+            <button><i class="save"></i>저장</button>
+          </div>
+        </div>
+        <div class="popUp n2s2-content-tab hide">
+          <div class="title partition-title">
+            <div>
+              <p>옵션 설정</p>
+              <div class="partition"></div>
+              <strong>경로변경</strong>
+            </div>
+            <i class="close"></i>
+          </div>
+          <div class="nav2-tab1 tab">
+            <div class="btn tab-name">
+              <button class="tab1 active">고도상승 탭</button>
+              <button class="tab2">경로변경 탭</button>
+            </div>
+            <div class="tab-contents">
+              <div class="tab1 active">
+                <input type="number" class="tab-input1" />
+                <input type="number" class="tab-input2" />
+                <input type="number" class="tab-input3" />
+                <input type="number" class="tab-input4" />
+              </div>
+              <div class="tab2 hide">
+                <input type="number" class="tab-input1" />
+                <input type="number" class="tab-input2" />
+                <input type="number" class="tab-input3" />
+                <input type="number" class="tab-input4" />
+              </div>
+            </div>
+          </div>
+          <div class="btn popup-btn-fe">
+            <button class="cancel"><i class="cancel"></i>취소</button>
+            <button><i class="save"></i>저장</button>
+          </div>
+        </div>
+        <!-- 자동 경로 생성 -->
+        <div class="prev-wrap rb2-page-wrap radio-btn2 hide">
+          <div class="sub-common n2s2-content4-sub1">
+            <div class="nc-sub-name">
+              <i class="back"></i>
+              <h4>자동 경로 생성</h4>
+            </div>
+            <ul class="nav-sub-contents">
+              <li class="nav-sub-content">
+                <div class="title">
+                  <p>임무기준점</p>
+                  <i class="edit i20"></i>
+                </div>
+                <ul class="ns-content-wrap row">
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>Lon</p>
+                    </div>
+                    <div class="form-container">
+                      <input type="text" class="form" readonly="" />
+                    </div>
+                  </li>
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>Lat</p>
+                    </div>
+                    <div class="form-container">
+                      <input type="text" class="form" readonly="" />
+                    </div>
+                  </li>
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>Alt</p>
+                    </div>
+                    <div class="form-container">
+                      <input type="text" class="form" readonly="" />
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-sub-content">
+                <div class="title">
+                  <p>카메라 정보</p>
+                </div>
+                <ul class="ns-content-wrap">
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>명칭</p>
+                    </div>
+                    <div class="form-container">
+                      <input type="text" class="form" />
+                    </div>
+                  </li>
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>센서 사이즈(㎜)</p>
+                    </div>
+                    <div class="form-container row">
+                      <input type="text" class="form" />
+                      <i class="multi c-default"></i>
+                      <input type="text" class="form" />
+                    </div>
+                  </li>
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>센서 사이즈(px)</p>
+                    </div>
+                    <div class="form-container row">
+                      <input type="text" class="form" />
+                      <i class="multi c-default"></i>
+                      <input type="text" class="form" />
+                    </div>
+                  </li>
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>초점 거리(㎜)</p>
+                    </div>
+                    <div class="form-container">
+                      <input type="text" class="form" />
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-sub-content">
+                <div class="title">
+                  <p>촬영정보</p>
+                </div>
+                <ul class="ns-content-wrap">
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>활영 중협도 (0%)</p>
+                    </div>
+                    <div class="progress-container form-container">
+                      <input type="range" class="progress-slider" value="0" step="10" />
+                    </div>
+                  </li>
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>영역 버퍼 (0m)</p>
+                    </div>
+                    <div class="progress-container form-container">
+                      <input type="range" class="progress-slider" value="0" step="10" />
+                    </div>
+                  </li>
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>경로회전 (0도)</p>
+                    </div>
+                    <div class="progress-container form-container">
+                      <input type="range" class="progress-slider" value="0" step="10" />
+                    </div>
+                  </li>
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <input type="radio" id="radio-default-btn1" name="radio-default" />
+                      <label for="radio-default-btn1">GSD</label>
+                    </div>
+                    <div class="form-container">
+                      <input type="text" class="form" />
+                    </div>
+                  </li>
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <input type="radio" id="radio-default-btn2" name="radio-default" />
+                      <label for="radio-default-btn2">고도</label>
+                    </div>
+                    <div class="form-container">
+                      <input type="text" class="form" />
+                    </div>
+                  </li>
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>촬영 영역(m)</p>
+                    </div>
+                    <div class="form-container row">
+                      <input type="text" class="form" />
+                      <i class="multi c-default"></i>
+                      <input type="text" class="form" />
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-sub-content">
+                <div class="title">
+                  <p>경로 시작 위치(정북기준)</p>
+                </div>
+                <ul class="ns-content-wrap">
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>vertical</p>
+                    </div>
+                    <div class="radio radio3">
+                      <input type="radio" id="radio3-btn1" name="radio3" />
+                      <label for="radio3-btn1"><i class="hide"></i>좌</label>
+                      <input type="radio" id="radio3-btn2" name="radio3" />
+                      <label for="radio3-btn2"><i class="hide"></i>우</label>
+                    </div>
+                  </li>
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>horizontal</p>
+                    </div>
+                    <div class="radio radio4">
+                      <input type="radio" id="radio4-btn1" name="radio4" /><label for="radio4-btn1"><i class="hide"></i>상</label> <input type="radio" id="radio4-btn2" name="radio4" /><label
+                        for="radio4-btn2"
+                        ><i class="hide"></i>하</label
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-sub-content">
+                <div class="title">
+                  <p>가시화 정보</p>
+                </div>
+                <ul class="ns-content-wrap">
+                  <li class="ns-content">
+                    <div class="checkbox checkbox1">
+                      <input type="checkbox" id="checkbox1-btn1" />
+                      <label for="checkbox1-btn1"><i class="hide"></i>영역의 윤곽선 표시</label>
+                      <input type="checkbox" id="checkbox1-btn2" />
+                      <label for="checkbox1-btn2"><i class="hide"></i>영역의 버퍼 윤곽선 표시</label>
+                      <input type="checkbox" id="checkbox1-btn3" />
+                      <label for="checkbox1-btn3"><i class="hide"></i>촬영 연장선 표시</label>
+                      <input type="checkbox" id="checkbox1-btn4" />
+                      <label for="checkbox1-btn4"><i class="hide"></i>촬영 지점 표시</label>
+                      <input type="checkbox" id="checkbox1-btn5" />
+                      <label for="checkbox1-btn5"><i class="hide"></i>영역을 채우는 경로 표시</label>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="apply-btn">
+              <button class="cancel">취소</button>
+              <button class="apply">완료</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 지오팬스 -->
+      <div class="main-nav_3 nav-contents hide">
+        <div class="nav-content">
+          <div class="content-search">
+            <input type="search" />
+            <i class="search"></i>
+          </div>
+          <div class="accor-wrap">
+            <ul class="accor">
+              <li>
+                <div class="accor-name">
+                  <div>
+                    <i class="accor-default"></i>
+                    <p>테스트그룹</p>
+                  </div>
+                </div>
+                <ul class="accor-sub hide">
+                  <li>
+                    <div class="accor-sub-name">
+                      <div>
+                        <i class="accor-sub-default"></i>
+                        <p>테스트그룹열림</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="accor-sub-name">
+                      <div>
+                        <i class="accor-sub-default"></i>
+                        <p>테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="accor-name">
+                  <div>
+                    <i class="accor-default"></i>
+                    <p>테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹</p>
+                  </div>
+                </div>
+                <ul class="accor-sub hide">
+                  <li>
+                    <div class="accor-sub-name">
+                      <div>
+                        <i class="accor-sub-default"></i>
+                        <p>클립상세팝업</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="accor-sub-name">
+                      <div>
+                        <i class="accor-sub-default"></i>
+                        <p>테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="close-wrap popUp nc-sub2-popup hide">
+            <div class="title">
+              <p>임무요약정보</p>
+              <i class="close"></i>
+            </div>
+            <div class="nc-sub2-popup-detail">
+              <ul>
+                <li>
+                  <strong>임무코드</strong>
+                  <p>20341219134320341219133</p>
+                </li>
+                <li>
+                  <strong>임무명</strong>
+                  <p>테스트 #2</p>
+                </li>
+                <li>
+                  <strong>임무설정속도</strong>
+                  <p>6 ㎧</p>
+                </li>
+                <li>
+                  <strong>총임무거리</strong>
+                  <p>648.88 m</p>
+                </li>
+                <li>
+                  <strong>총임무시간</strong>
+                  <p>106.67초</p>
+                </li>
+                <li>
+                  <strong>임무설명</strong>
+                  <p>테스트를 하기위한 임무 생성입니다</p>
+                </li>
+              </ul>
+            </div>
+            <div class="btn popup-btn-fe popup-edit-btn">
+              <button><i class="delete"></i>지오팬스 삭제</button>
+              <button><i class="edit"></i>지오팬스 수정</button>
+            </div>
+          </div>
+          <div class="main-btn">
+            <button class="nav3-btn1">신규 그룹 생성</button>
+            <button class="nav3-btn2">신규 지오팬스 생성</button>
+          </div>
+        </div>
+        <!-- 신규 그룹 생성 -->
+        <div class="prev-wrap sub-common nav-sub-wrap nav3-sub1-wrap hide">
+          <div class="nc-sub-name">
+            <i class="back"></i>
+            <h4>지오팬스 그룹 관리</h4>
+          </div>
+          <div class="nc-sub-accor">
+            <div class="accor-wrap">
+              <ul class="accor">
+                <li>
+                  <div class="accor-name">
+                    <div>
+                      <i class="accor-default"></i>
+                      <p>테스트그룹</p>
+                    </div>
+                    <i class="delete"></i>
+                  </div>
+                  <ul class="accor-sub hide">
+                    <li>
+                      <div class="accor-sub-name">
+                        <div>
+                          <i class="accor-sub-default"></i>
+                          <p>테스트그룹열림</p>
+                        </div>
+                        <i class="delete"></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="accor-sub-name">
+                        <div>
+                          <i class="accor-sub-default"></i>
+                          <p>테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림</p>
+                        </div>
+                        <i class="delete"></i>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="accor-name">
+                    <div>
+                      <i class="accor-default"></i>
+                      <p>테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹테스트그룹</p>
+                    </div>
+                    <i class="delete"></i>
+                  </div>
+                  <ul class="accor-sub hide">
+                    <li>
+                      <div class="accor-sub-name">
+                        <div>
+                          <i class="accor-sub-default"></i>
+                          <p>클립상세팝업</p>
+                        </div>
+                        <i class="delete"></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="accor-sub-name">
+                        <div>
+                          <i class="accor-sub-default"></i>
+                          <p>테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림테스트그룹열림</p>
+                        </div>
+                        <i class="delete"></i>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="accor-contents hide">
+              <div class="accor-contents-title">
+                <i class="i30 setting c-default"></i>
+                <strong>그룹정보 설정</strong>
+              </div>
+              <ul class="accor-contents-name">
+                <li>
+                  <div>
+                    <i class="list-disc"></i>
+                    <p>선택한 그룹명</p>
+                  </div>
+                  <input type="text" class="readonly" readonly />
+                </li>
+                <li>
+                  <div>
+                    <i class="list-disc"></i>
+                    <p>그룹명 설정</p>
+                  </div>
+                  <input type="text" />
+                </li>
+              </ul>
+              <div class="btn popup-btn">
+                <div>
+                  <button><i class="folder"></i>동위추가</button>
+                  <button><i class="file"></i>하위추가</button>
+                </div>
+                <button><i class="edit"></i>수정</button>
+              </div>
+            </div>
+          </div>
+          <div class="apply-btn">
+            <button class="cancel">취소</button>
+            <button class="apply">완료</button>
+          </div>
+        </div>
+        <!-- 신규 지오팬스 생성 -->
+        <div class="prev-wrap sub-common nav-sub-wrap nav3-sub2-wrap hide">
+          <div class="nc-sub-name">
+            <i class="back"></i>
+            <h4>지오팬스 생성</h4>
+          </div>
+          <ul class="nav-sub-contents">
+            <li class="nav-sub-content">
+              <div class="title">
+                <p>복귀 지점</p>
+                <i class="edit i20 table-btn"></i>
+              </div>
+              <ul class="ns-content-wrap row">
+                <li class="ns-content">
+                  <div class="content-name">
+                    <i class="list-disc"></i>
+                    <p>Lon</p>
+                  </div>
+                  <div class="form-container">
+                    <input type="text" class="form" readonly />
+                  </div>
+                </li>
+                <li class="ns-content">
+                  <div class="content-name">
+                    <i class="list-disc"></i>
+                    <p>Lat</p>
+                  </div>
+                  <div class="form-container">
+                    <input type="text" class="form" readonly />
+                  </div>
+                </li>
+                <li class="ns-content">
+                  <div class="content-name">
+                    <i class="list-disc"></i>
+                    <p>Alt</p>
+                  </div>
+                  <div class="form-container">
+                    <input type="text" class="form" readonly />
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-sub-content">
+              <div class="title">
+                <p>지오팬스</p>
+              </div>
+              <ul class="ns-content-wrap">
+                <li class="ns-content">
+                  <div class="content-name">
+                    <i class="list-disc"></i>
+                    <p>지오팬스 명칭</p>
+                  </div>
+                  <div class="form-container">
+                    <input type="text" class="form" class="" />
+                  </div>
+                </li>
+                <li class="ns-content">
+                  <div class="content-name">
+                    <i class="list-disc"></i>
+                    <p>지오팬스 침입액션</p>
+                  </div>
+                  <div class="selectbox form-container">
+                    <button type="button" class="selectbox-btn form">1</button>
+                    <ul class="selectbox-option hide">
+                      <li><button type="button" class="option-btn">1</button></li>
+                      <li><button type="button" class="option-btn">2</button></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="ns-content">
+                  <div class="content-name">
+                    <i class="list-disc"></i>
+                    <p>지오팬스 그룹설정</p>
+                  </div>
+                  <div class="selectbox form-container">
+                    <button type="button" class="selectbox-btn form">1</button>
+                    <ul class="selectbox-option hide">
+                      <li><button type="button" class="option-btn">1</button></li>
+                      <li><button type="button" class="option-btn">2</button></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-sub-content">
+              <div class="title">
+                <p>지오팬스 영역설정</p>
+              </div>
+              <ul class="ns-content-wrap">
+                <li class="ns-content">
+                  <div class="content-name content-num">
+                    <i class="point-num i20 c-default">1</i>
+                    <p>높이 : 50m</p>
+                  </div>
+                  <div class="form-container icon-container">
+                    <i class="move i20"></i>
+                    <i class="edit i20"></i>
+                    <i class="delete i20"></i>
+                  </div>
+                </li>
+                <li class="ns-content">
+                  <div class="content-name content-num">
+                    <i class="point-num i20 c-default">2</i>
+                    <p>높이 : 50m</p>
+                  </div>
+                  <div class="form-container icon-container">
+                    <i class="move i20"></i>
+                    <i class="edit i20"></i>
+                    <i class="delete i20"></i>
+                  </div>
+                </li>
+                <li class="ns-content">
+                  <div class="content-name content-num">
+                    <i class="point-num i20 c-default">3</i>
+                    <p>높이 : 50m</p>
+                  </div>
+                  <div class="form-container icon-container">
+                    <i class="move i20"></i>
+                    <i class="edit i20"></i>
+                    <i class="delete i20"></i>
+                  </div>
+                </li>
+                <li class="ns-content">
+                  <div class="content-name content-num">
+                    <i class="point-num i20 c-default">4</i>
+                    <p>높이 : 50m</p>
+                  </div>
+                  <div class="form-container icon-container">
+                    <i class="move i20"></i>
+                    <i class="edit i20"></i>
+                    <i class="delete i20"></i>
+                  </div>
+                </li>
+                <li class="ns-content">
+                  <div class="content-name content-num">
+                    <i class="point-num i20 c-default">5</i>
+                    <p>높이 : 50m</p>
+                  </div>
+                  <div class="form-container icon-container">
+                    <i class="move i20"></i>
+                    <i class="edit i20"></i>
+                    <i class="delete i20"></i>
+                  </div>
+                </li>
+              </ul>
+              <div class="btn popup-btn">
+                <button class="nav3-tab-btn"><i class="location"></i>추가</button>
+              </div>
+            </li>
+            <li class="nav-sub-content">
+              <div class="title">
+                <p>지오팬스 설명</p>
+              </div>
+              <ul class="ns-content-wrap">
+                <li class="column ns-content">
+                  <div class="form-container">
+                    <textarea name="" id="" cols="30" rows="10" class="textarea form"></textarea>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="apply-btn">
+            <button class="cancel">취소</button>
+            <button class="apply">완료</button>
+          </div>
+        </div>
+        <div class="popUp n3s2-content-tab w350 hide">
+          <div class="title partition-title">
+            <div>
+              <p>지오팬스영역 설정</p>
+              <div class="partition"></div>
+              <strong>지오팬스 영역 추가</strong>
+            </div>
+            <i class="close"></i>
+          </div>
+          <div class="tab nav3-tab1">
+            <div class="btn tab-name">
+              <button class="tab1 active">원형</button>
+              <button class="tab2">사각형</button>
+              <button class="tab3">다각형</button>
+            </div>
+            <div class="tab-contents">
+              <div class="tab1 active">
+                <ul class="nav-sub-contents">
+                  <li class="nav-sub-content">
+                    <div class="title">
+                      <p>중심점 위치 설정</p>
+                      <i class="edit i20 table-btn"></i>
+                    </div>
+                    <ul class="ns-content-wrap row">
+                      <li class="ns-content">
+                        <div class="content-name">
+                          <i class="list-disc"></i>
+                          <p>Lon</p>
+                        </div>
+                        <div class="form-container">
+                          <input type="text" class="form" />
+                        </div>
+                      </li>
+                      <li class="ns-content">
+                        <div class="content-name">
+                          <i class="list-disc"></i>
+                          <p>Lat</p>
+                        </div>
+                        <div class="form-container">
+                          <input type="text" class="form" />
+                        </div>
+                      </li>
+                      <li class="ns-content">
+                        <div class="content-name">
+                          <i class="list-disc"></i>
+                          <p>Alt</p>
+                        </div>
+                        <div class="form-container">
+                          <input type="text" class="form" />
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-sub-content">
+                    <div class="title">
+                      <p>영역설정</p>
+                    </div>
+                    <ul class="ns-content-wrap">
+                      <li class="ns-content">
+                        <div class="content-name">
+                          <i class="list-disc"></i>
+                          <p>반지름 크기 설정</p>
+                        </div>
+                        <div class="form-container">
+                          <input type="text" class="form" />
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab2 hide">
+                <ul class="nav-sub-contents">
+                  <li class="nav-sub-content">
+                    <div class="title">
+                      <p>중심점 위치 설정</p>
+                      <i class="edit i20 table-btn"></i>
+                    </div>
+                    <ul class="ns-content-wrap row">
+                      <li class="ns-content">
+                        <div class="content-name">
+                          <i class="list-disc"></i>
+                          <p>Lon</p>
+                        </div>
+                        <div class="form-container">
+                          <input type="text" class="form" />
+                        </div>
+                      </li>
+                      <li class="ns-content">
+                        <div class="content-name">
+                          <i class="list-disc"></i>
+                          <p>Lat</p>
+                        </div>
+                        <div class="form-container">
+                          <input type="text" class="form" />
+                        </div>
+                      </li>
+                      <li class="ns-content">
+                        <div class="content-name">
+                          <i class="list-disc"></i>
+                          <p>Alt</p>
+                        </div>
+                        <div class="form-container">
+                          <input type="text" class="form" />
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-sub-content">
+                    <div class="title">
+                      <p>영역설정</p>
+                    </div>
+                    <ul class="ns-content-wrap">
+                      <li class="ns-content">
+                        <div class="content-name">
+                          <i class="list-disc"></i>
+                          <p>가로 길이</p>
+                        </div>
+                        <div class="form-container">
+                          <input type="text" class="form" />
+                        </div>
+                      </li>
+                      <li class="ns-content">
+                        <div class="content-name">
+                          <i class="list-disc"></i>
+                          <p>세로 길이</p>
+                        </div>
+                        <div class="form-container">
+                          <input type="text" class="form" />
+                        </div>
+                      </li>
+                      <li class="ns-content">
+                        <div class="content-name">
+                          <i class="list-disc"></i>
+                          <p>회전</p>
+                        </div>
+                        <div class="form-container">
+                          <input type="text" class="form" />
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab3 hide">
+                <ul class="nav-sub-contents">
+                  <li class="nav-sub-content">
+                    <div class="title">
+                      <p>모드 선택</p>
+                    </div>
+                    <ul class="ns-content-wrap">
+                      <li class="ns-content">
+                        <div class="content-name">
+                          <i class="list-disc"></i>
+                          <p>경로</p>
+                        </div>
+                        <div class="radio radio5">
+                          <input type="radio" id="radio5-btn1" name="radio5" /><label for="radio5-btn1"><i class="hide"></i>수정모드</label> <input type="radio" id="radio5-btn2" name="radio5" /><label
+                            for="radio5-btn2"
+                            ><i class="hide"></i>생성모드</label
+                          >
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="table">
+                    <table>
+                      <tr>
+                        <th></th>
+                        <th>순번</th>
+                        <th>위도</th>
+                        <th>경도</th>
+                        <th>고도</th>
+                        <th>삭제</th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div><i class="point-num i20 c-default">1</i></div>
+                        </td>
+                        <td>1</td>
+                        <td>377.00000000</td>
+                        <td>377.00000000</td>
+                        <td>100</td>
+                        <td><i class="delete i20"></i></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div><i class="point-num i20 c-default">2</i></div>
+                        </td>
+                        <td>1</td>
+                        <td>377.00000000</td>
+                        <td>377.00000000</td>
+                        <td>100</td>
+                        <td><i class="delete i20"></i></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div><i class="point-num i20 c-default">3</i></div>
+                        </td>
+                        <td>1</td>
+                        <td>377.00000000</td>
+                        <td>377.00000000</td>
+                        <td>100</td>
+                        <td><i class="delete i20"></i></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div><i class="point-num i20 c-default">4</i></div>
+                        </td>
+                        <td>1</td>
+                        <td>377.00000000</td>
+                        <td>377.00000000</td>
+                        <td>100</td>
+                        <td><i class="delete i20"></i></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div><i class="point-num i20 c-default">5</i></div>
+                        </td>
+                        <td>1</td>
+                        <td>377.00000000</td>
+                        <td>377.00000000</td>
+                        <td>100</td>
+                        <td><i class="delete i20"></i></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div><i class="point-num i20 c-default">6</i></div>
+                        </td>
+                        <td>1</td>
+                        <td>377.00000000</td>
+                        <td>377.00000000</td>
+                        <td>100</td>
+                        <td><i class="delete i20"></i></td>
+                      </tr>
+                    </table>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="btn popup-btn-fe">
+            <button class="cancel"><i class="cancel"></i>취소</button>
+            <button><i class="play"></i>생성</button>
+          </div>
+        </div>
+      </div>
+      <!-- 임무스케줄 -->
+      <div class="main-nav_4 nav-contents hide">
+        <section class="nav-content">
+          <div class="nc-sub-name">
+            <h4>임무 스케줄</h4>
+          </div>
+          <div class="calandar"></div>
+          <div class="apply-btn f-initial">
+            <button class="apply">스케줄 생성</button>
+          </div>
+          <div class="popUp nav4-popup1 w350 hide">
+            <div class="title partition-title">
+              <div>
+                <p>임무 스케줄</p>
+                <div class="partition"></div>
+                <strong>스케줄 생성</strong>
+              </div>
+              <i class="close"></i>
+            </div>
+            <ul class="nav-sub-contents">
+              <li class="nav-sub-content">
+                <div class="title">
+                  <p>스케줄 기본 설정</p>
+                </div>
+                <ul class="ns-content-wrap">
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>스케줄 명칭</p>
+                    </div>
+                    <div class="form-container">
+                      <input type="text" class="form" />
+                    </div>
+                  </li>
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>드롬 선택</p>
+                    </div>
+                    <div class="selectbox form-container">
+                      <button type="button" class="selectbox-btn form">1</button>
+                      <ul class="selectbox-option hide">
+                        <li><button type="button" class="option-btn">1</button></li>
+                        <li><button type="button" class="option-btn">2</button></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>임무 선택</p>
+                    </div>
+                    <div class="selectbox form-container">
+                      <button type="button" class="selectbox-btn form">1</button>
+                      <ul class="selectbox-option hide">
+                        <li><button type="button" class="option-btn">1</button></li>
+                        <li><button type="button" class="option-btn">2</button></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>지오팬스 선택</p>
+                    </div>
+                    <div class="selectbox form-container">
+                      <button type="button" class="selectbox-btn form">1</button>
+                      <ul class="selectbox-option hide">
+                        <li><button type="button" class="option-btn">1</button></li>
+                        <li><button type="button" class="option-btn">2</button></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-sub-content">
+                <div class="title">
+                  <p>스케줄 옵션 설정</p>
+                </div>
+                <ul class="ns-content-wrap">
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>스케줄 활성화</p>
+                    </div>
+                    <div class="radio radio6">
+                      <input type="radio" id="radio6-btn1" name="radio6" />
+                      <label for="radio6-btn1"><i class="hide"></i>ON</label>
+                      <input type="radio" id="radio6-btn2" name="radio6" />
+                      <label for="radio6-btn2"><i class="hide"></i>OFF</label>
+                    </div>
+                  </li>
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>스케줄 자동 진행</p>
+                    </div>
+                    <div class="radio radio7">
+                      <input type="radio" id="radio7-btn1" name="radio7" />
+                      <label for="radio7-btn1"><i class="hide"></i>ON</label>
+                      <input type="radio" id="radio7-btn2" name="radio7" />
+                      <label for="radio7-btn2"><i class="hide"></i>OFF</label>
+                    </div>
+                  </li>
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>스케줄 환경 옵션</p>
+                    </div>
+                    <div class="selectbox form-container">
+                      <button type="button" class="selectbox-btn form">1</button>
+                      <ul class="selectbox-option hide">
+                        <li><button type="button" class="option-btn">1</button></li>
+                        <li><button type="button" class="option-btn">2</button></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>스케줄 자동 진행</p>
+                    </div>
+                    <div class="form-container icon-container">
+                      <div class="btn popup-btn">
+                        <button>
+                          <i class="edit"></i>
+                          <p>환경 옵션 설정/수정</p>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-sub-content">
+                <div class="title">
+                  <p>스케줄 시간 설정</p>
+                </div>
+                <ul class="ns-content-wrap">
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>반복 주기</p>
+                    </div>
+                    <div class="selectbox form-container">
+                      <button type="button" class="selectbox-btn form">1</button>
+                      <ul class="selectbox-option hide">
+                        <li><button type="button" class="option-btn">1</button></li>
+                        <li><button type="button" class="option-btn">2</button></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>시작 시간</p>
+                    </div>
+                    <div class="form-container">
+                      <input type="date" class="form" data-placeholder=" " />
+                    </div>
+                  </li>
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>종료 시간</p>
+                    </div>
+                    <div class="form-container">
+                      <input type="date" class="form" data-placeholder=" " />
+                    </div>
+                  </li>
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>반복 주기 값</p>
+                    </div>
+                    <div class="form-container">
+                      <input type="text" class="form" />
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-sub-content nav2-sub2-content">
+                <div class="title">
+                  <p>스케줄 설명</p>
+                </div>
+                <ul class="ns-content-wrap n2s2-content-wrap">
+                  <li class="column ns-content n2s2-content">
+                    <div class="form-container">
+                      <textarea name="" id="" cols="30" rows="10" class="textarea form"></textarea>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="btn popup-btn popup-btn-fe">
+              <button class="cancel"><i class="cancel"></i>취소</button>
+              <button><i class="play"></i>등록</button>
+            </div>
+          </div>
+          <div class="popUp nav4-popup2 w350 hide">
+            <div class="title partition-title">
+              <div>
+                <p>스케줄 생성</p>
+                <div class="partition"></div>
+                <strong>환경 옵션 설정</strong>
+              </div>
+              <i class="close"></i>
+            </div>
+            <ul class="nav-sub-contents">
+              <li class="nav-sub-content">
+                <div class="col title">
+                  <p>기본 설정</p>
+                  <em>체크된 옵션 및 설정된 값 이하의 옵션에 임무를 진행함</em>
+                </div>
+                <ul class="ns-content-wrap">
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>환경 옵션 명칭</p>
+                    </div>
+                    <div class="form-container">
+                      <input type="text" class="form" />
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-sub-content">
+                <div class="title">
+                  <p>날씨 옵션 설정</p>
+                </div>
+                <ul class="ns-content-wrap">
+                  <li class="ns-content col">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>비행가능 날씨</p>
+                    </div>
+                    <div class="checkbox checkbox2">
+                      <input type="checkbox" id="checkbox2-btn1" />
+                      <label for="checkbox2-btn1"><i class="hide"></i>비</label>
+                      <input type="checkbox" id="checkbox2-btn2" />
+                      <label for="checkbox2-btn2"><i class="hide"></i>비+눈</label>
+                      <input type="checkbox" id="checkbox2-btn3" />
+                      <label for="checkbox2-btn3"><i class="hide"></i>눈</label>
+                      <input type="checkbox" id="checkbox2-btn4" />
+                      <label for="checkbox2-btn4"><i class="hide"></i>눈날림</label>
+                      <input type="checkbox" id="checkbox2-btn5" />
+                      <label for="checkbox2-btn5"><i class="hide"></i>빗방울</label>
+                      <input type="checkbox" id="checkbox2-btn6" />
+                      <label for="checkbox2-btn6"><i class="hide"></i>빗방울+눈날림</label>
+                    </div>
+                  </li>
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>강우량/강설량</p>
+                    </div>
+                    <div class="form-container">
+                      <input type="text" class="form" />
+                    </div>
+                  </li>
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>강우량/강설량</p>
+                    </div>
+                    <div class="form-container">
+                      <input type="text" class="form" />
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-sub-content">
+                <div class="title">
+                  <p>우주 전파 옵션 설정</p>
+                </div>
+                <ul class="ns-content-wrap">
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>태양자유입 등급</p>
+                      <i class="question"></i>
+                    </div>
+                    <div class="selectbox form-container">
+                      <button type="button" class="selectbox-btn form">1</button>
+                      <ul class="selectbox-option hide">
+                        <li><button type="button" class="option-btn">1</button></li>
+                        <li><button type="button" class="option-btn">2</button></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>태양흑점폭발 등급</p>
+                      <i class="question"></i>
+                    </div>
+                    <div class="selectbox form-container">
+                      <button type="button" class="selectbox-btn form">1</button>
+                      <ul class="selectbox-option hide">
+                        <li><button type="button" class="option-btn">1</button></li>
+                        <li><button type="button" class="option-btn">2</button></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="ns-content">
+                    <div class="content-name">
+                      <i class="list-disc"></i>
+                      <p>지자기교란 등급</p>
+                      <i class="question"></i>
+                    </div>
+                    <div class="selectbox form-container">
+                      <button type="button" class="selectbox-btn form">1</button>
+                      <ul class="selectbox-option hide">
+                        <li><button type="button" class="option-btn">1</button></li>
+                        <li><button type="button" class="option-btn">2</button></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="btn popup-btn-fe">
+              <button class="cancel"><i class="cancel"></i>취소</button>
+              <button><i class="play"></i>설정</button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- 권한관리 -->
+      <div class="main-nav_5 nav-contents hide">
+        <section class="nav-content">
+          <div class="nc-sub-name">
+            <h4>미승인 드론</h4>
+          </div>
+          <div class="slider">
+            <i class="slider-icon prev"></i>
+            <div class="nc-sub1-contents">
+              <div class="nc-sc nc-sub1-content1">
+                <div class="ns-title sub-title">
+                  <i class="i30 drone c-default"></i>
+                  <div class="ns-title-text">
+                    <strong>Default1</strong>
+                    <p>요청일시: 2023.06.12 08:32:41.789</p>
+                  </div>
+                </div>
+                <ul class="wrap-list">
+                  <li class="info-list">model-mm</li>
+                  <li class="info-list">drone</li>
+                  <li class="info-list">홍길동</li>
+                  <li class="info-list alert">위험정보</li>
+                  <li class="info-list alert">192.168.0.0</li>
+                  <li class="info-list important">해당드론의 정보 표출</li>
+                  <li class="info-list important">중요정보</li>
+                  <li class="info-list alert">3줄까지 해당부분만 스크롤</li>
+                  <li class="info-list">model-mm</li>
+                  <li class="info-list">drone</li>
+                  <li class="info-list">홍길동</li>
+                  <li class="info-list alert">위험정보</li>
+                  <li class="info-list alert">192.168.0.0</li>
+                  <li class="info-list important">해당드론의 정보 표출</li>
+                  <li class="info-list important">중요정보</li>
+                  <li class="info-list alert">3줄까지 해당부분만 스크롤</li>
+                </ul>
+                <div class="btn nav5-btn">
+                  <button><i class="check"></i>승인</button>
+                  <button><i class="cancel"></i>거절</button>
+                </div>
+              </div>
+              <div class="nc-sc nc-sub1-content2">
+                <div class="ns-title sub-title">
+                  <i class="i30 drone c-default"></i>
+                  <div class="ns-title-text">
+                    <strong>Default2</strong>
+                    <p>요청일시: 2023.06.12 08:32:41.789</p>
+                  </div>
+                </div>
+                <ul class="wrap-list">
+                  <li class="info-list">model-mm</li>
+                  <li class="info-list">drone</li>
+                  <li class="info-list">홍길동</li>
+                  <li class="info-list alert">위험정보</li>
+                  <li class="info-list alert">192.168.0.0</li>
+                  <li class="info-list important">해당드론의 정보 표출</li>
+                  <li class="info-list important">중요정보</li>
+                  <li class="info-list alert">3줄까지 해당부분만 스크롤</li>
+                </ul>
+                <div class="btn nav5-btn">
+                  <button><i class="check"></i>승인</button>
+                  <button><i class="cancel"></i>거절</button>
+                </div>
+              </div>
+              <div class="nc-sc nc-sub1-content3">
+                <div class="ns-title sub-title">
+                  <i class="i30 drone c-default"></i>
+                  <div class="ns-title-text">
+                    <strong>Default3</strong>
+                    <p>요청일시: 2023.06.12 08:32:41.789</p>
+                  </div>
+                </div>
+                <ul class="wrap-list">
+                  <li class="info-list alert">192.168.0.0</li>
+                  <li class="info-list important">해당드론의 정보 표출</li>
+                </ul>
+                <div class="btn nav5-btn">
+                  <button><i class="check"></i>승인</button>
+                  <button><i class="cancel"></i>거절</button>
+                </div>
+              </div>
+              <div class="nc-sc nc-sub1-content4">
+                <div class="ns-title sub-title">
+                  <i class="i30 drone c-default"></i>
+                  <div class="ns-title-text">
+                    <strong>Default4</strong>
+                    <p>요청일시: 2023.06.12 08:32:41.789</p>
+                  </div>
+                </div>
+                <ul class="wrap-list">
+                  <li class="info-list">model-mm</li>
+                  <li class="info-list">drone</li>
+                  <li class="info-list">홍길동</li>
+                  <li class="info-list alert">위험정보</li>
+                  <li class="info-list alert">192.168.0.0</li>
+                  <li class="info-list important">해당드론의 정보 표출</li>
+                  <li class="info-list important">중요정보</li>
+                  <li class="info-list alert">3줄까지 해당부분만 스크롤</li>
+                  <li class="info-list">model-mm</li>
+                  <li class="info-list">drone</li>
+                  <li class="info-list">홍길동</li>
+                  <li class="info-list alert">위험정보</li>
+                  <li class="info-list alert">192.168.0.0</li>
+                  <li class="info-list important">해당드론의 정보 표출</li>
+                  <li class="info-list important">중요정보</li>
+                  <li class="info-list alert">3줄까지 해당부분만 스크롤</li>
+                </ul>
+                <div class="btn nav5-btn">
+                  <button><i class="check"></i>승인</button>
+                  <button><i class="cancel"></i>거절</button>
+                </div>
+              </div>
+              <div class="nc-sc nc-sub1-content5">
+                <div class="ns-title sub-title">
+                  <i class="i30 drone c-default"></i>
+                  <div class="ns-title-text">
+                    <strong>Default5</strong>
+                    <p>요청일시: 2023.06.12 08:32:41.789</p>
+                  </div>
+                </div>
+                <ul class="wrap-list">
+                  <li class="info-list">model-mm</li>
+                  <li class="info-list">drone</li>
+                  <li class="info-list">홍길동</li>
+                  <li class="info-list alert">위험정보</li>
+                  <li class="info-list alert">192.168.0.0</li>
+                  <li class="info-list important">해당드론의 정보 표출</li>
+                  <li class="info-list important">중요정보</li>
+                  <li class="info-list alert">3줄까지 해당부분만 스크롤</li>
+                </ul>
+                <div class="btn nav5-btn">
+                  <button><i class="check"></i>승인</button>
+                  <button><i class="cancel"></i>거절</button>
+                </div>
+              </div>
+              <div class="nc-sc nc-sub1-content6">
+                <div class="ns-title sub-title">
+                  <i class="i30 drone c-default"></i>
+                  <div class="ns-title-text">
+                    <strong>Default6</strong>
+                    <p>요청일시: 2023.06.12 08:32:41.789</p>
+                  </div>
+                </div>
+                <ul class="wrap-list">
+                  <li class="info-list alert">192.168.0.0</li>
+                  <li class="info-list important">해당드론의 정보 표출</li>
+                </ul>
+                <div class="btn nav5-btn">
+                  <button><i class="check"></i>승인</button>
+                  <button><i class="cancel"></i>거절</button>
+                </div>
+              </div>
+              <div class="nc-sc nc-sub1-content7">
+                <div class="ns-title sub-title">
+                  <i class="i30 drone c-default"></i>
+                  <div class="ns-title-text">
+                    <strong>Default7</strong>
+                    <p>요청일시: 2023.06.12 08:32:41.789</p>
+                  </div>
+                </div>
+                <ul class="wrap-list">
+                  <li class="info-list">model-mm</li>
+                  <li class="info-list">drone</li>
+                  <li class="info-list">홍길동</li>
+                  <li class="info-list alert">위험정보</li>
+                  <li class="info-list alert">192.168.0.0</li>
+                  <li class="info-list important">해당드론의 정보 표출</li>
+                  <li class="info-list important">중요정보</li>
+                  <li class="info-list alert">3줄까지 해당부분만 스크롤</li>
+                  <li class="info-list">model-mm</li>
+                  <li class="info-list">drone</li>
+                  <li class="info-list">홍길동</li>
+                  <li class="info-list alert">위험정보</li>
+                  <li class="info-list alert">192.168.0.0</li>
+                  <li class="info-list important">해당드론의 정보 표출</li>
+                  <li class="info-list important">중요정보</li>
+                  <li class="info-list alert">3줄까지 해당부분만 스크롤</li>
+                </ul>
+                <div class="btn nav5-btn">
+                  <button><i class="check"></i>승인</button>
+                  <button><i class="cancel"></i>거절</button>
+                </div>
+              </div>
+              <div class="nc-sc nc-sub1-content8">
+                <div class="ns-title sub-title">
+                  <i class="i30 drone c-default"></i>
+                  <div class="ns-title-text">
+                    <strong>Default8</strong>
+                    <p>요청일시: 2023.06.12 08:32:41.789</p>
+                  </div>
+                </div>
+                <ul class="wrap-list">
+                  <li class="info-list">model-mm</li>
+                  <li class="info-list">drone</li>
+                  <li class="info-list">홍길동</li>
+                  <li class="info-list alert">위험정보</li>
+                  <li class="info-list alert">192.168.0.0</li>
+                  <li class="info-list important">해당드론의 정보 표출</li>
+                  <li class="info-list important">중요정보</li>
+                  <li class="info-list alert">3줄까지 해당부분만 스크롤</li>
+                </ul>
+                <div class="btn nav5-btn">
+                  <button><i class="check"></i>승인</button>
+                  <button><i class="cancel"></i>거절</button>
+                </div>
+              </div>
+              <div class="nc-sc nc-sub1-content9">
+                <div class="ns-title sub-title">
+                  <i class="i30 drone c-default"></i>
+                  <div class="ns-title-text">
+                    <strong>Default9</strong>
+                    <p>요청일시: 2023.06.12 08:32:41.789</p>
+                  </div>
+                </div>
+                <ul class="wrap-list">
+                  <li class="info-list alert">192.168.0.0</li>
+                  <li class="info-list important">해당드론의 정보 표출</li>
+                </ul>
+                <div class="btn nav5-btn">
+                  <button><i class="check"></i>승인</button>
+                  <button><i class="cancel"></i>거절</button>
+                </div>
+              </div>
+              <div class="nc-sc nc-sub1-content10">
+                <div class="ns-title sub-title">
+                  <i class="i30 drone c-default"></i>
+                  <div class="ns-title-text">
+                    <strong>Default10</strong>
+                    <p>요청일시: 2023.06.12 08:32:41.789</p>
+                  </div>
+                </div>
+                <ul class="wrap-list">
+                  <li class="info-list">model-mm</li>
+                  <li class="info-list">drone</li>
+                  <li class="info-list">홍길동</li>
+                  <li class="info-list alert">위험정보</li>
+                  <li class="info-list alert">192.168.0.0</li>
+                  <li class="info-list important">해당드론의 정보 표출</li>
+                  <li class="info-list important">중요정보</li>
+                  <li class="info-list alert">3줄까지 해당부분만 스크롤</li>
+                  <li class="info-list">model-mm</li>
+                  <li class="info-list">drone</li>
+                  <li class="info-list">홍길동</li>
+                  <li class="info-list alert">위험정보</li>
+                  <li class="info-list alert">192.168.0.0</li>
+                  <li class="info-list important">해당드론의 정보 표출</li>
+                  <li class="info-list important">중요정보</li>
+                  <li class="info-list alert">3줄까지 해당부분만 스크롤</li>
+                </ul>
+                <div class="btn nav5-btn">
+                  <button><i class="check"></i>승인</button>
+                  <button><i class="cancel"></i>거절</button>
+                </div>
+              </div>
+              <div class="nc-sc nc-sub1-content11">
+                <div class="ns-title sub-title">
+                  <i class="i30 drone c-default"></i>
+                  <div class="ns-title-text">
+                    <strong>Default11</strong>
+                    <p>요청일시: 2023.06.12 08:32:41.789</p>
+                  </div>
+                </div>
+                <ul class="wrap-list">
+                  <li class="info-list">model-mm</li>
+                  <li class="info-list">drone</li>
+                  <li class="info-list">홍길동</li>
+                  <li class="info-list alert">위험정보</li>
+                  <li class="info-list alert">192.168.0.0</li>
+                  <li class="info-list important">해당드론의 정보 표출</li>
+                  <li class="info-list important">중요정보</li>
+                  <li class="info-list alert">3줄까지 해당부분만 스크롤</li>
+                </ul>
+                <div class="btn nav5-btn">
+                  <button><i class="check"></i>승인</button>
+                  <button><i class="cancel"></i>거절</button>
+                </div>
+              </div>
+              <div class="nc-sc nc-sub1-content12">
+                <div class="ns-title sub-title">
+                  <i class="i30 drone c-default"></i>
+                  <div class="ns-title-text">
+                    <strong>Default12</strong>
+                    <p>요청일시: 2023.06.12 08:32:41.789</p>
+                  </div>
+                </div>
+                <ul class="wrap-list">
+                  <li class="info-list alert">192.168.0.0</li>
+                  <li class="info-list important">해당드론의 정보 표출</li>
+                </ul>
+                <div class="btn nav5-btn">
+                  <button><i class="check"></i>승인</button>
+                  <button><i class="cancel"></i>거절</button>
+                </div>
+              </div>
+            </div>
+            <i class="slider-icon next"></i>
+          </div>
+          <div class="nc-sub-name">
+            <h4>드론권한 설정</h4>
+          </div>
+          <div class="nc-sub2-contents dl-list">
+            <div class="table-scroll">
+              <div class="fix">
+                <div class="ns2-contents-title title">
+                  <dl>
+                    <dt>로봇타입</dt>
+                    <dt>드론명</dt>
+                    <dt>드론명</dt>
+                    <dt>드론코드</dt>
+                    <dt>tcp / path</dt>
+                    <dt>port / baudrate</dt>
+                    <dt>관리자</dt>
+                    <dt>주사용자</dt>
+                    <dt>보조사용자</dt>
+                    <dt>사용자 권한 설정</dt>
+                  </dl>
+                </div>
+                <ul class="list-contents">
+                  <li class="ns2-content1">
+                    <dl>
+                      <dt><p class="info-list important">model-mm</p></dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">ajksdk-f345-f3450-dlskdlskdsdjkj</dt>
+                      <dt class="text-ellipsis">192.168.50.202</dt>
+                      <dt class="text-ellipsis">56711</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt><i class="edit i20"></i></dt>
+                    </dl>
+                  </li>
+                  <li class="ns2-content2">
+                    <dl>
+                      <dt><p class="info-list">model-mm</p></dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC</dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC</dt>
+                      <dt class="text-ellipsis">ajksdk-f345-f3450-dlskdlskdsdjkj</dt>
+                      <dt class="text-ellipsis">192.168.50.202</dt>
+                      <dt class="text-ellipsis">56711</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt><i class="edit i20"></i></dt>
+                    </dl>
+                  </li>
+                  <li class="ns2-content3">
+                    <dl>
+                      <dt><p class="info-list">알수없음</p></dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">ajksdk-f345-f3450-dlskdlskdsdjkj</dt>
+                      <dt class="text-ellipsis">192.168.50.202</dt>
+                      <dt class="text-ellipsis">56711</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt><i class="edit i20"></i></dt>
+                    </dl>
+                  </li>
+                  <li class="ns2-content4">
+                    <dl>
+                      <dt><p class="info-list">알수없음</p></dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">ajksdk-f345-f3450-dlskdlskdsdjkj</dt>
+                      <dt class="text-ellipsis">192.168.50.202</dt>
+                      <dt class="text-ellipsis">56711</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt><i class="edit i20"></i></dt>
+                    </dl>
+                  </li>
+                  <li class="ns2-content5">
+                    <dl>
+                      <dt><p class="info-list">알수없음</p></dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">ajksdk-f345-f3450-dlskdlskdsdjkj</dt>
+                      <dt class="text-ellipsis">192.168.50.202</dt>
+                      <dt class="text-ellipsis">56711</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt><i class="edit i20"></i></dt>
+                    </dl>
+                  </li>
+                  <li class="ns2-content6">
+                    <dl>
+                      <dt><p class="info-list">알수없음</p></dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">ajksdk-f345-f3450-dlskdlskdsdjkj</dt>
+                      <dt class="text-ellipsis">192.168.50.202</dt>
+                      <dt class="text-ellipsis">56711</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt><i class="edit i20"></i></dt>
+                    </dl>
+                  </li>
+                  <li class="ns2-content7">
+                    <dl>
+                      <dt><p class="info-list">알수없음</p></dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">ajksdk-f345-f3450-dlskdlskdsdjkj</dt>
+                      <dt class="text-ellipsis">192.168.50.202</dt>
+                      <dt class="text-ellipsis">56711</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt><i class="edit i20"></i></dt>
+                    </dl>
+                  </li>
+                  <li class="ns2-content8">
+                    <dl>
+                      <dt><p class="info-list">알수없음</p></dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">ajksdk-f345-f3450-dlskdlskdsdjkj</dt>
+                      <dt class="text-ellipsis">192.168.50.202</dt>
+                      <dt class="text-ellipsis">56711</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt><i class="edit i20"></i></dt>
+                    </dl>
+                  </li>
+                  <li class="ns2-content9">
+                    <dl>
+                      <dt><p class="info-list">알수없음</p></dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">ajksdk-f345-f3450-dlskdlskdsdjkj</dt>
+                      <dt class="text-ellipsis">192.168.50.202</dt>
+                      <dt class="text-ellipsis">56711</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt><i class="edit i20"></i></dt>
+                    </dl>
+                  </li>
+                  <li class="ns2-content10">
+                    <dl>
+                      <dt><p class="info-list">알수없음</p></dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">ajksdk-f345-f3450-dlskdlskdsdjkj</dt>
+                      <dt class="text-ellipsis">192.168.50.202</dt>
+                      <dt class="text-ellipsis">56711</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt><i class="edit i20"></i></dt>
+                    </dl>
+                  </li>
+                  <li class="ns2-content11">
+                    <dl>
+                      <dt><p class="info-list">알수없음</p></dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">ajksdk-f345-f3450-dlskdlskdsdjkj</dt>
+                      <dt class="text-ellipsis">192.168.50.202</dt>
+                      <dt class="text-ellipsis">56711</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt><i class="edit i20"></i></dt>
+                    </dl>
+                  </li>
+                  <li class="ns2-content12">
+                    <dl>
+                      <dt><p class="info-list">알수없음</p></dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">ajksdk-f345-f3450-dlskdlskdsdjkj</dt>
+                      <dt class="text-ellipsis">192.168.50.202</dt>
+                      <dt class="text-ellipsis">56711</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt><i class="edit i20"></i></dt>
+                    </dl>
+                  </li>
+                  <li class="ns2-content13">
+                    <dl>
+                      <dt><p class="info-list">알수없음</p></dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">ajksdk-f345-f3450-dlskdlskdsdjkj</dt>
+                      <dt class="text-ellipsis">192.168.50.202</dt>
+                      <dt class="text-ellipsis">56711</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt><i class="edit i20"></i></dt>
+                    </dl>
+                  </li>
+                  <li class="ns2-content14">
+                    <dl>
+                      <dt><p class="info-list">알수없음</p></dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">ajksdk-f345-f3450-dlskdlskdsdjkj</dt>
+                      <dt class="text-ellipsis">192.168.50.202</dt>
+                      <dt class="text-ellipsis">56711</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt><i class="edit i20"></i></dt>
+                    </dl>
+                  </li>
+                  <li class="ns2-content15">
+                    <dl>
+                      <dt><p class="info-list">알수없음</p></dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">매빅3 프로 플라이모어 콤보 RC PRO</dt>
+                      <dt class="text-ellipsis">ajksdk-f345-f3450-dlskdlskdsdjkj</dt>
+                      <dt class="text-ellipsis">192.168.50.202</dt>
+                      <dt class="text-ellipsis">56711</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt class="text-ellipsis">지정한 사용자 없음</dt>
+                      <dt><i class="edit i20"></i></dt>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="contents-page">
+              <ul>
+                <li class="page-prev"></li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li class="active">5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li class="page-next"></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

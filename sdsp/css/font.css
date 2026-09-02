@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Pretendard";
+  font-style: thin;
+  font-weight: 100;
+  src: url(../font/pretendard/eot/Pretendard-Thin.eot);
+  src: url(../font/pretendard/eot/Pretendard-Thin.eot?#iefix) format("embedded-opentype"), url(../font/pretendard/woff/Pretendard-Thin.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-style: extralight;
+  font-weight: 200;
+  src: url(../font/pretendard/eot/Pretendard-ExtraLight.eot);
+  src: url(../font/pretendard/eot/Pretendard-ExtraLight.eot?#iefix) format("embedded-opentype"), url(../font/pretendard/woff/Pretendard-ExtraLight.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-style: light;
+  font-weight: 300;
+  src: url(../font/pretendard/eot/Pretendard-Light.eot);
+  src: url(../font/pretendard/eot/Pretendard-Light.eot?#iefix) format("embedded-opentype"), url(../font/pretendard/woff/Pretendard-Light.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-style: regular;
+  font-weight: 400;
+  src: url(../font/pretendard/eot/Pretendard-Regular.eot);
+  src: url(../font/pretendard/eot/Pretendard-Regular.eot?#iefix) format("embedded-opentype"), url(../font/pretendard/woff/Pretendard-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-style: medium;
+  font-weight: 500;
+  src: url(../font/pretendard/eot/Pretendard-Medium.eot);
+  src: url(../font/pretendard/eot/Pretendard-Medium.eot?#iefix) format("embedded-opentype"), url(../font/pretendard/woff/Pretendard-Medium.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-style: semibold;
+  font-weight: 600;
+  src: url(../font/pretendard/eot/Pretendard-SemiBold.eot);
+  src: url(../font/pretendard/eot/Pretendard-SemiBold.eot?#iefix) format("embedded-opentype"), url(../font/pretendard/woff/Pretendard-SemiBold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-style: bold;
+  font-weight: 700;
+  src: url(../font/pretendard/eot/Pretendard-Bold.eot);
+  src: url(../font/pretendard/eot/Pretendard-Bold.eot?#iefix) format("embedded-opentype"), url(../font/pretendard/woff/Pretendard-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-style: extrabold;
+  font-weight: 800;
+  src: url(../font/pretendard/eot/Pretendard-ExtraBold.eot);
+  src: url(../font/pretendard/eot/Pretendard-ExtraBold.eot?#iefix) format("embedded-opentype"), url(../font/pretendard/woff/Pretendard-ExtraBold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-style: black;
+  font-weight: 900;
+  src: url(../font/pretendard/eot/Pretendard-Black.eot);
+  src: url(../font/pretendard/eot/Pretendard-Black.eot?#iefix) format("embedded-opentype"), url(../font/pretendard/woff/Pretendard-Black.woff) format("woff");
+}
+
+
+.text-sm {font-size: 14px !important; font-weight: 500 !important;}
+.title-lg {font-size: 48px !important; font-weight: 600 !important;}
+.title-md {font-size: 36px !important; font-weight: 600 !important;}
+.title-sm {font-size: 24px !important; font-weight: 600 !important;}
+.body1_B {font-size: 18px !important; font-weight: 700 !important;}
+.body1_M {font-size: 18px !important; font-weight: 500 !important;}
+.body1_R {font-size: 18px !important; font-weight: 400 !important;}
+.body2_B {font-size: 16px !important; font-weight: 700 !important;}
+.body2_M {font-size: 16px !important; font-weight: 500 !important;}
+.body3_B {font-size: 14px !important; font-weight: 700 !important; }
+.body3_R {font-size: 14px !important; font-weight: 400 !important;}
+.body4_B {font-size: 13px !important; font-weight: 700 !important;}
+.body4_M {font-size: 13px !important; font-weight: 500 !important; }
+.element1_B {font-size: 16px !important; font-weight: 700 !important; }
+.element1_R {font-size: 16px !important; font-weight: 400 !important;}
+.element2_B {font-size: 14px !important; font-weight: 700 !important;}
+.element2_R {font-size: 14px !important; font-weight: 400 !important;}
+.element3_B {font-size: 12px !important; font-weight: 700 !important;}
+.element3_R {font-size: 12px !important; font-weight: 400 !important;}
+.caption {font-size: 11px !important; font-weight: 400 !important;}
